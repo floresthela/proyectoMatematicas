@@ -7,10 +7,11 @@
 //
 
 import UIKit
+import Charts
 
 class ViewController: UIViewController {
 
-    //hola
+    var test = LineChartData()
     
     override func viewDidLoad() {
         super.viewDidLoad()
