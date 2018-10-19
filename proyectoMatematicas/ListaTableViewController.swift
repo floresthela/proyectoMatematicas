@@ -10,6 +10,7 @@ import UIKit
 
 class ListaTableViewController: UITableViewController {
     
+    var equis = 1
 
     var listaSecc = [ListaSeccionesConicas]()
     
