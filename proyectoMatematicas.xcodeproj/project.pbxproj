@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		290C71ED217C058F00389BAA /* FormularioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290C71EC217C058F00389BAA /* FormularioViewController.swift */; };
+		290C71EF217C059D00389BAA /* PracticaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290C71EE217C059D00389BAA /* PracticaViewController.swift */; };
+		290C71F1217C05A500389BAA /* GraficaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290C71F0217C05A500389BAA /* GraficaViewController.swift */; };
+		290C71F3217C05AC00389BAA /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290C71F2217C05AC00389BAA /* QuizViewController.swift */; };
 		290E5824C167D624B0B12560 /* Pods_proyectoMatematicas.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67B5FAF48BDE1D1901AD472F /* Pods_proyectoMatematicas.framework */; };
 		296BAC7D2179321100E55702 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296BAC7C2179321100E55702 /* AppDelegate.swift */; };
 		296BAC7F2179321100E55702 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296BAC7E2179321100E55702 /* ViewController.swift */; };
@@ -19,6 +23,10 @@
 
 /* Begin PBXFileReference section */
 		1481233E2DC0D3F9FD6CEF75 /* Pods-proyectoMatematicas.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-proyectoMatematicas.release.xcconfig"; path = "Pods/Target Support Files/Pods-proyectoMatematicas/Pods-proyectoMatematicas.release.xcconfig"; sourceTree = "<group>"; };
+		290C71EC217C058F00389BAA /* FormularioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormularioViewController.swift; sourceTree = "<group>"; };
+		290C71EE217C059D00389BAA /* PracticaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticaViewController.swift; sourceTree = "<group>"; };
+		290C71F0217C05A500389BAA /* GraficaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraficaViewController.swift; sourceTree = "<group>"; };
+		290C71F2217C05AC00389BAA /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
 		296BAC792179321100E55702 /* proyectoMatematicas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = proyectoMatematicas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		296BAC7C2179321100E55702 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		296BAC7E2179321100E55702 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -68,6 +76,10 @@
 				296BAC7C2179321100E55702 /* AppDelegate.swift */,
 				296BAC7E2179321100E55702 /* ViewController.swift */,
 				296BAC802179321100E55702 /* Main.storyboard */,
+				290C71EC217C058F00389BAA /* FormularioViewController.swift */,
+				290C71EE217C059D00389BAA /* PracticaViewController.swift */,
+				290C71F0217C05A500389BAA /* GraficaViewController.swift */,
+				290C71F2217C05AC00389BAA /* QuizViewController.swift */,
 				296BAC8E2179376100E55702 /* ListaTableViewController.swift */,
 				296BAC902179381800E55702 /* ListaSeccionesConicas.swift */,
 				296BAC832179321400E55702 /* Assets.xcassets */,
@@ -214,9 +226,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				290C71ED217C058F00389BAA /* FormularioViewController.swift in Sources */,
+				290C71EF217C059D00389BAA /* PracticaViewController.swift in Sources */,
 				296BAC7F2179321100E55702 /* ViewController.swift in Sources */,
+				290C71F3217C05AC00389BAA /* QuizViewController.swift in Sources */,
 				296BAC7D2179321100E55702 /* AppDelegate.swift in Sources */,
 				296BAC8F2179376100E55702 /* ListaTableViewController.swift in Sources */,
+				290C71F1217C05A500389BAA /* GraficaViewController.swift in Sources */,
 				296BAC912179381800E55702 /* ListaSeccionesConicas.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

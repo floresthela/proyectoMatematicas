@@ -72,7 +72,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-119" y="578"/>
+            <point key="canvasLocation" x="-1730" y="656"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="h5v-Vs-rKA">
@@ -88,7 +88,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bzt-sx-Xcs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1647" y="216"/>
+            <point key="canvasLocation" x="-455" y="1164"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ucG-R7-KCV">
@@ -104,17 +104,17 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GHt-Le-lwj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-455" y="-185"/>
+            <point key="canvasLocation" x="-455" y="481"/>
         </scene>
-        <!--View Controller-->
+        <!--Practica-->
         <scene sceneID="8bD-ak-Xld">
             <objects>
-                <viewController id="ux5-uD-I25" customClass="ViewController" customModule="proyectoMatematicas" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ux5-uD-I25" userLabel="Practica" customClass="PracticaViewController" customModule="proyectoMatematicas" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ETG-Fz-2x1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="GRAFICAR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sn3-M4-5tp">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="PRÁCTICA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sn3-M4-5tp">
                                 <rect key="frame" x="166" y="84" width="81" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -126,12 +126,16 @@
                         <viewLayoutGuide key="safeArea" id="Ak8-VB-ORI"/>
                     </view>
                     <navigationItem key="navigationItem" id="Jo4-Zl-hDm">
-                        <barButtonItem key="leftBarButtonItem" title="Item" id="lPt-i1-5BY"/>
+                        <barButtonItem key="leftBarButtonItem" title="Item" id="lPt-i1-5BY">
+                            <connections>
+                                <action selector="regresaMenu:" destination="ux5-uD-I25" id="AC3-4u-NFv"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lOQ-CM-gP4" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="999" y="-107"/>
+            <point key="canvasLocation" x="326" y="481"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="iq4-CO-YjH">
@@ -147,12 +151,12 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pch-6Z-e7M" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="372" y="1408"/>
+            <point key="canvasLocation" x="-850" y="1872"/>
         </scene>
-        <!--View Controller-->
+        <!--Grafica-->
         <scene sceneID="u7s-Fu-5jy">
             <objects>
-                <viewController id="CV1-XZ-luZ" customClass="ViewController" customModule="proyectoMatematicas" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="CV1-XZ-luZ" userLabel="Grafica" customClass="GraficaViewController" customModule="proyectoMatematicas" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6lW-Jo-o2f">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -164,17 +168,26 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="I2d-c3-LvI">
+                                <rect key="frame" x="41" y="154" width="292" height="209"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.68499069830000003" green="0.98132258650000004" blue="0.94095594930000004" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="5LZ-pL-BXJ"/>
                     </view>
                     <navigationItem key="navigationItem" id="Kvz-yD-ra4">
-                        <barButtonItem key="leftBarButtonItem" title="Item" id="POM-7Y-M7n"/>
+                        <barButtonItem key="leftBarButtonItem" title="Item" id="POM-7Y-M7n">
+                            <connections>
+                                <action selector="regresaMenu:" destination="CV1-XZ-luZ" id="O6p-Xt-nUK"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q88-kQ-oZ7" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1532" y="1407"/>
+            <point key="canvasLocation" x="-34.399999999999999" y="1871.5142428785609"/>
         </scene>
         <!--Secciones Cónicas-->
         <scene sceneID="qw9-wW-JwX">
@@ -212,7 +225,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kCb-tr-Ok7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1314" y="-898"/>
+            <point key="canvasLocation" x="326" y="-219"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="gAd-mV-Od1">
@@ -228,12 +241,12 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X9Y-14-R3I" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="554" y="-898"/>
+            <point key="canvasLocation" x="-455" y="-219"/>
         </scene>
-        <!--View Controller-->
+        <!--Formulario-->
         <scene sceneID="dDw-en-e0O">
             <objects>
-                <viewController id="2Q7-LG-f37" customClass="ViewController" customModule="proyectoMatematicas" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="2Q7-LG-f37" userLabel="Formulario" customClass="FormularioViewController" customModule="proyectoMatematicas" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ip0-JZ-UKb">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -243,12 +256,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FpH-hy-lnj" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-287" y="-637"/>
+            <point key="canvasLocation" x="1130" y="-219"/>
         </scene>
-        <!--View Controller-->
+        <!--Quiz-->
         <scene sceneID="Yfb-Fh-tLV">
             <objects>
-                <viewController id="Q5X-Og-WYR" customClass="ViewController" customModule="proyectoMatematicas" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Q5X-Og-WYR" userLabel="Quiz" customClass="QuizViewController" customModule="proyectoMatematicas" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ap1-B6-Wqe">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -265,12 +278,16 @@
                         <viewLayoutGuide key="safeArea" id="Kbq-Xt-8tC"/>
                     </view>
                     <navigationItem key="navigationItem" id="XRc-5d-0H4">
-                        <barButtonItem key="leftBarButtonItem" title="Item" id="oif-eg-mfq"/>
+                        <barButtonItem key="leftBarButtonItem" title="Item" id="oif-eg-mfq">
+                            <connections>
+                                <action selector="regresaMenu:" destination="Q5X-Og-WYR" id="S2G-TB-J5S"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kW9-zm-WwR" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-903" y="599"/>
+            <point key="canvasLocation" x="326" y="1164"/>
         </scene>
     </scenes>
 </document>
