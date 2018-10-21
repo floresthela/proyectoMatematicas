@@ -66,7 +66,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.68499069834913195" green="0.98132258650000004" blue="0.94095594932866811" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.77407597959999996" green="0.92549019610000005" blue="0.80630397700000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
@@ -122,7 +122,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.68499069830000003" green="0.98132258650000004" blue="0.94095594930000004" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.77407597959999996" green="0.92549019610000005" blue="0.80630397700000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="Ak8-VB-ORI"/>
                     </view>
                     <navigationItem key="navigationItem" id="Jo4-Zl-hDm">
@@ -168,13 +168,13 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="I2d-c3-LvI">
-                                <rect key="frame" x="41" y="154" width="292" height="209"/>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="I2d-c3-LvI" customClass="LineChartView" customModule="Charts">
+                                <rect key="frame" x="20" y="123" width="334" height="321"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" red="0.68499069830000003" green="0.98132258650000004" blue="0.94095594930000004" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.77407597959999996" green="0.92549019610000005" blue="0.80630397700000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="5LZ-pL-BXJ"/>
                     </view>
                     <navigationItem key="navigationItem" id="Kvz-yD-ra4">
@@ -184,6 +184,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="chartView" destination="I2d-c3-LvI" id="NUd-UW-HAY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q88-kQ-oZ7" sceneMemberID="firstResponder"/>
             </objects>
@@ -206,7 +209,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="2Q7-LG-f37" kind="show" id="0wd-PZ-IDD"/>
+                                    <segue destination="2Q7-LG-f37" kind="show" identifier="formulario" id="0wd-PZ-IDD"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -250,7 +253,7 @@
                     <view key="view" contentMode="scaleToFill" id="Ip0-JZ-UKb">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.68499069830000003" green="0.98132258650000004" blue="0.94095594930000004" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.77407597959999996" green="0.92549019610000005" blue="0.80630397700000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="iZX-ia-oHv"/>
                     </view>
                 </viewController>
@@ -274,7 +277,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.68499069830000003" green="0.98132258650000004" blue="0.94095594930000004" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.77407597959999996" green="0.92549019610000005" blue="0.80630397700000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="Kbq-Xt-8tC"/>
                     </view>
                     <navigationItem key="navigationItem" id="XRc-5d-0H4">
