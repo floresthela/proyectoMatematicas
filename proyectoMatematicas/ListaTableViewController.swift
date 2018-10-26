@@ -10,7 +10,6 @@ import UIKit
 
 class ListaTableViewController: UITableViewController {
     
-    var equis = 1
 
     var listaSecc = [ListaSeccionesConicas]()
     
@@ -105,8 +104,12 @@ class ListaTableViewController: UITableViewController {
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        if segue.identifier == "formulario"{
+            
+            let indice = tableView.indexPathForSelectedRow!
+            let vistaFormulario = segue.destination as! FormularioViewController
+            vistaFormulario.seccionCon = listaSecc[indice.row]
+        }
         
     }
     
