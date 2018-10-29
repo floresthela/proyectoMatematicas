@@ -18,10 +18,9 @@
 		296BAC822179321100E55702 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 296BAC802179321100E55702 /* Main.storyboard */; };
 		296BAC842179321400E55702 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 296BAC832179321400E55702 /* Assets.xcassets */; };
 		296BAC872179321400E55702 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 296BAC852179321400E55702 /* LaunchScreen.storyboard */; };
-		296BAC8F2179376100E55702 /* ListaTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296BAC8E2179376100E55702 /* ListaTableViewController.swift */; };
-		296BAC912179381800E55702 /* ListaSeccionesConicas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296BAC902179381800E55702 /* ListaSeccionesConicas.swift */; };
 		2998C8BE2180ED1A00112EA7 /* graficaCirculoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2998C8BD2180ED1A00112EA7 /* graficaCirculoViewController.swift */; };
 		2998C8C02180ED2B00112EA7 /* graficaParabolaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2998C8BF2180ED2B00112EA7 /* graficaParabolaViewController.swift */; };
+		FBBB2FBB2187AF9500D8E1D6 /* MenuFormularioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBBB2FBA2187AF9500D8E1D6 /* MenuFormularioViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,12 +37,11 @@
 		296BAC832179321400E55702 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		296BAC862179321400E55702 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		296BAC882179321400E55702 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		296BAC8E2179376100E55702 /* ListaTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaTableViewController.swift; sourceTree = "<group>"; };
-		296BAC902179381800E55702 /* ListaSeccionesConicas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListaSeccionesConicas.swift; sourceTree = "<group>"; };
 		2998C8BD2180ED1A00112EA7 /* graficaCirculoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = graficaCirculoViewController.swift; sourceTree = "<group>"; };
 		2998C8BF2180ED2B00112EA7 /* graficaParabolaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = graficaParabolaViewController.swift; sourceTree = "<group>"; };
 		60DDAD5673428D65AF227D7E /* Pods-proyectoMatematicas.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-proyectoMatematicas.debug.xcconfig"; path = "Pods/Target Support Files/Pods-proyectoMatematicas/Pods-proyectoMatematicas.debug.xcconfig"; sourceTree = "<group>"; };
 		67B5FAF48BDE1D1901AD472F /* Pods_proyectoMatematicas.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_proyectoMatematicas.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBBB2FBA2187AF9500D8E1D6 /* MenuFormularioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuFormularioViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,14 +88,13 @@
 				296BAC7C2179321100E55702 /* AppDelegate.swift */,
 				296BAC7E2179321100E55702 /* ViewController.swift */,
 				296BAC802179321100E55702 /* Main.storyboard */,
+				FBBB2FBA2187AF9500D8E1D6 /* MenuFormularioViewController.swift */,
 				2998C8BD2180ED1A00112EA7 /* graficaCirculoViewController.swift */,
 				2998C8BF2180ED2B00112EA7 /* graficaParabolaViewController.swift */,
 				290C71EC217C058F00389BAA /* FormularioViewController.swift */,
 				290C71EE217C059D00389BAA /* PracticaViewController.swift */,
 				290C71F0217C05A500389BAA /* GraficaViewController.swift */,
 				290C71F2217C05AC00389BAA /* QuizViewController.swift */,
-				296BAC8E2179376100E55702 /* ListaTableViewController.swift */,
-				296BAC902179381800E55702 /* ListaSeccionesConicas.swift */,
 				2956768D21837FB7008FF3CE /* Fonts */,
 				296BAC832179321400E55702 /* Assets.xcassets */,
 				296BAC852179321400E55702 /* LaunchScreen.storyboard */,
@@ -247,13 +244,12 @@
 				290C71ED217C058F00389BAA /* FormularioViewController.swift in Sources */,
 				290C71EF217C059D00389BAA /* PracticaViewController.swift in Sources */,
 				296BAC7F2179321100E55702 /* ViewController.swift in Sources */,
+				FBBB2FBB2187AF9500D8E1D6 /* MenuFormularioViewController.swift in Sources */,
 				290C71F3217C05AC00389BAA /* QuizViewController.swift in Sources */,
 				296BAC7D2179321100E55702 /* AppDelegate.swift in Sources */,
 				2998C8BE2180ED1A00112EA7 /* graficaCirculoViewController.swift in Sources */,
 				2998C8C02180ED2B00112EA7 /* graficaParabolaViewController.swift in Sources */,
-				296BAC8F2179376100E55702 /* ListaTableViewController.swift in Sources */,
 				290C71F1217C05A500389BAA /* GraficaViewController.swift in Sources */,
-				296BAC912179381800E55702 /* ListaSeccionesConicas.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
