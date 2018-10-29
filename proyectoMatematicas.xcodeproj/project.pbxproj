@@ -12,6 +12,7 @@
 		290C71F1217C05A500389BAA /* GraficaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290C71F0217C05A500389BAA /* GraficaViewController.swift */; };
 		290C71F3217C05AC00389BAA /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290C71F2217C05AC00389BAA /* QuizViewController.swift */; };
 		290E5824C167D624B0B12560 /* Pods_proyectoMatematicas.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67B5FAF48BDE1D1901AD472F /* Pods_proyectoMatematicas.framework */; };
+		2956768F21838392008FF3CE /* WedgieRegular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2956768E21838392008FF3CE /* WedgieRegular.ttf */; };
 		296BAC7D2179321100E55702 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296BAC7C2179321100E55702 /* AppDelegate.swift */; };
 		296BAC7F2179321100E55702 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296BAC7E2179321100E55702 /* ViewController.swift */; };
 		296BAC822179321100E55702 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 296BAC802179321100E55702 /* Main.storyboard */; };
@@ -29,6 +30,7 @@
 		290C71EE217C059D00389BAA /* PracticaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticaViewController.swift; sourceTree = "<group>"; };
 		290C71F0217C05A500389BAA /* GraficaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraficaViewController.swift; sourceTree = "<group>"; };
 		290C71F2217C05AC00389BAA /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
+		2956768E21838392008FF3CE /* WedgieRegular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = WedgieRegular.ttf; sourceTree = "<group>"; };
 		296BAC792179321100E55702 /* proyectoMatematicas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = proyectoMatematicas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		296BAC7C2179321100E55702 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		296BAC7E2179321100E55702 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +58,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2956768D21837FB7008FF3CE /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				2956768E21838392008FF3CE /* WedgieRegular.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		296BAC702179321100E55702 = {
 			isa = PBXGroup;
 			children = (
@@ -88,6 +98,7 @@
 				290C71F2217C05AC00389BAA /* QuizViewController.swift */,
 				296BAC8E2179376100E55702 /* ListaTableViewController.swift */,
 				296BAC902179381800E55702 /* ListaSeccionesConicas.swift */,
+				2956768D21837FB7008FF3CE /* Fonts */,
 				296BAC832179321400E55702 /* Assets.xcassets */,
 				296BAC852179321400E55702 /* LaunchScreen.storyboard */,
 				296BAC882179321400E55702 /* Info.plist */,
@@ -173,6 +184,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				296BAC872179321400E55702 /* LaunchScreen.storyboard in Resources */,
+				2956768F21838392008FF3CE /* WedgieRegular.ttf in Resources */,
 				296BAC842179321400E55702 /* Assets.xcassets in Resources */,
 				296BAC822179321100E55702 /* Main.storyboard in Resources */,
 			);
