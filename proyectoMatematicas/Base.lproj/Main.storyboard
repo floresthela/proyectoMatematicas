@@ -147,6 +147,9 @@
                                 <state key="normal" title="Círculo">
                                     <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
                                 </state>
+                                <connections>
+                                    <segue destination="emJ-uW-WZe" kind="show" identifier="pracCirculo" id="GuR-gk-C6J"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o5k-TG-OuK">
                                 <rect key="frame" x="195" y="352" width="160" height="160"/>
@@ -156,6 +159,9 @@
                                 <state key="normal" title="Elipse">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="emJ-uW-WZe" kind="show" identifier="pracElipse" id="ZBk-kl-OfA"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7e9-Em-vRK">
                                 <rect key="frame" x="19" y="352" width="160" height="160"/>
@@ -165,6 +171,9 @@
                                 <state key="normal" title="Hiperbola">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="emJ-uW-WZe" kind="show" identifier="pracHiperbola" id="p8s-eR-QwK"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5qu-i1-pRD">
                                 <rect key="frame" x="195" y="184" width="160" height="160"/>
@@ -174,6 +183,9 @@
                                 <state key="normal" title="Parabola">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="emJ-uW-WZe" kind="show" identifier="pracParabola" id="tBZ-4Q-dLj"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.77407597959999996" green="0.92549019610000005" blue="0.80630397700000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -190,6 +202,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lOQ-CM-gP4" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="325.60000000000002" y="480.80959520239884"/>
+        </scene>
+        <!--Preguntas Practica-->
+        <scene sceneID="Yoi-2q-wxf">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FyA-3L-y7s" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="emJ-uW-WZe" userLabel="Preguntas Practica" customClass="repasoViewController" customModule="proyectoMatematicas" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IjO-5m-ZLC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="zUJ-I2-5BB"/>
+                    </view>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1130.4000000000001" y="491.60419790104953"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="iq4-CO-YjH">
@@ -585,6 +612,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="xn8-Ik-8ej"/>
+        <segue reference="W7k-a4-oOa"/>
+        <segue reference="p8s-eR-QwK"/>
     </inferredMetricsTieBreakers>
 </document>
