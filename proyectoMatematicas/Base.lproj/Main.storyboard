@@ -206,8 +206,7 @@
         <!--Preguntas Practica-->
         <scene sceneID="Yoi-2q-wxf">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="FyA-3L-y7s" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController id="emJ-uW-WZe" userLabel="Preguntas Practica" customClass="repasoViewController" customModule="proyectoMatematicas" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="emJ-uW-WZe" userLabel="Preguntas Practica" customClass="preguntasPracticaViewController" customModule="proyectoMatematicas" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IjO-5m-ZLC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -215,6 +214,7 @@
                         <viewLayoutGuide key="safeArea" id="zUJ-I2-5BB"/>
                     </view>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FyA-3L-y7s" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1130.4000000000001" y="491.60419790104953"/>
         </scene>

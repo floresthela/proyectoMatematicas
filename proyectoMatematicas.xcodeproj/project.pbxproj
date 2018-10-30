@@ -12,7 +12,6 @@
 		290C71F1217C05A500389BAA /* GraficaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290C71F0217C05A500389BAA /* GraficaViewController.swift */; };
 		290C71F3217C05AC00389BAA /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290C71F2217C05AC00389BAA /* QuizViewController.swift */; };
 		290E5824C167D624B0B12560 /* Pods_proyectoMatematicas.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67B5FAF48BDE1D1901AD472F /* Pods_proyectoMatematicas.framework */; };
-		294EAF9A2187B702001D0EA1 /* preguntasPracticaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294EAF992187B702001D0EA1 /* preguntasPracticaViewController.swift */; };
 		2956768F21838392008FF3CE /* WedgieRegular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2956768E21838392008FF3CE /* WedgieRegular.ttf */; };
 		296BAC7D2179321100E55702 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296BAC7C2179321100E55702 /* AppDelegate.swift */; };
 		296BAC7F2179321100E55702 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296BAC7E2179321100E55702 /* ViewController.swift */; };
@@ -21,6 +20,7 @@
 		296BAC872179321400E55702 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 296BAC852179321400E55702 /* LaunchScreen.storyboard */; };
 		2998C8BE2180ED1A00112EA7 /* graficaCirculoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2998C8BD2180ED1A00112EA7 /* graficaCirculoViewController.swift */; };
 		2998C8C02180ED2B00112EA7 /* graficaParabolaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2998C8BF2180ED2B00112EA7 /* graficaParabolaViewController.swift */; };
+		29ED9BE32187F97E00160FEF /* preguntasPracticaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29ED9BE22187F97E00160FEF /* preguntasPracticaViewController.swift */; };
 		FBBB2FBB2187AF9500D8E1D6 /* MenuFormularioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBBB2FBA2187AF9500D8E1D6 /* MenuFormularioViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -30,8 +30,6 @@
 		290C71EE217C059D00389BAA /* PracticaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticaViewController.swift; sourceTree = "<group>"; };
 		290C71F0217C05A500389BAA /* GraficaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraficaViewController.swift; sourceTree = "<group>"; };
 		290C71F2217C05AC00389BAA /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
-		294EAF932187B4D0001D0EA1 /* proyectoMatematicas-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "proyectoMatematicas-Bridging-Header.h"; sourceTree = "<group>"; };
-		294EAF992187B702001D0EA1 /* preguntasPracticaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = preguntasPracticaViewController.swift; sourceTree = "<group>"; };
 		2956768E21838392008FF3CE /* WedgieRegular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = WedgieRegular.ttf; sourceTree = "<group>"; };
 		296BAC792179321100E55702 /* proyectoMatematicas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = proyectoMatematicas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		296BAC7C2179321100E55702 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -42,6 +40,7 @@
 		296BAC882179321400E55702 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2998C8BD2180ED1A00112EA7 /* graficaCirculoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = graficaCirculoViewController.swift; sourceTree = "<group>"; };
 		2998C8BF2180ED2B00112EA7 /* graficaParabolaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = graficaParabolaViewController.swift; sourceTree = "<group>"; };
+		29ED9BE22187F97E00160FEF /* preguntasPracticaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = preguntasPracticaViewController.swift; sourceTree = "<group>"; };
 		60DDAD5673428D65AF227D7E /* Pods-proyectoMatematicas.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-proyectoMatematicas.debug.xcconfig"; path = "Pods/Target Support Files/Pods-proyectoMatematicas/Pods-proyectoMatematicas.debug.xcconfig"; sourceTree = "<group>"; };
 		67B5FAF48BDE1D1901AD472F /* Pods_proyectoMatematicas.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_proyectoMatematicas.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBBB2FBA2187AF9500D8E1D6 /* MenuFormularioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuFormularioViewController.swift; sourceTree = "<group>"; };
@@ -90,10 +89,11 @@
 			isa = PBXGroup;
 			children = (
 				296BAC7C2179321100E55702 /* AppDelegate.swift */,
-				296BAC7E2179321100E55702 /* ViewController.swift */,
 				296BAC802179321100E55702 /* Main.storyboard */,
+				296BAC7E2179321100E55702 /* ViewController.swift */,
 				FBBB2FBA2187AF9500D8E1D6 /* MenuFormularioViewController.swift */,
 				2998C8BD2180ED1A00112EA7 /* graficaCirculoViewController.swift */,
+				29ED9BE22187F97E00160FEF /* preguntasPracticaViewController.swift */,
 				2998C8BF2180ED2B00112EA7 /* graficaParabolaViewController.swift */,
 				290C71EC217C058F00389BAA /* FormularioViewController.swift */,
 				290C71EE217C059D00389BAA /* PracticaViewController.swift */,
@@ -103,7 +103,6 @@
 				296BAC832179321400E55702 /* Assets.xcassets */,
 				296BAC852179321400E55702 /* LaunchScreen.storyboard */,
 				296BAC882179321400E55702 /* Info.plist */,
-				294EAF932187B4D0001D0EA1 /* proyectoMatematicas-Bridging-Header.h */,
 			);
 			path = proyectoMatematicas;
 			sourceTree = "<group>";
@@ -111,7 +110,6 @@
 		29ED9BE12187F52300160FEF /* Recovered References */ = {
 			isa = PBXGroup;
 			children = (
-				294EAF992187B702001D0EA1 /* preguntasPracticaViewController.swift */,
 			);
 			name = "Recovered References";
 			sourceTree = "<group>";
@@ -264,7 +262,7 @@
 				2998C8BE2180ED1A00112EA7 /* graficaCirculoViewController.swift in Sources */,
 				2998C8C02180ED2B00112EA7 /* graficaParabolaViewController.swift in Sources */,
 				290C71F1217C05A500389BAA /* GraficaViewController.swift in Sources */,
-				294EAF9A2187B702001D0EA1 /* preguntasPracticaViewController.swift in Sources */,
+				29ED9BE32187F97E00160FEF /* preguntasPracticaViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
