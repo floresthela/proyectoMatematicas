@@ -25,7 +25,9 @@ class preguntasPracticaViewController: UIViewController {
     @IBOutlet weak var bOpc3: UIButton!
     @IBOutlet weak var bOpc4: UIButton!
     
+    @IBOutlet weak var bTerminarout: UIButton!
     @IBOutlet weak var bAyudaout: UIButton!
+    @IBOutlet weak var bSigout: UIButton!
     
     lazy var opciones: [UIButton] = { return [self.bOpc1 , self.bOpc2, self.bOpc3, self.bOpc4] }()
     
@@ -55,19 +57,23 @@ class preguntasPracticaViewController: UIViewController {
     var indicePregunta: [Int]!
     var indicePreguntaActual = 0
     var ayudas = 2
-
+    var cuenta = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
 
         // Do any additional setup after loading the view.
+        bTerminarout.isHidden = true
         indicePregunta = Array(0 ..< preguntasPrueba.count)
         indicePregunta.shuffle()
         actualiza(indicePregunta: 0)
     }
     
     func actualiza(indicePregunta: Int){
+        cuenta += 1
+        indicePreguntaActual = indicePregunta
+        
         lbPregunta.text = preguntasPrueba[indicePregunta].pregunta
         imagenPregunta.image = preguntasPrueba[indicePregunta].imagen
     bOpc1.setTitle(preguntasPrueba[indicePregunta].opciones[0], for: .normal)
@@ -97,23 +103,39 @@ class preguntasPracticaViewController: UIViewController {
         ayudas -= 1
         
         // mostrar mensajillo pa ayudar
+        
+        
+        // solo se cuenta con # (ayudas) de oportunidades de recibir ayuda
+        if ayudas == 0 {
+            bAyudaout.isHidden = true
+        }
     }
     
     
     @IBAction func bSiguiente(_ sender: UIButton) {
 
+        if cuenta != preguntasPrueba.count{
         actualiza(indicePregunta: indicePreguntaActual+1)
-        
-        // solo se cuenta con # (ayudas) de oportunidades de recibir ayuda 
-        if ayudas == 0 {
-            bAyudaout.isEnabled = false
         }
         
         // reseteas el color de los botones
         for i in 0 ..< opciones.count{
             opciones[i].backgroundColor = UIColor.lightGray
         }
+        
+        if cuenta == preguntasPrueba.count{
+            bTerminarout.isHidden = false
+            bSigout.isHidden = true
+        }
+    
     }
+    
+    
+    
+    @IBAction func bTermina(_ sender: UIButton) {
+        navigationController?.popViewController(animated: true)
+    }
+    
     
     /*
     // MARK: - Navigation

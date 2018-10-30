@@ -248,6 +248,18 @@
                                             <action selector="bAyuda:" destination="emJ-uW-WZe" eventType="touchUpInside" id="w1W-2W-xY3"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lwj-Sz-T6Q">
+                                        <rect key="frame" x="148" y="331" width="78" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.47684186699999997" green="0.50480759139999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Terminar">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="bSiguiente:" destination="emJ-uW-WZe" eventType="touchUpInside" id="m7K-Ic-b8t"/>
+                                            <action selector="bTermina:" destination="emJ-uW-WZe" eventType="touchUpInside" id="ebG-q9-1OL"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
@@ -316,6 +328,8 @@
                         <outlet property="bOpc2" destination="XPY-Az-L8p" id="SkS-Vp-H9R"/>
                         <outlet property="bOpc3" destination="zdg-Ix-pqQ" id="SE6-Fq-HhS"/>
                         <outlet property="bOpc4" destination="5bx-xk-EaO" id="nGK-UY-rDF"/>
+                        <outlet property="bSigout" destination="RnV-YI-6Ad" id="eQ2-FU-Mo4"/>
+                        <outlet property="bTerminarout" destination="Lwj-Sz-T6Q" id="CGV-nF-Myn"/>
                         <outlet property="imagenPregunta" destination="zPb-IN-4MB" id="YNc-Je-rfP"/>
                         <outlet property="lbPregunta" destination="di8-od-GhZ" id="3eW-Tx-Qaf"/>
                     </connections>
@@ -670,7 +684,7 @@
                                 </subviews>
                             </scrollView>
                         </subviews>
-                        <color key="backgroundColor" red="0.77407597959999996" green="0.92549019610000005" blue="0.80630397700000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="iZX-ia-oHv"/>
                     </view>
                     <connections>
