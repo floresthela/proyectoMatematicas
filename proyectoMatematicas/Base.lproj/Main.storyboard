@@ -124,10 +124,10 @@
             </objects>
             <point key="canvasLocation" x="-455" y="481"/>
         </scene>
-        <!--EligePractica-->
+        <!--Practica-->
         <scene sceneID="8bD-ak-Xld">
             <objects>
-                <viewController id="ux5-uD-I25" userLabel="EligePractica" customClass="PracticaViewController" customModule="proyectoMatematicas" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ux5-uD-I25" userLabel="Practica" customClass="PracticaViewController" customModule="proyectoMatematicas" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ETG-Fz-2x1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -147,9 +147,6 @@
                                 <state key="normal" title="Círculo">
                                     <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
                                 </state>
-                                <connections>
-                                    <segue destination="gLK-tI-UAp" kind="show" identifier="repasoCirculo" id="J9e-xp-bCw"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o5k-TG-OuK">
                                 <rect key="frame" x="195" y="352" width="160" height="160"/>
@@ -159,9 +156,6 @@
                                 <state key="normal" title="Elipse">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
-                                <connections>
-                                    <segue destination="gLK-tI-UAp" kind="show" identifier="repasoElipse" id="kon-88-kd0"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7e9-Em-vRK">
                                 <rect key="frame" x="19" y="352" width="160" height="160"/>
@@ -171,9 +165,6 @@
                                 <state key="normal" title="Hiperbola">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
-                                <connections>
-                                    <segue destination="gLK-tI-UAp" kind="show" identifier="repasoHiperbola" id="WvX-5L-iXk"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5qu-i1-pRD">
                                 <rect key="frame" x="195" y="184" width="160" height="160"/>
@@ -183,9 +174,6 @@
                                 <state key="normal" title="Parabola">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
-                                <connections>
-                                    <segue destination="gLK-tI-UAp" kind="show" identifier="repasoParabola" id="1KW-sm-aaf"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.77407597959999996" green="0.92549019610000005" blue="0.80630397700000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -202,78 +190,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lOQ-CM-gP4" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="325.60000000000002" y="480.80959520239884"/>
-        </scene>
-        <!--Repaso-->
-        <scene sceneID="9pH-4u-gVu">
-            <objects>
-                <viewController id="gLK-tI-UAp" userLabel="Repaso" customClass="repasoViewController" customModule="proyectoMatematicas" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="72g-F9-Irx">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="¿Quieres dar un repaso antes de comenzar?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HJQ-K1-wvi">
-                                <rect key="frame" x="25" y="55" width="325" height="153"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r43-Mj-AJv">
-                                <rect key="frame" x="57" y="195" width="260" height="111"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
-                                <state key="normal" title="SÍ">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jyR-Ir-31r">
-                                <rect key="frame" x="57" y="333" width="260" height="111"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
-                                <state key="normal" title="NO">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <segue destination="zVN-rb-saX" kind="show" id="ZTA-pb-0hw"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="kZ1-jY-98M"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="vFv-FD-bk4" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1055" y="481"/>
-        </scene>
-        <!--Practica-->
-        <scene sceneID="FIY-3m-v1a">
-            <objects>
-                <viewController id="zVN-rb-saX" userLabel="Practica" customClass="preguntasPracticaViewController" customModule="proyectoMatematicas" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="0sj-B5-tzW">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Iag-Fg-jKe" userLabel="viewPregunta">
-                                <rect key="frame" x="0.0" y="64" width="375" height="360"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.77407597959999996" green="0.92549019610000005" blue="0.80630397700000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ty0-hK-nO9" userLabel="viewOpciones">
-                                <rect key="frame" x="0.0" y="424" width="375" height="243"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </view>
-                        </subviews>
-                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="UuP-bb-fPZ"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="BYb-qq-6hc" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1767.2" y="486.20689655172418"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="iq4-CO-YjH">
@@ -477,44 +393,6 @@
             </objects>
             <point key="canvasLocation" x="-943.20000000000005" y="1963.2683658170915"/>
         </scene>
-        <!--Secciones Cónicas-->
-        <scene sceneID="qw9-wW-JwX">
-            <objects>
-                <tableViewController id="m9o-fJ-Hrl" customClass="ListaTableViewController" customModule="proyectoMatematicas" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="d24-DA-Quo">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="celda" id="msD-zC-JUI">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="msD-zC-JUI" id="0gL-IH-LBt">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                                <connections>
-                                    <segue destination="2Q7-LG-f37" kind="show" identifier="formulario" id="0wd-PZ-IDD"/>
-                                </connections>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="m9o-fJ-Hrl" id="mDK-2p-U06"/>
-                            <outlet property="delegate" destination="m9o-fJ-Hrl" id="9lj-fw-Epg"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="Secciones Cónicas" id="yPo-ji-ejO">
-                        <barButtonItem key="leftBarButtonItem" title="Menu" id="4hT-h2-J6J">
-                            <connections>
-                                <action selector="regresaMenu:" destination="m9o-fJ-Hrl" id="a29-Si-Qkr"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="kCb-tr-Ok7" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="326" y="-219"/>
-        </scene>
         <!--Navigation Controller-->
         <scene sceneID="gAd-mV-Od1">
             <objects>
@@ -524,12 +402,97 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="m9o-fJ-Hrl" kind="relationship" relationship="rootViewController" id="Cqd-Qh-BtF"/>
+                        <segue destination="Y9t-82-raT" kind="relationship" relationship="rootViewController" id="kUJ-2n-9ED"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X9Y-14-R3I" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-455" y="-219"/>
+        </scene>
+        <!--Menu Formulario View Controller-->
+        <scene sceneID="ry8-PW-RKy">
+            <objects>
+                <viewController id="Y9t-82-raT" customClass="MenuFormularioViewController" customModule="proyectoMatematicas" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jbX-NO-QEM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0m7-On-kHF">
+                                <rect key="frame" x="16" y="188" width="160" height="160"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
+                                <state key="normal" title="Círculo">
+                                    <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <segue destination="2Q7-LG-f37" kind="show" identifier="circulo" id="xn8-Ik-8ej"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V5T-mi-2gt">
+                                <rect key="frame" x="199" y="188" width="160" height="160"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
+                                <state key="normal" title="Parabola">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="2Q7-LG-f37" kind="show" identifier="parabola" id="f2d-f9-mVL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wrt-4J-wos">
+                                <rect key="frame" x="199" y="409" width="160" height="160"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
+                                <state key="normal" title="Elipse">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="2Q7-LG-f37" kind="show" identifier="elipse" id="W7k-a4-oOa"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Formulario" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3PQ-pI-3LJ">
+                                <rect key="frame" x="105" y="100" width="173" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zTe-Cb-583">
+                                <rect key="frame" x="16" y="408" width="160" height="160"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
+                                <state key="normal" title="Hiperbola">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="2Q7-LG-f37" kind="show" identifier="hiperbola" id="d23-Jf-XwB"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.85987009211679077" green="0.99894374610000003" blue="0.85050627742084128" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <viewLayoutGuide key="safeArea" id="Lz6-8w-You"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Sis-Tg-LC7">
+                        <barButtonItem key="leftBarButtonItem" title="Menu" id="Hke-Io-8Ko">
+                            <connections>
+                                <action selector="btnRegresar:" destination="Y9t-82-raT" id="h6d-Q8-zZP"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="btnCirculo" destination="0m7-On-kHF" id="OjN-XN-cxX"/>
+                        <outlet property="btnElipse" destination="wrt-4J-wos" id="mlC-Al-q8f"/>
+                        <outlet property="btnHiperbola" destination="zTe-Cb-583" id="YHE-dH-h5L"/>
+                        <outlet property="btnParabola" destination="V5T-mi-2gt" id="D7x-5d-6F5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Juy-dI-K0L" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="341.60000000000002" y="-219.04047976011995"/>
         </scene>
         <!--Formulario-->
         <scene sceneID="dDw-en-e0O">
@@ -551,17 +514,23 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="LXK-sr-6YU">
-                                        <rect key="frame" x="67" y="109" width="240" height="424"/>
+                                        <rect key="frame" x="67" y="109" width="240" height="464.5"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tiO-d4-XBc">
+                                                <rect key="frame" x="0.0" y="0.0" width="240" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="O2u-Gt-g3c">
-                                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                                <rect key="frame" x="0.0" y="40.5" width="240" height="128"/>
                                             </imageView>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lKd-Op-BCr">
-                                                <rect key="frame" x="0.0" y="148" width="240" height="128"/>
+                                                <rect key="frame" x="0.0" y="188.5" width="240" height="128"/>
                                             </imageView>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uA2-fr-kHN">
-                                                <rect key="frame" x="0.0" y="296" width="240" height="128"/>
+                                                <rect key="frame" x="0.0" y="336.5" width="240" height="128"/>
                                             </imageView>
                                         </subviews>
                                     </stackView>
@@ -574,7 +543,8 @@
                     <connections>
                         <outlet property="img1" destination="O2u-Gt-g3c" id="gcu-Y1-Tzx"/>
                         <outlet property="img2" destination="lKd-Op-BCr" id="Pif-DB-5Nv"/>
-                        <outlet property="img3" destination="uA2-fr-kHN" id="Uhz-hp-c6t"/>
+                        <outlet property="img3" destination="uA2-fr-kHN" id="mei-c1-Brn"/>
+                        <outlet property="label1" destination="tiO-d4-XBc" id="cQe-6p-OcW"/>
                         <outlet property="lbTitulo" destination="SW8-6M-Uvl" id="qb7-sK-i7q"/>
                     </connections>
                 </viewController>
@@ -615,6 +585,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="WvX-5L-iXk"/>
+        <segue reference="xn8-Ik-8ej"/>
     </inferredMetricsTieBreakers>
 </document>
