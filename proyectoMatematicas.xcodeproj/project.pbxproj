@@ -12,6 +12,8 @@
 		290C71F1217C05A500389BAA /* GraficaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290C71F0217C05A500389BAA /* GraficaViewController.swift */; };
 		290C71F3217C05AC00389BAA /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290C71F2217C05AC00389BAA /* QuizViewController.swift */; };
 		290E5824C167D624B0B12560 /* Pods_proyectoMatematicas.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67B5FAF48BDE1D1901AD472F /* Pods_proyectoMatematicas.framework */; };
+		294EAF9A2187B702001D0EA1 /* preguntasPracticaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294EAF992187B702001D0EA1 /* preguntasPracticaViewController.swift */; };
+		294EAFA42187B774001D0EA1 /* repasoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 294EAFA32187B774001D0EA1 /* repasoViewController.swift */; };
 		2956768F21838392008FF3CE /* WedgieRegular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2956768E21838392008FF3CE /* WedgieRegular.ttf */; };
 		296BAC7D2179321100E55702 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296BAC7C2179321100E55702 /* AppDelegate.swift */; };
 		296BAC7F2179321100E55702 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296BAC7E2179321100E55702 /* ViewController.swift */; };
@@ -30,6 +32,9 @@
 		290C71EE217C059D00389BAA /* PracticaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticaViewController.swift; sourceTree = "<group>"; };
 		290C71F0217C05A500389BAA /* GraficaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraficaViewController.swift; sourceTree = "<group>"; };
 		290C71F2217C05AC00389BAA /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
+		294EAF932187B4D0001D0EA1 /* proyectoMatematicas-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "proyectoMatematicas-Bridging-Header.h"; sourceTree = "<group>"; };
+		294EAF992187B702001D0EA1 /* preguntasPracticaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = preguntasPracticaViewController.swift; sourceTree = "<group>"; };
+		294EAFA32187B774001D0EA1 /* repasoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = repasoViewController.swift; sourceTree = "<group>"; };
 		2956768E21838392008FF3CE /* WedgieRegular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = WedgieRegular.ttf; sourceTree = "<group>"; };
 		296BAC792179321100E55702 /* proyectoMatematicas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = proyectoMatematicas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		296BAC7C2179321100E55702 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -90,6 +95,7 @@
 				296BAC7C2179321100E55702 /* AppDelegate.swift */,
 				296BAC7E2179321100E55702 /* ViewController.swift */,
 				296BAC802179321100E55702 /* Main.storyboard */,
+				294EAF992187B702001D0EA1 /* preguntasPracticaViewController.swift */,
 				2998C8BD2180ED1A00112EA7 /* graficaCirculoViewController.swift */,
 				2998C8BF2180ED2B00112EA7 /* graficaParabolaViewController.swift */,
 				290C71EC217C058F00389BAA /* FormularioViewController.swift */,
@@ -102,6 +108,8 @@
 				296BAC832179321400E55702 /* Assets.xcassets */,
 				296BAC852179321400E55702 /* LaunchScreen.storyboard */,
 				296BAC882179321400E55702 /* Info.plist */,
+				294EAF932187B4D0001D0EA1 /* proyectoMatematicas-Bridging-Header.h */,
+				294EAFA32187B774001D0EA1 /* repasoViewController.swift */,
 			);
 			path = proyectoMatematicas;
 			sourceTree = "<group>";
@@ -157,6 +165,7 @@
 				TargetAttributes = {
 					296BAC782179321100E55702 = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1000;
 					};
 				};
 			};
@@ -246,6 +255,7 @@
 			files = (
 				290C71ED217C058F00389BAA /* FormularioViewController.swift in Sources */,
 				290C71EF217C059D00389BAA /* PracticaViewController.swift in Sources */,
+				294EAFA42187B774001D0EA1 /* repasoViewController.swift in Sources */,
 				296BAC7F2179321100E55702 /* ViewController.swift in Sources */,
 				290C71F3217C05AC00389BAA /* QuizViewController.swift in Sources */,
 				296BAC7D2179321100E55702 /* AppDelegate.swift in Sources */,
@@ -254,6 +264,7 @@
 				296BAC8F2179376100E55702 /* ListaTableViewController.swift in Sources */,
 				290C71F1217C05A500389BAA /* GraficaViewController.swift in Sources */,
 				296BAC912179381800E55702 /* ListaSeccionesConicas.swift in Sources */,
+				294EAF9A2187B702001D0EA1 /* preguntasPracticaViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -400,6 +411,7 @@
 			baseConfigurationReference = 60DDAD5673428D65AF227D7E /* Pods-proyectoMatematicas.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8DM5542DL4;
 				INFOPLIST_FILE = proyectoMatematicas/Info.plist;
@@ -410,6 +422,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = itesm.proyectoMatematicas;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "proyectoMatematicas/proyectoMatematicas-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -420,6 +434,7 @@
 			baseConfigurationReference = 1481233E2DC0D3F9FD6CEF75 /* Pods-proyectoMatematicas.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8DM5542DL4;
 				INFOPLIST_FILE = proyectoMatematicas/Info.plist;
@@ -430,6 +445,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = itesm.proyectoMatematicas;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "proyectoMatematicas/proyectoMatematicas-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
