@@ -7,11 +7,7 @@
 //
 
 import UIKit
-/*struct Question {
- let question: String
- let answers: [String]
- let correctAnswer: Int
- }*/
+
 struct Pregunta {
     let pregunta: String
     let opciones: [String]
@@ -23,10 +19,36 @@ struct Pregunta {
 
 class preguntasPracticaViewController: UIViewController {
 
+    
+    @IBOutlet weak var bOpc1: UIButton!
+    @IBOutlet weak var bOpc2: UIButton!
+    @IBOutlet weak var bOpc3: UIButton!
+    @IBOutlet weak var bOpc4: UIButton!
+    
+
+    lazy var opciones: [UIButton] = { return [self.bOpc1 , self.bOpc2, self.bOpc3, self.bOpc4] }()
+    
+    @IBOutlet weak var lbPregunta: UILabel!
+    @IBOutlet weak var imagenPregunta: UIImageView!
+    
     var seccionConica : String!
-    //var questions: [Question] = [
-    var preguntas: [Pregunta] = [
-    Pregunta(pregunta: "¿Pregunta 1?", opciones: ["Parabola", "Hiperbola", "Elipse", "Círculo"], respCorrecta: 0, imagen: nil, feedback: "Recuerda que la parabola bla bla bla")
+
+    var preguntasPrueba: [Pregunta] = [
+        Pregunta(pregunta: "¿Cuál es el radio del siguiente círculo?", opciones: ["1", "4", "5", "6"], respCorrecta: 1, imagen: #imageLiteral(resourceName: "p1"), feedback: "Recuerda que el circulo bla bla bla"),
+        Pregunta(pregunta: "¿Cuál es el radio de la siguiente elipse?", opciones: ["20", "100", "10", "50"], respCorrecta: 2, imagen: #imageLiteral(resourceName: "p2"), feedback: "Recuerda que el circulo bla bla bla")
+    ]
+    
+    var preguntasCirculo: [Pregunta] = [
+    Pregunta(pregunta: "¿Cuál es el radio del siguiente círculo?", opciones: ["1", "4", "5", "6"], respCorrecta: 1, imagen: nil, feedback: "Recuerda que el circulo bla bla bla")
+    ]
+    var preguntasParabola: [Pregunta] = [
+        Pregunta(pregunta: "¿Pregunta 1?", opciones: ["Parabola", "Hiperbola", "Elipse", "Círculo"], respCorrecta: 0, imagen: nil, feedback: "Recuerda que la parabola bla bla bla")
+    ]
+    var preguntasElipse: [Pregunta] = [
+        Pregunta(pregunta: "¿Pregunta 1?", opciones: ["Parabola", "Hiperbola", "Elipse", "Círculo"], respCorrecta: 0, imagen: nil, feedback: "Recuerda que la parabola bla bla bla")
+    ]
+    var preguntasHiperbola: [Pregunta] = [
+        Pregunta(pregunta: "¿Pregunta 1?", opciones: ["Parabola", "Hiperbola", "Elipse", "Círculo"], respCorrecta: 0, imagen: nil, feedback: "Recuerda que la parabola bla bla bla")
     ]
     
     var indicePregunta: [Int]!
@@ -34,16 +56,43 @@ class preguntasPracticaViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        /* questionIndexes = Array(0 ..< questions.count)  // builds an array [0, 1, 2, ... n]
-         questionIndexes.shuffle()                       // randomizes that list
-         
-         updateLabelsAndButtonsForIndex(0)*/
+        
+
         // Do any additional setup after loading the view.
-        indicePregunta = Array(0 ..< preguntas.count)
+        indicePregunta = Array(0 ..< preguntasPrueba.count)
         indicePregunta.shuffle()
+        actualiza(indicePregunta: 0)
     }
     
-
+    func actualiza(indicePregunta: Int){
+        lbPregunta.text = preguntasPrueba[indicePregunta].pregunta
+        imagenPregunta.image = preguntasPrueba[indicePregunta].imagen
+    bOpc1.setTitle(preguntasPrueba[indicePregunta].opciones[0], for: .normal)
+    bOpc2.setTitle(preguntasPrueba[indicePregunta].opciones[1], for: .normal)
+    bOpc3.setTitle(preguntasPrueba[indicePregunta].opciones[2], for: .normal)
+    bOpc4.setTitle(preguntasPrueba[indicePregunta].opciones[3], for: .normal)
+    }
+    
+    
+    @IBAction func seleccionoBoton(button: UIButton) {
+        
+        let indiceBoton = opciones.index(of: button)
+        let preguntaObjecto = preguntasPrueba[indicePregunta[indicePreguntaActual]]
+        
+        if indiceBoton == preguntaObjecto.respCorrecta{
+            opciones[indiceBoton!].backgroundColor = UIColor.green
+        }
+        else{
+            opciones[indiceBoton!].backgroundColor = UIColor.red
+        }
+    }
+    
+    
+    @IBAction func bSiguiente(_ sender: UIButton) {
+        //updateLabelsAndButtonsForIndex(currentQuestionIndex + 1)
+        actualiza(indicePregunta: indicePreguntaActual+1)
+    }
+    
     /*
     // MARK: - Navigation
 
@@ -54,4 +103,6 @@ class preguntasPracticaViewController: UIViewController {
     }
     */
 
+    
+    
 }
