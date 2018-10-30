@@ -23,7 +23,7 @@ struct Pregunta {
 
 class preguntasPracticaViewController: UIViewController {
 
-    
+    var seccionConica : String!
     //var questions: [Question] = [
     var preguntas: [Pregunta] = [
     Pregunta(pregunta: "¿Pregunta 1?", opciones: ["Parabola", "Hiperbola", "Elipse", "Círculo"], respCorrecta: 0, imagen: nil, feedback: "Recuerda que la parabola bla bla bla")

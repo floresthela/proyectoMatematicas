@@ -39,19 +39,19 @@ class PracticaViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "repasoCirculo"{
-            let vistaRepaso = segue.destination as! repasoViewController
+            let vistaRepaso = segue.destination as! preguntasPracticaViewController
             vistaRepaso.seccionConica = "Circulo"
         }
         if segue.identifier == "repasoParabola"{
-            let vistaRepaso = segue.destination as! repasoViewController
+            let vistaRepaso = segue.destination as! preguntasPracticaViewController
             vistaRepaso.seccionConica = "Parabola"
         }
         if segue.identifier == "repasoHiperbola"{
-            let vistaRepaso = segue.destination as! repasoViewController
+            let vistaRepaso = segue.destination as! preguntasPracticaViewController
             vistaRepaso.seccionConica = "Hiperbola"
         }
         if segue.identifier == "repasoElipse"{
-            let vistaRepaso = segue.destination as! repasoViewController
+            let vistaRepaso = segue.destination as! preguntasPracticaViewController
             vistaRepaso.seccionConica = "Elipse"
         }
     }
