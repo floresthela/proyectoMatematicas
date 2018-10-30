@@ -25,7 +25,8 @@ class preguntasPracticaViewController: UIViewController {
     @IBOutlet weak var bOpc3: UIButton!
     @IBOutlet weak var bOpc4: UIButton!
     
-
+    @IBOutlet weak var bAyudaout: UIButton!
+    
     lazy var opciones: [UIButton] = { return [self.bOpc1 , self.bOpc2, self.bOpc3, self.bOpc4] }()
     
     @IBOutlet weak var lbPregunta: UILabel!
@@ -34,7 +35,7 @@ class preguntasPracticaViewController: UIViewController {
     var seccionConica : String!
 
     var preguntasPrueba: [Pregunta] = [
-        Pregunta(pregunta: "¿Cuál es el radio del siguiente círculo?", opciones: ["1", "4", "5", "6"], respCorrecta: 1, imagen: #imageLiteral(resourceName: "p1"), feedback: "Recuerda que el circulo bla bla bla"),
+        Pregunta(pregunta: "¿Cuál es el radio del siguiente círculo?", opciones: ["1", "4", "5", "6"], respCorrecta: 2, imagen: #imageLiteral(resourceName: "p1"), feedback: "Recuerda que el circulo bla bla bla"),
         Pregunta(pregunta: "¿Cuál es el radio de la siguiente elipse?", opciones: ["20", "100", "10", "50"], respCorrecta: 2, imagen: #imageLiteral(resourceName: "p2"), feedback: "Recuerda que el circulo bla bla bla")
     ]
     
@@ -53,7 +54,9 @@ class preguntasPracticaViewController: UIViewController {
     
     var indicePregunta: [Int]!
     var indicePreguntaActual = 0
+    var ayudas = 2
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -88,9 +91,28 @@ class preguntasPracticaViewController: UIViewController {
     }
     
     
+    
+    @IBAction func bAyuda(_ sender: UIButton) {
+        
+        ayudas -= 1
+        
+        // mostrar mensajillo pa ayudar
+    }
+    
+    
     @IBAction func bSiguiente(_ sender: UIButton) {
-        //updateLabelsAndButtonsForIndex(currentQuestionIndex + 1)
+
         actualiza(indicePregunta: indicePreguntaActual+1)
+        
+        // solo se cuenta con # (ayudas) de oportunidades de recibir ayuda 
+        if ayudas == 0 {
+            bAyudaout.isEnabled = false
+        }
+        
+        // reseteas el color de los botones
+        for i in 0 ..< opciones.count{
+            opciones[i].backgroundColor = UIColor.lightGray
+        }
     }
     
     /*
