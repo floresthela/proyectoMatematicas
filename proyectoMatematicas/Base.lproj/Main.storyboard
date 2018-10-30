@@ -407,6 +407,38 @@
             </objects>
             <point key="canvasLocation" x="-162.40000000000001" y="1962.3688155922041"/>
         </scene>
+        <!--Grafica Elipse View Controller-->
+        <scene sceneID="wej-Ug-k9u">
+            <objects>
+                <viewController id="yhC-CF-wNQ" customClass="graficaElipseViewController" customModule="proyectoMatematicas" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xA5-TX-BQg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Elipse" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eMk-5a-s6V">
+                                <rect key="frame" x="164" y="92" width="46" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Nht-dv-1gY" customClass="LineChartView" customModule="Charts">
+                                <rect key="frame" x="16" y="218" width="343" height="327"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.77407597959999996" green="0.92549019610000005" blue="0.80630397700000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="DiR-pU-3cX"/>
+                    </view>
+                    <connections>
+                        <outlet property="chartView" destination="Nht-dv-1gY" id="6Ra-6B-0PM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pky-wQ-kxa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1044" y="2748"/>
+        </scene>
         <!--Grafica Parabola View Controller-->
         <scene sceneID="QFj-qi-Efp">
             <objects>
@@ -505,6 +537,9 @@
                                 <state key="normal" title="Elipse">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="yhC-CF-wNQ" kind="show" identifier="graficaElipse" id="rd2-If-PcZ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Hw-se-bvO">
                                 <rect key="frame" x="68" y="464" width="233" height="80"/>

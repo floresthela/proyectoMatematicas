@@ -34,10 +34,10 @@ class GraficaViewController: UIViewController, ChartViewDelegate {
             let vistagraficaCirculo = segue.destination as! graficaParabolaViewController
         }
         
+        if segue.identifier == "graficaElipse"{
+            let vistagraficaElipse = segue.destination as! graficaElipseViewController
+        }
         
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.            let vistaMorada = segue.destination as! ViewControllerMorada
-     
      }
     
 

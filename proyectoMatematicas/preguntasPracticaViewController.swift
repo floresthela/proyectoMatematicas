@@ -66,7 +66,9 @@ class preguntasPracticaViewController: UIViewController {
         // Do any additional setup after loading the view.
         bTerminarout.isHidden = true
         indicePregunta = Array(0 ..< preguntasPrueba.count)
+        
         indicePregunta.shuffle()
+        
         actualiza(indicePregunta: 0)
     }
     
