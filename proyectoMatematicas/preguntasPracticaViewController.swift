@@ -125,23 +125,32 @@ class preguntasPracticaViewController: UIViewController {
     
     @IBAction func bAyuda(_ sender: UIButton) {
         
+        
         if bAyudaout.isEnabled == true{
             ayudas -= 1
         }
         
         
-        // mostrar mensajillo pa ayudar
+        // muestra mensaje de ayuda
+        let mensajeAyuda = aMostrar[indicePreguntaActual].ayuda
+        let alertAyuda = UIAlertController(title: "Ayuda", message: mensajeAyuda, preferredStyle: .alert)
+        let restartAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+        alertAyuda.addAction(restartAction)
+        present(alertAyuda, animated: true, completion: nil)
         
         
         // solo se cuenta con # (ayudas) de oportunidades de recibir ayuda
         if ayudas == 0 {
             bAyudaout.isHidden = true
         }
+        
+        bAyudaout.isEnabled = false
     }
     
     
     @IBAction func bSiguiente(_ sender: UIButton) {
 
+         bAyudaout.isEnabled = true
         bAyudaout.isEnabled = true
         if cuenta != aMostrar.count{
         actualiza(indicePregunta: indicePreguntaActual+1)
