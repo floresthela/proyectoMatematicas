@@ -812,17 +812,17 @@
                                                 <rect key="frame" x="67" y="234" width="241" height="128"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5gC-p7-sPo">
-                                                <rect key="frame" x="35" y="383" width="305" height="198"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lKd-Op-BCr">
                                                 <rect key="frame" x="14" y="589" width="347" height="210"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="wordWrap" numberOfLines="6" baselineAdjustment="none" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iZh-E7-bbz">
+                                                <rect key="frame" x="35" y="403" width="305" height="98"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </view>
@@ -843,7 +843,7 @@
                         <outlet property="img2" destination="lKd-Op-BCr" id="Pif-DB-5Nv"/>
                         <outlet property="img3" destination="uA2-fr-kHN" id="mei-c1-Brn"/>
                         <outlet property="label1" destination="tiO-d4-XBc" id="cQe-6p-OcW"/>
-                        <outlet property="label2" destination="5gC-p7-sPo" id="0XT-SH-48e"/>
+                        <outlet property="label2" destination="iZh-E7-bbz" id="IZN-fk-owy"/>
                         <outlet property="lbTitulo" destination="SW8-6M-Uvl" id="qb7-sK-i7q"/>
                         <outlet property="scrollView" destination="WDx-Bq-NFA" id="ONe-hS-oNb"/>
                         <outlet property="viewFormulario" destination="OWN-7y-XXF" id="KRc-kH-Vdd"/>

@@ -58,8 +58,9 @@ class FormularioViewController: UIViewController {
         if lbTitulo.text == "Elipse"{
             label1.text = "La ecuación en forma estándar de un elipse con su centro en (0,0) y su eje mayor en el eje x es: "
             img1.image = #imageLiteral(resourceName: "ecuacionElipse1")
-            img2.image = #imageLiteral(resourceName: "elipse2")
-            
+            //img2.image = #imageLiteral(resourceName: "elipse2")
+            label2.text = "La forma estándar de la ecuación de una elipse con centro en (0,0) y eje mayor en el eje y es:"
+            img2.image = UIImage(named: "ecuacionElipse")
         }
 
     }
