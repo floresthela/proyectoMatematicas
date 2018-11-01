@@ -10,6 +10,10 @@ import UIKit
 
 class PracticaViewController: UIViewController {
 
+    @IBOutlet weak var btnCirculo: UIButton!
+    @IBOutlet weak var btnParabola: UIButton!
+    @IBOutlet weak var btnHiperbola: UIButton!
+    @IBOutlet weak var btnElipse: UIButton!
     
     @IBAction func regresaMenu(_ sender: UIBarButtonItem) {
           dismiss(animated: true, completion: nil)
@@ -18,8 +22,13 @@ class PracticaViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        btnCirculo.backgroundColor = UIColor(red: 250/255.0, green: 121/255.0, blue: 33/255.0, alpha: 1)
+        btnParabola.backgroundColor = UIColor(red: 250/255.0, green: 121/255.0, blue: 33/255.0, alpha: 1)
+        btnHiperbola.backgroundColor = UIColor(red: 250/255.0, green: 121/255.0, blue: 33/255.0, alpha: 1)
+        btnElipse.backgroundColor = UIColor(red: 250/255.0, green: 121/255.0, blue: 33/255.0, alpha: 1)
+        
+        
     }
     
 

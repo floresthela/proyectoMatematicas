@@ -11,9 +11,19 @@ import Charts
 
 class GraficaViewController: UIViewController, ChartViewDelegate {
     
+    
+    @IBOutlet weak var btnCirculo: UIButton!
+    @IBOutlet weak var btnParabola: UIButton!
+    @IBOutlet weak var btnElipse: UIButton!
+    @IBOutlet weak var btnHiperbola: UIButton!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        btnCirculo.backgroundColor = UIColor(red: 250/255.0, green: 121/255.0, blue: 33/255.0, alpha: 1)
+        btnParabola.backgroundColor = UIColor(red: 250/255.0, green: 121/255.0, blue: 33/255.0, alpha: 1)
+        btnElipse.backgroundColor = UIColor(red: 250/255.0, green: 121/255.0, blue: 33/255.0, alpha: 1)
+        btnHiperbola.backgroundColor = UIColor(red: 250/255.0, green: 121/255.0, blue: 33/255.0, alpha: 1)
     }
     
     @IBAction func regresaMenu(_ sender: Any) {
