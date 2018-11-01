@@ -111,6 +111,9 @@ class preguntasPracticaViewController: UIViewController {
             opciones[indiceBoton!].backgroundColor = UIColor.green
             bSigout.isEnabled = true
             bTerminarout.isEnabled = true
+            for button in self.opciones {
+                button.isEnabled = false
+            }
         }
         else{
             opciones[indiceBoton!].backgroundColor = UIColor.red
@@ -153,6 +156,10 @@ class preguntasPracticaViewController: UIViewController {
             bTerminarout.isHidden = false
             bTerminarout.isEnabled = false
             bSigout.isHidden = true
+        }
+        
+        for button in self.opciones {
+            button.isEnabled = true
         }
     
     }
