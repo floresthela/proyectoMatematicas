@@ -22,6 +22,7 @@
 		2998C8C02180ED2B00112EA7 /* graficaParabolaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2998C8BF2180ED2B00112EA7 /* graficaParabolaViewController.swift */; };
 		29A3FD9F2188D8B100E63DFA /* graficaElipseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A3FD9E2188D8B100E63DFA /* graficaElipseViewController.swift */; };
 		29ED9BE32187F97E00160FEF /* preguntasPracticaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29ED9BE22187F97E00160FEF /* preguntasPracticaViewController.swift */; };
+		8E866E6B218A6A4F004C875E /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E866E6A218A6A4F004C875E /* RoundButton.swift */; };
 		FB016879218A4AAE005708A0 /* ResultadosQuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB016878218A4AAE005708A0 /* ResultadosQuizViewController.swift */; };
 		FBBB2FBB2187AF9500D8E1D6 /* MenuFormularioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBBB2FBA2187AF9500D8E1D6 /* MenuFormularioViewController.swift */; };
 /* End PBXBuildFile section */
@@ -47,6 +48,7 @@
 		29ED9BE42187FA1F00160FEF /* proyectoMatematicas-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "proyectoMatematicas-Bridging-Header.h"; sourceTree = "<group>"; };
 		60DDAD5673428D65AF227D7E /* Pods-proyectoMatematicas.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-proyectoMatematicas.debug.xcconfig"; path = "Pods/Target Support Files/Pods-proyectoMatematicas/Pods-proyectoMatematicas.debug.xcconfig"; sourceTree = "<group>"; };
 		67B5FAF48BDE1D1901AD472F /* Pods_proyectoMatematicas.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_proyectoMatematicas.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E866E6A218A6A4F004C875E /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 		FB016878218A4AAE005708A0 /* ResultadosQuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultadosQuizViewController.swift; sourceTree = "<group>"; };
 		FBBB2FBA2187AF9500D8E1D6 /* MenuFormularioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuFormularioViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -95,6 +97,7 @@
 			children = (
 				296BAC7C2179321100E55702 /* AppDelegate.swift */,
 				296BAC802179321100E55702 /* Main.storyboard */,
+				8E866E6A218A6A4F004C875E /* RoundButton.swift */,
 				FB016878218A4AAE005708A0 /* ResultadosQuizViewController.swift */,
 				29A3FD9E2188D8B100E63DFA /* graficaElipseViewController.swift */,
 				296BAC7E2179321100E55702 /* ViewController.swift */,
@@ -267,6 +270,7 @@
 				FBBB2FBB2187AF9500D8E1D6 /* MenuFormularioViewController.swift in Sources */,
 				290C71F3217C05AC00389BAA /* QuizViewController.swift in Sources */,
 				296BAC7D2179321100E55702 /* AppDelegate.swift in Sources */,
+				8E866E6B218A6A4F004C875E /* RoundButton.swift in Sources */,
 				2998C8BE2180ED1A00112EA7 /* graficaCirculoViewController.swift in Sources */,
 				FB016879218A4AAE005708A0 /* ResultadosQuizViewController.swift in Sources */,
 				2998C8C02180ED2B00112EA7 /* graficaParabolaViewController.swift in Sources */,
