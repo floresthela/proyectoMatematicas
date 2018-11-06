@@ -53,6 +53,7 @@ class preguntasPracticaViewController: UIViewController {
         Pregunta(pregunta: "Encuentra el centro de la siguiente ecuacion: (y+2)^2/9 − (x+1)^2/4 = 1", opciones: ["(0,0)","(2,-1)","(-1,2)","(-1,1)"], respCorrecta: 2, imagen: nil, ayuda: "falta", feedback: "falta")
     ]
     
+    var seEquivoco = false
     var indicePregunta: [Int]!
     var indicePreguntaActual = 0
     var ayudas = 2
@@ -109,15 +110,24 @@ class preguntasPracticaViewController: UIViewController {
         
         if indiceBoton == preguntaObjecto.respCorrecta{
             opciones[indiceBoton!].backgroundColor = UIColor.green
+            bAyudaout.isEnabled = false
             bSigout.isEnabled = true
             bTerminarout.isEnabled = true
             for button in self.opciones {
                 button.isEnabled = false
             }
+            if seEquivoco == true {
+                let mensajeFeedback = aMostrar[indicePreguntaActual].feedback
+                let alertaFeedback = UIAlertController(title: "Feedback", message: mensajeFeedback, preferredStyle: .alert)
+                let restartAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+                alertaFeedback.addAction(restartAction)
+                present(alertaFeedback, animated: true, completion: nil)
+            }
         }
         else{
+           seEquivoco = true
             opciones[indiceBoton!].backgroundColor = UIColor.red
-            bAyudaout.isEnabled = false
+            //bAyudaout.isEnabled = false
         }
     }
     
@@ -150,7 +160,8 @@ class preguntasPracticaViewController: UIViewController {
     
     @IBAction func bSiguiente(_ sender: UIButton) {
 
-         bAyudaout.isEnabled = true
+        seEquivoco = false
+        bAyudaout.isEnabled = true
         bAyudaout.isEnabled = true
         if cuenta != aMostrar.count{
         actualiza(indicePregunta: indicePreguntaActual+1)
@@ -176,7 +187,7 @@ class preguntasPracticaViewController: UIViewController {
     
     
     @IBAction func bTermina(_ sender: UIButton) {
-        navigationController?.popViewController(animated: true)
+    navigationController?.popViewController(animated: true)
     }
     
     

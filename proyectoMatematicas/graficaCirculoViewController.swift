@@ -14,13 +14,16 @@ class graficaCirculoViewController: UIViewController, ChartViewDelegate {
     @IBOutlet weak var chartView: LineChartView!
     
 
+    @IBOutlet weak var tfRadio: UITextField!
     /*var vX : Double!
     var vY : Double!
     var vR : Double!*/
     
+    var radio : Double!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        radio = 100
         chartView.delegate = self
 
         chartView.chartDescription?.enabled = false
@@ -42,8 +45,8 @@ class graficaCirculoViewController: UIViewController, ChartViewDelegate {
         xAxis.drawGridLinesEnabled = true
         xAxis.gridLineWidth = 1
         xAxis.gridLineDashLengths = [1,1]
-        xAxis.axisMaximum = 100
-        xAxis.axisMinimum = -100
+        xAxis.axisMaximum = 50
+        xAxis.axisMinimum = -50
         
         xAxis.granularity = 0.5
         let leftAxis = chartView.leftAxis
@@ -53,8 +56,8 @@ class graficaCirculoViewController: UIViewController, ChartViewDelegate {
         leftAxis.gridLineWidth = 1
         leftAxis.gridLineDashLengths = [1,1]
         leftAxis.granularityEnabled = true
-        leftAxis.axisMinimum = -100
-        leftAxis.axisMaximum = 100
+        leftAxis.axisMinimum = -50
+        leftAxis.axisMaximum = 50
         leftAxis.granularity = 0.5
         leftAxis.yOffset = -9
         leftAxis.labelTextColor = UIColor.black
@@ -69,8 +72,7 @@ class graficaCirculoViewController: UIViewController, ChartViewDelegate {
         //chartView.animate(xAxisDuration: 2.5)
         
     }
-    
-  
+
 
     
     @IBAction func quitaTeclado(_ sender: Any) {
@@ -88,16 +90,44 @@ class graficaCirculoViewController: UIViewController, ChartViewDelegate {
     
     
     func setDataCount() {
+        /*myArray.map({ (number: Int) in
+         if number % 2 != 0 {
+         return 0
+         } else {
+         return number
+         }
+         }) as [Int]*/
+        // parte de arriba del circulo
+        let rangoMayor = Int(sqrt(radio))
+        let rangoMenor = Int(rangoMayor * -1)
+        var rango = [Int]()
+        var cuenta = 0
         
-        let yVal1 = (-100...100).map {
+        for i in rangoMenor...rangoMayor{
+            rango.append(i)
+        }
+        //let rangoA : [Int] = Array(rangoMenor...rangoMayor)
+        //let fiveZs = Array(repeating: "Z", count: 5)
+   
+        
+        /*let yVal1 = rango.map({
+            (valor: Double) -> ChartDataEntry in
+            //let xAxis = Double(valor)
+            //let yAxis = sqrt(radio - pow(xAxis, 2.0))
+            //chingadamadre
+            return ChartDataEntry(x: Double(valor), y: sqrt(radio - pow(valor, 2.0)))
+        })*/
 
-            return ChartDataEntry(x: Double($0), y: sqrt(100 - pow(Double($0), 2)))
-           
+
+        let yVal1 = (rango).map { (valor : Int) -> ChartDataEntry in
+            return ChartDataEntry(x: Double(valor), y: sqrt(radio - pow(Double(valor), 2.0)))
         }
-        
-        let yVal2 = (-100...100).map {
-           return ChartDataEntry(x: Double($0), y: sqrt(100 - pow(Double($0), 2)) * -1)
-        }
+   
+        // parte de abajo del circulo
+        let yVal2 = (rango).map {
+            (valor : Int) -> ChartDataEntry in
+            return ChartDataEntry(x: Double(valor), y: sqrt(radio - pow(Double(valor), 2.0)) * -1)
+            }
         
         let set1 = LineChartDataSet(values: yVal1, label: "Top")
          //set1.axisDependency = .left
@@ -111,6 +141,7 @@ class graficaCirculoViewController: UIViewController, ChartViewDelegate {
         set2.drawCirclesEnabled = false
         set2.lineWidth = 2
         
+        //set2.mode = .cubicBezier
         set2.mode = .cubicBezier
 
         let data = LineChartData(dataSets: [set1,set2])

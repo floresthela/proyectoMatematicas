@@ -62,10 +62,12 @@ class graficaElipseViewController: UIViewController, ChartViewDelegate {
     
     func setDataCount(){
         let val1 = (-100..<100).map{
-            return ChartDataEntry(x: Double($0), y: sqrt((1-(pow(Double($0), 2)/100)) * 20))
+            //return ChartDataEntry(x: Double($0), y: sqrt((1-(pow(Double($0), 2)/100)) * 20))
+            return ChartDataEntry(x: Double($0), y: sqrt(-pow(25,2) * (1 - (pow(Double($0),2)/25))))
         }
         let val2 = (-100..<100).map{
-            return ChartDataEntry(x: Double($0), y: sqrt((1-(pow(Double($0), 2)/100)) * 20) * -1)
+            //return ChartDataEntry(x: Double($0), y: sqrt((1-(pow(Double($0), 2)/100)) * 20) * -1)
+            return ChartDataEntry(x: Double($0), y: sqrt(-pow(25,2) * (1 - (pow(Double($0),2)/25))) * -1)
         }
         
         let set = LineChartDataSet(values: val1, label: "Elipse")
