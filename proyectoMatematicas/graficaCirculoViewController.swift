@@ -11,18 +11,25 @@ import Charts
 
 class graficaCirculoViewController: UIViewController, ChartViewDelegate {
 
+    
+    @IBOutlet weak var tfH: UITextField!
+    @IBOutlet weak var tfK: UITextField!
     @IBOutlet weak var chartView: LineChartView!
-    
-
+    @IBOutlet weak var lbEcuacion: UILabel!
     @IBOutlet weak var tfRadio: UITextField!
-    /*var vX : Double!
-    var vY : Double!
-    var vR : Double!*/
+    @IBOutlet weak var svHK: UIStackView!
+    @IBOutlet weak var sv00: UIStackView!
+    @IBOutlet weak var segconOut: UISegmentedControl!
     
+    var h : Double!
+    var k : Double!
     var radio : Double!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        h = 0
+        k = 0
+        svHK.isHidden = true
         radio = 100
         chartView.delegate = self
 
@@ -69,7 +76,7 @@ class graficaCirculoViewController: UIViewController, ChartViewDelegate {
         
     
         setDataCount()
-        //chartView.animate(xAxisDuration: 2.5)
+        chartView.animate(xAxisDuration: 2.5)
         
     }
 
@@ -79,54 +86,31 @@ class graficaCirculoViewController: UIViewController, ChartViewDelegate {
         view.endEditing(true)
     }
     
-    
-    
-    @IBAction func bGrafica(_ sender: UIButton){
-        // número que se pasa de parámetro es el rango en X
-        //vR = 100
-        setDataCount()
-        chartView.animate(xAxisDuration: 2.5)
-    }
-    
-    
     func setDataCount() {
-        /*myArray.map({ (number: Int) in
-         if number % 2 != 0 {
-         return 0
-         } else {
-         return number
-         }
-         }) as [Int]*/
         // parte de arriba del circulo
-        let rangoMayor = Int(sqrt(radio))
-        let rangoMenor = Int(rangoMayor * -1)
+        let rangoMayor = Int(sqrt(radio) + h)
+        let rangoMenor = Int((sqrt(radio) - h) * -1)
         var rango = [Int]()
-        var cuenta = 0
+        
+        print(rangoMayor)
+        print(rangoMenor)
         
         for i in rangoMenor...rangoMayor{
             rango.append(i)
         }
-        //let rangoA : [Int] = Array(rangoMenor...rangoMayor)
-        //let fiveZs = Array(repeating: "Z", count: 5)
-   
-        
-        /*let yVal1 = rango.map({
-            (valor: Double) -> ChartDataEntry in
-            //let xAxis = Double(valor)
-            //let yAxis = sqrt(radio - pow(xAxis, 2.0))
-            //chingadamadre
-            return ChartDataEntry(x: Double(valor), y: sqrt(radio - pow(valor, 2.0)))
-        })*/
 
 
         let yVal1 = (rango).map { (valor : Int) -> ChartDataEntry in
-            return ChartDataEntry(x: Double(valor), y: sqrt(radio - pow(Double(valor), 2.0)))
+            //return ChartDataEntry(x: Double(valor), y: sqrt(radio - pow(Double(valor), 2.0)))
+            return ChartDataEntry(x: Double(valor), y: k + sqrt(radio - pow(Double(valor) - h, 2.0)))
         }
    
+        print(yVal1)
         // parte de abajo del circulo
         let yVal2 = (rango).map {
             (valor : Int) -> ChartDataEntry in
-            return ChartDataEntry(x: Double(valor), y: sqrt(radio - pow(Double(valor), 2.0)) * -1)
+            //return ChartDataEntry(x: Double(valor), y: sqrt(radio - pow(Double(valor), 2.0)) * -1)
+            return ChartDataEntry(x: Double(valor), y: k + sqrt(radio - pow(Double(valor) - h, 2.0)) * -1)
             }
         
         let set1 = LineChartDataSet(values: yVal1, label: "Top")
@@ -140,16 +124,84 @@ class graficaCirculoViewController: UIViewController, ChartViewDelegate {
         set2.setColor(UIColor.black)
         set2.drawCirclesEnabled = false
         set2.lineWidth = 2
-        
-        //set2.mode = .cubicBezier
         set2.mode = .cubicBezier
 
         let data = LineChartData(dataSets: [set1,set2])
         
-        data.setValueFont(.systemFont(ofSize: 9))
+    data.setValueFont(.systemFont(ofSize: 9))
         data.setDrawValues(false)
         chartView.data = data
     }
+    
+    /* UIView.animate(withDuration: 1, animations: {
+     self.lbAnima.frame.origin.x = 250
+     self.lbAnima.frame.origin.y = 85
+     })
+     */
+    
+    @IBAction func scOrigen(_ sender: UISegmentedControl) {
+        
+        radio = Double(tfRadio.text!)
+        
+        if segconOut.selectedSegmentIndex == 0 {
+            //230
+            svHK.isHidden = true
+            sv00.isHidden = false
+            UIView.animate(withDuration: 1, animations: {
+                self.tfRadio.frame.origin.x = 230
+            })
+            h = 0
+            k = 0
+            
+            
+        }
+        else{
+            
+            svHK.isHidden = false
+            sv00.isHidden = true
+            //285
+            UIView.animate(withDuration: 1, animations: {
+                self.tfRadio.frame.origin.x = 285
+            })
+            h = Double(tfH.text!)
+            k = Double(tfK.text!)
+            
+        }
+    }
+    
+    @IBAction func bGrafica(_ sender: UIButton) {
+       
+        radio = Double(tfRadio.text!)
+        
+        if segconOut.selectedSegmentIndex == 0 {
+            //230
+            svHK.isHidden = true
+            sv00.isHidden = false
+            UIView.animate(withDuration: 1, animations: {
+                self.tfRadio.frame.origin.x = 230
+            })
+            h = 0
+            k = 0
+        }
+        else{
+            
+            svHK.isHidden = false
+            sv00.isHidden = true
+            //285
+            UIView.animate(withDuration: 1, animations: {
+                self.tfRadio.frame.origin.x = 285
+            })
+            h = Double(tfH.text!)
+            k = Double(tfK.text!)
+            
+        }
+        
+        
+        setDataCount()
+        chartView.animate(xAxisDuration: 2.5)
+    }
+    
+    
     
     // TO DO: checar que el valor ingresado sea válido / numérico
     
