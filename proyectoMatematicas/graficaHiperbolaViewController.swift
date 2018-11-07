@@ -55,7 +55,7 @@ class graficaHiperbolaViewController: UIViewController, ChartViewDelegate {
         xAxis.axisMaximum = 50
         xAxis.axisMinimum = -50
         
-        xAxis.granularity = 0.5
+        xAxis.granularity = 1
         let leftAxis = chartView.leftAxis
         leftAxis.labelPosition = .insideChart
         leftAxis.labelFont = .systemFont(ofSize: 12, weight: .light)
@@ -65,7 +65,7 @@ class graficaHiperbolaViewController: UIViewController, ChartViewDelegate {
         leftAxis.granularityEnabled = true
         leftAxis.axisMinimum = -50
         leftAxis.axisMaximum = 50
-        leftAxis.granularity = 0.5
+        leftAxis.granularity = 1
         leftAxis.yOffset = -9
         leftAxis.labelTextColor = UIColor.black
         
@@ -88,72 +88,59 @@ class graficaHiperbolaViewController: UIViewController, ChartViewDelegate {
         b = Double(tfB.text!)
         
         setDataCount()
-        chartView.animate(xAxisDuration: 2.5)
+        //chartView.animate(xAxisDuration: 2.5)
     }
     
     func setDataCount(){
         
         
         let rango11 = -50.0
-        let rango12 = (sqrt(a) - h) * -1
+        let rango12 = ( h - sqrt(a))
+        print(rango11, rango12)
         
-        //print(rangoMenor1, rangoMayor1)
-        
-        let rango21 = sqrt(a) + h
+        let rango21 = (sqrt(a) + h)
         let rango22  = 50.0
+        print(rango21, rango22)
+        
+        let rango1 = stride(from: rango11, through: rango12, by: 0.5)
+        
+        let rango2 = stride(from: rango21, through: rango22, by: 0.5)
         
         
-        var rango1 = stride(from: rango11, through: rango12, by: 0.1)
-        
-        var rango2 = stride(from: rango21, through: rango22, by: 0.1)
-        //stride(from: 1, to: 2, by: 0.1)
-        /*for i in rango11...rango12 {
-            
-            rango1.append(i)
-        }
-        
-        print(rango1)
-
-        for i in rango21...rango22 {
-            
-            rango2.append(i)
-        }*/
-        
-    
         let yVal1 = (rango1).map {(valor: Double) -> ChartDataEntry in
             
-            return ChartDataEntry(x: Double(valor), y: (k + sqrt( b * (( pow(Double(valor) - h , 2) / a) - 1 ))))
+            return ChartDataEntry(x: Double(valor), y: k + sqrt( b * (( pow(Double(valor) - h , 2) / a) - 1 )))
         }
         
-    
+       
         let yVal2 = (rango2).map {(valor: Double) -> ChartDataEntry in
-            return ChartDataEntry(x: Double(valor), y: (k + sqrt( b * (( pow(Double(valor) - h , 2) / a) - 1 ))) * -1)
+            return ChartDataEntry(x: Double(valor), y: k + sqrt( b * (( pow(Double(valor) - h , 2) / a) - 1 )) * -1)
         }
         
         let yVal3 = (rango2).map {(valor: Double) -> ChartDataEntry in
             
-            return ChartDataEntry(x: Double(valor), y: (k + sqrt( b * (( pow(Double(valor) - h , 2) / a) - 1 ))))
+            return ChartDataEntry(x: Double(valor), y: k + sqrt( b * (( pow(Double(valor) - h , 2) / a) - 1 )))
         }
         
         let yVal4 = (rango1).map {(valor: Double) -> ChartDataEntry in
-            return ChartDataEntry(x: Double(valor), y: (k + sqrt( b * (( pow(Double(valor) - h , 2) / a) - 1 ))) * -1)
+            return ChartDataEntry(x: Double(valor), y: k + sqrt( b * (( pow(Double(valor) - h , 2) / a) - 1 )) * -1)
         }
-        
+        print("VALORES MALOS", yVal1)
+        print("BUENOS VALORES", yVal2)
         let set1 = LineChartDataSet(values: yVal1, label: "1")
-        //set1.axisDependency = .left
-        set1.setColor(UIColor.red)
+        set1.setColor(UIColor.green)
         set1.drawCirclesEnabled = false
         set1.lineWidth = 2
         set1.mode = .cubicBezier
         
         let set2 = LineChartDataSet(values: yVal2, label: "2")
-        set2.setColor(UIColor.black)
+        set2.setColor(UIColor.red)
         set2.drawCirclesEnabled = false
         set2.lineWidth = 2
         set2.mode = .cubicBezier
         
         let set3 = LineChartDataSet(values: yVal3, label: "2")
-        set3.setColor(UIColor.black)
+        set3.setColor(UIColor.blue)
         set3.drawCirclesEnabled = false
         set3.lineWidth = 2
         set3.mode = .cubicBezier
@@ -166,7 +153,6 @@ class graficaHiperbolaViewController: UIViewController, ChartViewDelegate {
         
         
         let data = LineChartData(dataSets: [set1,set2,set3,set4])
-        
         data.setValueFont(.systemFont(ofSize: 9))
         data.setDrawValues(false)
         chartView.data = data

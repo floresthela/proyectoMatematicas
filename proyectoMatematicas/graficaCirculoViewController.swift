@@ -92,8 +92,8 @@ class graficaCirculoViewController: UIViewController, ChartViewDelegate {
         // se definen los rangos en x que tendrá y no recibir valores NaN
         //stride(from: rango11, to: rango12, by: 0.1)
         let rangoMayor = sqrt(radio) + h
-        let rangoMenor = (sqrt(radio) - h) * -1
-        var rango = stride(from: rangoMenor, through: rangoMayor, by: 0.1)
+        let rangoMenor = (h - sqrt(radio))
+        var rango = stride(from: rangoMenor, through: rangoMayor, by: 0.5)
         print(rango)
         /*for i in rangoMenor...rangoMayor{
             rango.append(i)
