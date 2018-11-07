@@ -90,22 +90,23 @@ class graficaCirculoViewController: UIViewController, ChartViewDelegate {
     func setDataCount() {
         
         // se definen los rangos en x que tendrá y no recibir valores NaN
-        let rangoMayor = Int(sqrt(radio) + h)
-        let rangoMenor = Int((sqrt(radio) - h) * -1)
-        var rango = [Int]()
-        
-        for i in rangoMenor...rangoMayor{
+        //stride(from: rango11, to: rango12, by: 0.1)
+        let rangoMayor = sqrt(radio) + h
+        let rangoMenor = (sqrt(radio) - h) * -1
+        var rango = stride(from: rangoMenor, through: rangoMayor, by: 0.1)
+        print(rango)
+        /*for i in rangoMenor...rangoMayor{
             rango.append(i)
-        }
+        }*/
 
         // parte de arriba del circulo
-        let yVal1 = (rango).map { (valor : Int) -> ChartDataEntry in
+        let yVal1 = (rango).map { (valor : Double) -> ChartDataEntry in
             return ChartDataEntry(x: Double(valor), y: k + sqrt(radio - pow(Double(valor) - h, 2.0)))
         }
    
         // parte de abajo del circulo
         let yVal2 = (rango).map {
-            (valor : Int) -> ChartDataEntry in
+            (valor : Double) -> ChartDataEntry in
             //return ChartDataEntry(x: Double(valor), y: sqrt(radio - pow(Double(valor), 2.0)) * -1)
             return ChartDataEntry(x: Double(valor), y: k + sqrt(radio - pow(Double(valor) - h, 2.0)) * -1)
             }

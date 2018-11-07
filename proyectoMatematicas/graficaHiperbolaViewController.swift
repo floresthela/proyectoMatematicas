@@ -94,47 +94,48 @@ class graficaHiperbolaViewController: UIViewController, ChartViewDelegate {
     func setDataCount(){
         
         
-        let rango11 = -50
-        let rango12 = Int((sqrt(a) - h) * -1)
+        let rango11 = -50.0
+        let rango12 = (sqrt(a) - h) * -1
         
         //print(rangoMenor1, rangoMayor1)
         
-        let rango21 = Int(sqrt(a) + h)
-        let rango22  = 50
+        let rango21 = sqrt(a) + h
+        let rango22  = 50.0
         
         
-        var rango1 = [Int]()
-        var rango2 = [Int]()
+        var rango1 = stride(from: rango11, through: rango12, by: 0.1)
         
-        for i in rango11...rango12{
+        var rango2 = stride(from: rango21, through: rango22, by: 0.1)
+        //stride(from: 1, to: 2, by: 0.1)
+        /*for i in rango11...rango12 {
             
             rango1.append(i)
         }
         
         print(rango1)
 
-        for i in rango21...rango22{
+        for i in rango21...rango22 {
             
             rango2.append(i)
-        }
+        }*/
         
     
-        let yVal1 = (rango1).map {(valor: Int) -> ChartDataEntry in
+        let yVal1 = (rango1).map {(valor: Double) -> ChartDataEntry in
             
             return ChartDataEntry(x: Double(valor), y: (k + sqrt( b * (( pow(Double(valor) - h , 2) / a) - 1 ))))
         }
         
     
-        let yVal2 = (rango2).map {(valor: Int) -> ChartDataEntry in
+        let yVal2 = (rango2).map {(valor: Double) -> ChartDataEntry in
             return ChartDataEntry(x: Double(valor), y: (k + sqrt( b * (( pow(Double(valor) - h , 2) / a) - 1 ))) * -1)
         }
         
-        let yVal3 = (rango2).map {(valor: Int) -> ChartDataEntry in
+        let yVal3 = (rango2).map {(valor: Double) -> ChartDataEntry in
             
             return ChartDataEntry(x: Double(valor), y: (k + sqrt( b * (( pow(Double(valor) - h , 2) / a) - 1 ))))
         }
         
-        let yVal4 = (rango1).map {(valor: Int) -> ChartDataEntry in
+        let yVal4 = (rango1).map {(valor: Double) -> ChartDataEntry in
             return ChartDataEntry(x: Double(valor), y: (k + sqrt( b * (( pow(Double(valor) - h , 2) / a) - 1 ))) * -1)
         }
         
