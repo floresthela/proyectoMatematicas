@@ -1,33 +1,36 @@
 //
-//  graficaElipseViewController.swift
+//  graficaHiperbolaViewController.swift
 //  proyectoMatematicas
 //
-//  Created by Flor Barbosa on 10/30/18.
+//  Created by Flor Barbosa on 11/6/18.
 //  Copyright © 2018 Flor Barbosa. All rights reserved.
 //
 
 import UIKit
 import Charts
 
-class graficaElipseViewController: UIViewController, ChartViewDelegate {
+class graficaHiperbolaViewController: UIViewController, ChartViewDelegate {
 
-
-    @IBOutlet weak var tfH: UITextField!
-    @IBOutlet weak var tfK: UITextField!
-    @IBOutlet weak var tfA: UITextField!
-    @IBOutlet weak var tfB: UITextField!
     
     @IBOutlet weak var chartView: LineChartView!
+    
+    @IBOutlet weak var tfH: UITextField!
+    @IBOutlet weak var tfK: UITextField!
+    
+    @IBOutlet weak var tfA: UITextField!
+    
+    @IBOutlet weak var tfB: UITextField!
+    
     
     var h : Double!
     var k : Double!
     var a : Double!
     var b : Double!
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
         chartView.delegate = self
         
         chartView.chartDescription?.enabled = false
@@ -74,66 +77,98 @@ class graficaElipseViewController: UIViewController, ChartViewDelegate {
         
         //setDataCount()
         //chartView.animate(xAxisDuration: 2.5)
+        // Do any additional setup after loading the view.
+    }
+    
+    @IBAction func bGrafica(_ sender: UIButton) {
+        
+        h = Double(tfH.text!)
+        k = Double(tfK.text!)
+        a = Double(tfA.text!)
+        b = Double(tfB.text!)
+        
+        setDataCount()
+        chartView.animate(xAxisDuration: 2.5)
     }
     
     func setDataCount(){
         
-        /*
-         
-         // parte de arriba del circulo
-         let yVal1 = (rango).map { (valor : Int) -> ChartDataEntry in
-         return ChartDataEntry(x: Double(valor), y: k + sqrt(radio - pow(Double(valor) - h, 2.0)))
-         }*/
+        
+        let rango11 = -50
+        let rango12 = Int((sqrt(a) - h) * -1)
+        
+        //print(rangoMenor1, rangoMayor1)
+        
+        let rango21 = Int(sqrt(a) + h)
+        let rango22  = 50
         
         
+        var rango1 = [Int]()
+        var rango2 = [Int]()
         
-        let rangoMayor = Int(sqrt(a) + h)
-        let rangoMenor = Int((sqrt(a) - h) * -1)
-        var rango = [Int]()
-        
-        for i in rangoMenor...rangoMayor{
+        for i in rango11...rango12{
             
-            rango.append(i)
+            rango1.append(i)
         }
+        
+        print(rango1)
 
-        print(rangoMenor)
-        print(rangoMayor)
-        
-        let yVal1 = (rango).map {(valor: Int) -> ChartDataEntry in
-
-            return ChartDataEntry(x: Double(valor), y: (k + sqrt( b * (1 - ( pow(Double(valor) - h , 2) / a) ))))
+        for i in rango21...rango22{
+            
+            rango2.append(i)
         }
         
-        print(yVal1)
-        let yVal2 = (rango).map {(valor: Int) -> ChartDataEntry in
-            return ChartDataEntry(x: Double(valor), y: (k + sqrt( b * (1 - ( pow(Double(valor) - h , 2) / a) ))) * -1)
+    
+        let yVal1 = (rango1).map {(valor: Int) -> ChartDataEntry in
+            
+            return ChartDataEntry(x: Double(valor), y: (k + sqrt( b * (( pow(Double(valor) - h , 2) / a) - 1 ))))
         }
         
-        let set1 = LineChartDataSet(values: yVal1, label: "Top")
+    
+        let yVal2 = (rango2).map {(valor: Int) -> ChartDataEntry in
+            return ChartDataEntry(x: Double(valor), y: (k + sqrt( b * (( pow(Double(valor) - h , 2) / a) - 1 ))) * -1)
+        }
+        
+        let yVal3 = (rango2).map {(valor: Int) -> ChartDataEntry in
+            
+            return ChartDataEntry(x: Double(valor), y: (k + sqrt( b * (( pow(Double(valor) - h , 2) / a) - 1 ))))
+        }
+        
+        let yVal4 = (rango1).map {(valor: Int) -> ChartDataEntry in
+            return ChartDataEntry(x: Double(valor), y: (k + sqrt( b * (( pow(Double(valor) - h , 2) / a) - 1 ))) * -1)
+        }
+        
+        let set1 = LineChartDataSet(values: yVal1, label: "1")
         //set1.axisDependency = .left
         set1.setColor(UIColor.red)
         set1.drawCirclesEnabled = false
         set1.lineWidth = 2
-        //set1.mode = .cubicBezier
+        set1.mode = .cubicBezier
         
-        let set2 = LineChartDataSet(values: yVal2, label: "Bottom")
+        let set2 = LineChartDataSet(values: yVal2, label: "2")
         set2.setColor(UIColor.black)
         set2.drawCirclesEnabled = false
         set2.lineWidth = 2
-        //set2.mode = .cubicBezier
+        set2.mode = .cubicBezier
         
-        let data = LineChartData(dataSets: [set1,set2])
+        let set3 = LineChartDataSet(values: yVal3, label: "2")
+        set3.setColor(UIColor.black)
+        set3.drawCirclesEnabled = false
+        set3.lineWidth = 2
+        set3.mode = .cubicBezier
+        
+        let set4 = LineChartDataSet(values: yVal4, label: "2")
+        set4.setColor(UIColor.black)
+        set4.drawCirclesEnabled = false
+        set4.lineWidth = 2
+        set4.mode = .cubicBezier
+        
+        
+        let data = LineChartData(dataSets: [set1,set2,set3,set4])
         
         data.setValueFont(.systemFont(ofSize: 9))
         data.setDrawValues(false)
         chartView.data = data
-        
-        /*       set.mode = .cubicBezier
-         let data = LineChartData(dataSet: set)
-         data.setValueFont(.systemFont(ofSize: 10, weight: .light))
-         data.setDrawValues(false)
-         
-         chartView.data = data*/
     }
     /*
     // MARK: - Navigation
@@ -145,20 +180,4 @@ class graficaElipseViewController: UIViewController, ChartViewDelegate {
     }
     */
 
-    
-    
-    @IBAction func bGrafica(_ sender: UIButton) {
-       
-        h = Double(tfH.text!)
-        k = Double(tfK.text!)
-        a = Double(tfA.text!)
-        b = Double(tfB.text!)
-        
-        setDataCount()
-    }
-    
-    
-    @IBAction func quitaTeclado(_ sender: Any) {
-        view.endEditing(true)
-    }
 }

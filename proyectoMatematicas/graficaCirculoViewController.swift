@@ -31,6 +31,7 @@ class graficaCirculoViewController: UIViewController, ChartViewDelegate {
         k = 0
         svHK.isHidden = true
         radio = 100
+        
         chartView.delegate = self
 
         chartView.chartDescription?.enabled = false
@@ -87,25 +88,21 @@ class graficaCirculoViewController: UIViewController, ChartViewDelegate {
     }
     
     func setDataCount() {
-        // parte de arriba del circulo
+        
+        // se definen los rangos en x que tendrá y no recibir valores NaN
         let rangoMayor = Int(sqrt(radio) + h)
         let rangoMenor = Int((sqrt(radio) - h) * -1)
         var rango = [Int]()
-        
-        print(rangoMayor)
-        print(rangoMenor)
         
         for i in rangoMenor...rangoMayor{
             rango.append(i)
         }
 
-
+        // parte de arriba del circulo
         let yVal1 = (rango).map { (valor : Int) -> ChartDataEntry in
-            //return ChartDataEntry(x: Double(valor), y: sqrt(radio - pow(Double(valor), 2.0)))
             return ChartDataEntry(x: Double(valor), y: k + sqrt(radio - pow(Double(valor) - h, 2.0)))
         }
    
-        print(yVal1)
         // parte de abajo del circulo
         let yVal2 = (rango).map {
             (valor : Int) -> ChartDataEntry in
@@ -133,12 +130,6 @@ class graficaCirculoViewController: UIViewController, ChartViewDelegate {
         chartView.data = data
     }
     
-    /* UIView.animate(withDuration: 1, animations: {
-     self.lbAnima.frame.origin.x = 250
-     self.lbAnima.frame.origin.y = 85
-     })
-     */
-    
     @IBAction func scOrigen(_ sender: UISegmentedControl) {
         
         radio = Double(tfRadio.text!)
@@ -152,8 +143,6 @@ class graficaCirculoViewController: UIViewController, ChartViewDelegate {
             })
             h = 0
             k = 0
-            
-            
         }
         else{
             
@@ -195,7 +184,6 @@ class graficaCirculoViewController: UIViewController, ChartViewDelegate {
             k = Double(tfK.text!)
             
         }
-        
         
         setDataCount()
         chartView.animate(xAxisDuration: 2.5)
