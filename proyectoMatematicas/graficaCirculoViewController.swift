@@ -21,12 +21,17 @@ class graficaCirculoViewController: UIViewController, ChartViewDelegate {
     @IBOutlet weak var sv00: UIStackView!
     @IBOutlet weak var segconOut: UISegmentedControl!
     
+    
+    @IBOutlet var viewGraficar: UIView!
+    
     var h : Double!
     var k : Double!
     var radio : Double!
+     var colorFondo = UIColor(red: 239/255.0, green: 231/255.0, blue: 218/255.0, alpha: 1)
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.viewGraficar.backgroundColor = colorFondo
         h = 0
         k = 0
         svHK.isHidden = true

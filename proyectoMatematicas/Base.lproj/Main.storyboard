@@ -384,6 +384,8 @@
                         <outlet property="bTerminarout" destination="Lwj-Sz-T6Q" id="CGV-nF-Myn"/>
                         <outlet property="imagenPregunta" destination="zPb-IN-4MB" id="YNc-Je-rfP"/>
                         <outlet property="lbPregunta" destination="di8-od-GhZ" id="3eW-Tx-Qaf"/>
+                        <outlet property="view1" destination="2vN-vn-KYU" id="h3C-s5-g9U"/>
+                        <outlet property="view2" destination="XUx-vr-VdV" id="eRh-1Q-cVH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FyA-3L-y7s" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -523,6 +525,7 @@
                         <outlet property="tfH" destination="EAc-Oh-wmH" id="dzf-Or-BxU"/>
                         <outlet property="tfK" destination="raP-gZ-hFp" id="Vhd-ce-Vxo"/>
                         <outlet property="tfRadio" destination="p9E-Xc-cYs" id="D2A-To-6ds"/>
+                        <outlet property="viewGraficar" destination="6lW-Jo-o2f" id="zKH-IB-IhG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q88-kQ-oZ7" sceneMemberID="firstResponder"/>
@@ -1035,11 +1038,11 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OWN-7y-XXF">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1150"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1192"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="wordWrap" numberOfLines="6" baselineAdjustment="none" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tiO-d4-XBc">
-                                                <rect key="frame" x="35" y="89" width="305" height="98"/>
+                                                <rect key="frame" x="35" y="89" width="305" height="187"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
                                                 <nil key="textColor"/>
@@ -1052,25 +1055,32 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uA2-fr-kHN">
-                                                <rect key="frame" x="14" y="859" width="347" height="210"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="O2u-Gt-g3c">
-                                                <rect key="frame" x="67" y="234" width="241" height="128"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lKd-Op-BCr">
-                                                <rect key="frame" x="14" y="589" width="347" height="210"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="wordWrap" numberOfLines="6" baselineAdjustment="none" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iZh-E7-bbz">
-                                                <rect key="frame" x="35" y="403" width="305" height="98"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="wordWrap" numberOfLines="6" baselineAdjustment="none" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fgz-ip-0dw">
+                                                <rect key="frame" x="35" y="424" width="305" height="152"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="O2u-Gt-g3c">
+                                                <rect key="frame" x="67" y="584" width="241" height="128"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gih-Gr-hYv">
+                                                <rect key="frame" x="40" y="266" width="294" height="173"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="wordWrap" numberOfLines="6" baselineAdjustment="none" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iZh-E7-bbz">
+                                                <rect key="frame" x="35" y="720" width="305" height="146"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CbZ-dz-UDT">
+                                                <rect key="frame" x="67" y="887" width="241" height="128"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </view>
@@ -1088,10 +1098,11 @@
                     </view>
                     <connections>
                         <outlet property="img1" destination="O2u-Gt-g3c" id="gcu-Y1-Tzx"/>
-                        <outlet property="img2" destination="lKd-Op-BCr" id="Pif-DB-5Nv"/>
-                        <outlet property="img3" destination="uA2-fr-kHN" id="mei-c1-Brn"/>
+                        <outlet property="img2" destination="CbZ-dz-UDT" id="Gk0-a5-V9H"/>
+                        <outlet property="img4" destination="gih-Gr-hYv" id="Tie-5P-gGh"/>
                         <outlet property="label1" destination="tiO-d4-XBc" id="cQe-6p-OcW"/>
-                        <outlet property="label2" destination="iZh-E7-bbz" id="IZN-fk-owy"/>
+                        <outlet property="label2" destination="Fgz-ip-0dw" id="gEV-qF-LeZ"/>
+                        <outlet property="label3" destination="iZh-E7-bbz" id="oWQ-am-bCJ"/>
                         <outlet property="lbTitulo" destination="SW8-6M-Uvl" id="qb7-sK-i7q"/>
                         <outlet property="scrollView" destination="WDx-Bq-NFA" id="ONe-hS-oNb"/>
                         <outlet property="viewFormulario" destination="OWN-7y-XXF" id="KRc-kH-Vdd"/>
@@ -1236,6 +1247,7 @@
                         <outlet property="lbQuestion" destination="WkN-dv-uev" id="po9-kd-pA1"/>
                         <outlet property="progress" destination="sDr-vt-AUT" id="KA4-rZ-cfA"/>
                         <outlet property="questionImage" destination="zV8-25-z2S" id="N8S-H7-awS"/>
+                        <outlet property="viewQuiz" destination="Ap1-B6-Wqe" id="zXk-jV-Yi4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kW9-zm-WwR" sceneMemberID="firstResponder"/>

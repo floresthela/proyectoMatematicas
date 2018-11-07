@@ -60,8 +60,17 @@ class preguntasPracticaViewController: UIViewController {
     var cuenta = 0
     var aMostrar : [Pregunta]!
     
+     var colorFondo = UIColor(red: 239/255.0, green: 231/255.0, blue: 218/255.0, alpha: 1)
+    
+    
+    @IBOutlet weak var view1: UIView!
+    @IBOutlet weak var view2: UIView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view1.backgroundColor = colorFondo
+        self.view2.backgroundColor = colorFondo
         
         bSigout.isEnabled = false
         bTerminarout.isHidden = true

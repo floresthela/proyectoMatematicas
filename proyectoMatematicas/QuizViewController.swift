@@ -52,10 +52,16 @@ class QuizViewController: UIViewController {
     var show : [QuestionQuiz]!
     var correctAns = 0
     var incorrectAns = 0
-
+    
+    
+    @IBOutlet var viewQuiz: UIView!
+     var colorFondo = UIColor(red: 239/255.0, green: 231/255.0, blue: 218/255.0, alpha: 1)
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        self.viewQuiz.backgroundColor = colorFondo
+        
         btnNextQuestion.isEnabled = false
         btnFinishQuiz.isEnabled = false
         btnFinishQuiz.isHidden = true
