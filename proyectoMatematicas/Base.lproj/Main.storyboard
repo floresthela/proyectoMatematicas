@@ -1267,7 +1267,7 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="btnFinish:" destination="Q5X-Og-WYR" eventType="touchUpInside" id="lVG-yJ-sbu"/>
-                                    <segue destination="kTK-K1-OWP" kind="show" id="vcn-sX-eRi"/>
+                                    <segue destination="kTK-K1-OWP" kind="show" identifier="Segue" id="vcn-sX-eRi"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YPo-I9-ZwJ">
