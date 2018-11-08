@@ -21,6 +21,7 @@ class graficaHiperbolaViewController: UIViewController, ChartViewDelegate {
     
     @IBOutlet weak var tfB: UITextField!
     
+    @IBOutlet var viewHiperbola: UIView!
     
     var h : Double!
     var k : Double!
@@ -30,7 +31,9 @@ class graficaHiperbolaViewController: UIViewController, ChartViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        self.viewHiperbola.backgroundColor = UIColor(red: 255/255.0, green: 223/255.0, blue: 104/255.0, alpha: 1)
+        
         chartView.delegate = self
         
         chartView.chartDescription?.enabled = false

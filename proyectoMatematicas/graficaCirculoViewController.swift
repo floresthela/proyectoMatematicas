@@ -21,12 +21,20 @@ class graficaCirculoViewController: UIViewController, ChartViewDelegate {
     @IBOutlet weak var sv00: UIStackView!
     @IBOutlet weak var segconOut: UISegmentedControl!
     
+    
+    @IBOutlet weak var btnGrafica: UIButton!
+    @IBOutlet var viewGraficar: UIView!
+    
     var h : Double!
     var k : Double!
     var radio : Double!
+     var colorFondo = UIColor(red: 255/255.0, green: 223/255.0, blue: 104/255.0, alpha: 1)
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        btnGrafica.backgroundColor = UIColor(red: 66/255.0, green: 108/255.0, blue: 218/255.0, alpha: 1)
+        segconOut.tintColor = UIColor(red: 66/255.0, green: 108/255.0, blue: 218/255.0, alpha: 1)
+        self.viewGraficar.backgroundColor = colorFondo
         h = 0
         k = 0
         svHK.isHidden = true
@@ -144,6 +152,7 @@ class graficaCirculoViewController: UIViewController, ChartViewDelegate {
             })
             h = 0
             k = 0
+            segconOut.tintColor = UIColor(red: 66/255.0, green: 108/255.0, blue: 218/255.0, alpha: 1)
         }
         else{
             
@@ -155,6 +164,7 @@ class graficaCirculoViewController: UIViewController, ChartViewDelegate {
             })
             h = Double(tfH.text!)
             k = Double(tfK.text!)
+            segconOut.tintColor = UIColor(red: 66/255.0, green: 108/255.0, blue: 218/255.0, alpha: 1)
             
         }
     }

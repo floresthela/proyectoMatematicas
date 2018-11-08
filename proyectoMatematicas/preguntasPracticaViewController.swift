@@ -42,6 +42,9 @@ class preguntasPracticaViewController: UIViewController {
         Pregunta(pregunta: "Cuál es la forma estándar de la ecuación de un círculo con el centro en (2,4) y que también contiene el punto (−2,1).", opciones: ["x^2+(y-5)^2 = 25","2x^2 + 4y^2 = 25","x^2 + y^2 = 3","(x-2)^2 + (y-4)^2 = 25"], respCorrecta: 3, imagen: nil, ayuda: "Puedes usar la formula de la distancia para calcular el radio.", feedback: "feedback")
     ]
     var preguntasParabola: [Pregunta]! = [
+        Pregunta(pregunta: "¿Cuál es la ecuación en forma estándar de la siguiente expresión:  y=3x^2−6x+5?", opciones: ["y=3(x−1)^2+2", "y=3(x−1)^2", "y=3x^2+1", "y=3x^2+6"], respCorrecta: 1, imagen: nil, ayuda: "Recuerda completar el cuadrado cuando pases la ecuación a forma estándar", feedback: "Reescriba la función en y = a (x − h) ^ 2 + k completando el cuadrado."),
+        Pregunta(pregunta: "¿Cuál es la ecuación de la parábola con foco en (−1/2,0) y directriz x = 1/2?", opciones: ["y^2=2x","y^2=−2x", "y^2=2x+1", "y^2=x"], respCorrecta: 2, imagen: nil, ayuda: "La forma de la ecuacion de la parábola es  y^2=4px", feedback: "El foco tiene la forma (p, 0), por lo que la ecuación tendrá la forma y^2 = 4px."),
+        Pregunta(pregunta: "Encuentra el eje de simetria de la siguiente ecuacion:  y=−x^2+6x−8 ", opciones: ["4", "10", "3", "5"], respCorrecta: 3, imagen: nil, ayuda: "Recuerda la formula para obtener el eje de simetria. ", feedback: "La ecuacion para calcular el eje de simetria es: x=−b/2a")
 
     ]
     var preguntasElipse: [Pregunta]! = [
@@ -60,8 +63,19 @@ class preguntasPracticaViewController: UIViewController {
     var cuenta = 0
     var aMostrar : [Pregunta]!
     
+     var colorFondo = UIColor(red: 239/255.0, green: 231/255.0, blue: 218/255.0, alpha: 1)
+    
+    
+    @IBOutlet weak var view1: UIView!
+    @IBOutlet weak var view2: UIView!
+    
+    @IBOutlet weak var btnAyuda: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        btnAyuda.backgroundColor = UIColor(red: 197/255, green: 0/255, blue: 0/255, alpha: 1)
+        self.view1.backgroundColor = colorFondo
+        self.view2.backgroundColor = colorFondo
         
         bSigout.isEnabled = false
         bTerminarout.isHidden = true

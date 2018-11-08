@@ -13,18 +13,16 @@ class FormularioViewController: UIViewController {
     @IBOutlet weak var lbTitulo: UILabel!
     @IBOutlet weak var img1: UIImageView!
     @IBOutlet weak var img2: UIImageView!
-    @IBOutlet weak var img3: UIImageView!
+    @IBOutlet weak var img4: UIImageView!
+    
     @IBOutlet weak var label1: UILabel!
     @IBOutlet weak var label2: UILabel!
+    @IBOutlet weak var label3: UILabel!
     
-    
-    var colorFondo = UIColor(red: 239/255.0, green: 231/255.0, blue: 218/255.0, alpha: 1)
-    
+    var colorFondo = UIColor(red: 255/255.0, green: 223/255.0, blue: 104/255.0, alpha: 1)
     
     @IBOutlet weak var viewFormulario: UIView!
-    
     @IBOutlet weak var scrollView: UIScrollView!
-    
     
     var labelText : String!
     
@@ -37,30 +35,38 @@ class FormularioViewController: UIViewController {
         scrollView.contentSize = viewFormulario.frame.size
         
         if lbTitulo.text == "Círculo" {
-            label1.text = "La ecuación en forma estándar de un círculo con centro en (h,k) y radio r es: "
-            img1.image = UIImage(named: "formulaCirculo")
-            img2.image = #imageLiteral(resourceName: "1-circulo")
+            label1.text = "Un círculo es todos los puntos en un plano que están a una distancia fija de un punto dado en el plano. El punto dado se llama centro, (h, k), y la distancia fija se llama radio, r, del círculo."
+            img4.image = UIImage(named: "descCirculo")
+            label2.text = "La forma estándar de la ecuación de un círculo con centro en (0,0) tiene la siguiente forma: "
+            img1.image = UIImage(named: "formulaCirculo1")
+            label3.text = "La forma estándar de la ecuación de un círculo con centro en (h,k) es:"
+            img2.image = UIImage(named: "formaCirculo2")
 
         }
         if lbTitulo.text == "Hiperbola"{
             //img1.image = #imageLiteral(resourceName: "4-hiperbola")
-            label1.text = "La forma estándar de la ecuación de una hipérbola con centro (0,0) y eje transversal en el eje x es: "
-            img1.image = UIImage(named: "ecuacionHiperbola")
-            //label1.text = "La ecuación en forma estándar de una Hiperbola es: "
-            label2.text = "La forma estándar de la ecuación de una hipérbola con centro en (0,0) y eje transversal en el eje y es"
-            img2.image = UIImage(named: "ecuacionHiperbola2")
+            label1.text = "Una hipérbola es todos los puntos en un plano donde la diferencia de sus distancias desde dos puntos fijos es constante. Cada uno de los puntos fijos se llama foco de la hipérbola."
+            img4.image = UIImage(named: "descHiperbola")
+            label2.text = "La forma estándar de la ecuación de una hipérbola con centro en (0,0) puede tener cualquiera de estas dos formas: "
+            img1.image = UIImage(named: "formulaHiperbola")
+            label3.text = "La forma estándar de la ecuación de una hipérbola con centro en (h,k) puede tener cualquiera de las siguientes formas: "
+            img2.image = UIImage(named: "hiperbola2")
         }
         if lbTitulo.text == "Parabola"{
-            label1.text = "La ecuación en forma estándar de una parabola con su vértice en (h,k) es: "
-            img1.image = UIImage(named: "ecuacionParabola")
-            img2.image = #imageLiteral(resourceName: "2-parabola")
+            label1.text = "Una parábola es todos los puntos en un plano que están a la misma distancia de un punto fijo y de una línea fija. El punto fijo se llama el foco, y la línea fija se llama la directriz de la parábola. "
+            img4.image = UIImage(named: "descParabola")
+            label2.text = "La ecuación general de la parabola tiene la siguiente forma: "
+            img1.image = UIImage(named: "formaGeneralParabola")
+            label3.text = "La forma estándar de la parabola tiene la siguiente forma: "
+            img2.image = UIImage(named: "formaEstandarParabola")
         }
         if lbTitulo.text == "Elipse"{
-            label1.text = "La ecuación en forma estándar de un elipse con su centro en (0,0) y su eje mayor en el eje x es: "
-            img1.image = #imageLiteral(resourceName: "ecuacionElipse1")
-            //img2.image = #imageLiteral(resourceName: "elipse2")
-            label2.text = "La forma estándar de la ecuación de una elipse con centro en (0,0) y eje mayor en el eje y es:"
-            img2.image = UIImage(named: "ecuacionElipse")
+            label1.text = "Un elipse es todos los puntos de un plano donde la suma de las distancias desde dos puntos fijos es constante. Cada uno de los puntos fijos se llama foco del  elipse. "
+            img4.image = UIImage(named: "descElipse")
+            label2.text = "La forma estándar de la ecuación de un elipse con centro en (0,0) tiene la siguiente forma:"
+            img1.image = UIImage(named: "elipseFormula")
+            label3.text = "La forma estándar de la ecuación de un elipse con centro de (h,k) tiene la siguiente forma:"
+            img2.image = UIImage(named: "ElipseCentro2")
         }
 
     }
