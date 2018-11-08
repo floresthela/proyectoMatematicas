@@ -20,10 +20,16 @@ class graficaParabolaViewController: UIViewController, ChartViewDelegate{
     var vX : Double!
     var transY : Double!
     
+    
+    @IBOutlet var viewParabola: UIView!
+    
+    var colorFondo = UIColor(red: 255/255.0, green: 223/255.0, blue: 104/255.0, alpha: 1)
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         chartView.delegate = self
         
+        self.viewParabola.backgroundColor = colorFondo
         
         vX = 1
         transY = 1

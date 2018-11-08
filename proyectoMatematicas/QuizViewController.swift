@@ -60,7 +60,13 @@ class QuizViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.viewQuiz.backgroundColor = colorFondo
+        btnOptionA.backgroundColor = UIColor(red: 250/255.0, green: 121/255.0, blue: 33/255.0, alpha: 1)
+        btnOptionB.backgroundColor = UIColor(red: 250/255.0, green: 121/255.0, blue: 33/255.0, alpha: 1)
+        btnOptionC.backgroundColor = UIColor(red: 250/255.0, green: 121/255.0, blue: 33/255.0, alpha: 1)
+        btnOptionD.backgroundColor = UIColor(red: 250/255.0, green: 121/255.0, blue: 33/255.0, alpha: 1)
+        
+        //self.viewQuiz.backgroundColor = colorFondo
+        btnHelp.backgroundColor = UIColor(red: 197/255, green: 0/255, blue: 0/255, alpha: 1)
         
         btnNextQuestion.isEnabled = false
         btnFinishQuiz.isEnabled = false

@@ -10,8 +10,8 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="WedgieRegular.ttf">
-            <string>Wedgie-Regular</string>
+        <array key="Antonio-Regular.ttf">
+            <string>Antonio-Regular</string>
         </array>
     </customFonts>
     <scenes>
@@ -74,16 +74,10 @@
                                     <segue destination="BdJ-xP-GR4" kind="show" id="xsB-3h-QFC"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SECCIONES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jAr-g2-Tz8">
-                                <rect key="frame" x="21" y="53" width="333" height="74"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Secciones" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jAr-g2-Tz8">
+                                <rect key="frame" x="21" y="53" width="333" height="87"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Wedgie-Regular" family="Wedgie" pointSize="38"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Conicas" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xLg-sC-Jux">
-                                <rect key="frame" x="1" y="103" width="373" height="74"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Wedgie-Regular" family="Wedgie" pointSize="51"/>
+                                <fontDescription key="fontDescription" name="Antonio-Regular" family="Antonio" pointSize="60"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lvj-n4-Vn2" customClass="RoundButton" customModule="proyectoMatematicas" customModuleProvider="target">
@@ -103,6 +97,12 @@
                                     <segue destination="k0B-QY-1gU" kind="show" id="IjB-ua-m0D"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Cónicas" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xLg-sC-Jux">
+                                <rect key="frame" x="2" y="115" width="373" height="87"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Antonio-Regular" family="Antonio" pointSize="60"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -319,7 +319,7 @@
                                 <rect key="frame" x="0.0" y="496" width="375" height="171"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XPY-Az-L8p">
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XPY-Az-L8p" customClass="RoundButton" customModule="proyectoMatematicas" customModuleProvider="target">
                                         <rect key="frame" x="8" y="53" width="359" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -327,11 +327,16 @@
                                         <state key="normal" title="Parabola">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="12"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="seleccionoBotonWithButton:" destination="emJ-uW-WZe" eventType="touchUpInside" id="B5u-I3-tCX"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zdg-Ix-pqQ">
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zdg-Ix-pqQ" customClass="RoundButton" customModule="proyectoMatematicas" customModuleProvider="target">
                                         <rect key="frame" x="8" y="91" width="359" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -339,11 +344,16 @@
                                         <state key="normal" title="Parabola">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="12"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="seleccionoBotonWithButton:" destination="emJ-uW-WZe" eventType="touchUpInside" id="eXx-3O-i6T"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cyj-Mh-tu1">
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cyj-Mh-tu1" customClass="RoundButton" customModule="proyectoMatematicas" customModuleProvider="target">
                                         <rect key="frame" x="8" y="15" width="359" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -351,11 +361,16 @@
                                         <state key="normal" title="Parabola">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="12"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="seleccionoBotonWithButton:" destination="emJ-uW-WZe" eventType="touchUpInside" id="CQq-Dd-XEw"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5bx-xk-EaO">
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5bx-xk-EaO" customClass="RoundButton" customModule="proyectoMatematicas" customModuleProvider="target">
                                         <rect key="frame" x="8" y="129" width="359" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -363,6 +378,11 @@
                                         <state key="normal" title="Parabola">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="12"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="seleccionoBotonWithButton:" destination="emJ-uW-WZe" eventType="touchUpInside" id="ciS-Px-Uai"/>
                                         </connections>
@@ -382,6 +402,7 @@
                         <outlet property="bOpc4" destination="5bx-xk-EaO" id="nGK-UY-rDF"/>
                         <outlet property="bSigout" destination="RnV-YI-6Ad" id="eQ2-FU-Mo4"/>
                         <outlet property="bTerminarout" destination="Lwj-Sz-T6Q" id="CGV-nF-Myn"/>
+                        <outlet property="btnAyuda" destination="uY7-dX-H9w" id="Jhc-6E-6wc"/>
                         <outlet property="imagenPregunta" destination="zPb-IN-4MB" id="YNc-Je-rfP"/>
                         <outlet property="lbPregunta" destination="di8-od-GhZ" id="3eW-Tx-Qaf"/>
                         <outlet property="view1" destination="2vN-vn-KYU" id="h3C-s5-g9U"/>
@@ -421,12 +442,19 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9tI-tN-VtZ">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9tI-tN-VtZ" customClass="RoundButton" customModule="proyectoMatematicas" customModuleProvider="target">
                                 <rect key="frame" x="162" y="216" width="74" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
-                                <state key="normal" title="Grafica"/>
+                                <state key="normal" title="Grafica">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="bGrafica:" destination="CV1-XZ-luZ" eventType="touchUpInside" id="Sqa-D8-err"/>
                                 </connections>
@@ -452,7 +480,7 @@
                                     <segment title="(0,0)"/>
                                     <segment title="(h,k)"/>
                                 </segments>
-                                <color key="tintColor" red="0.58260279541533744" green="0.94372620558375631" blue="0.46005057094022844" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="scOrigen:" destination="CV1-XZ-luZ" eventType="valueChanged" id="9JK-Mq-NOV"/>
                                 </connections>
@@ -517,6 +545,7 @@
                         <barButtonItem key="backBarButtonItem" title="Atrás" id="XQi-hb-vZN"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="btnGrafica" destination="9tI-tN-VtZ" id="f7R-WY-fa9"/>
                         <outlet property="chartView" destination="I2d-c3-LvI" id="NUd-UW-HAY"/>
                         <outlet property="lbEcuacion" destination="Oqs-ML-Bmb" id="9HQ-rU-EMZ"/>
                         <outlet property="segconOut" destination="Ij5-ME-xgf" id="yra-ap-Awq"/>
@@ -550,13 +579,18 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wNI-Re-Jl6">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wNI-Re-Jl6" customClass="RoundButton" customModule="proyectoMatematicas" customModuleProvider="target">
                                 <rect key="frame" x="150" y="246" width="74" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Grafica"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="bGrafica:" destination="yhC-CF-wNQ" eventType="touchUpInside" id="cOX-CN-rip"/>
                                     <action selector="bGrafica:" destination="CV1-XZ-luZ" eventType="touchUpInside" id="qGH-Y5-hXu"/>
@@ -623,6 +657,7 @@
                         <outlet property="tfB" destination="MrQ-JU-heg" id="d8x-jE-xoU"/>
                         <outlet property="tfH" destination="eu5-Sd-X8Q" id="P0y-ap-487"/>
                         <outlet property="tfK" destination="ugO-h7-zhg" id="fSO-pB-QfC"/>
+                        <outlet property="viewHiperbola" destination="bSl-Xg-PL0" id="ZTe-4J-uBK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="goS-we-ZVO" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -698,12 +733,17 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fW3-3t-Qg9">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fW3-3t-Qg9" customClass="RoundButton" customModule="proyectoMatematicas" customModuleProvider="target">
                                 <rect key="frame" x="150" y="223" width="74" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
                                 <state key="normal" title="Grafica"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="bGrafica:" destination="yhC-CF-wNQ" eventType="touchUpInside" id="QIA-ps-WhH"/>
                                     <action selector="bGrafica:" destination="CV1-XZ-luZ" eventType="touchUpInside" id="WDl-6y-huN"/>
@@ -726,6 +766,7 @@
                         <outlet property="tfB" destination="guO-wa-RMk" id="K1G-Jq-gKo"/>
                         <outlet property="tfH" destination="wlb-Sf-GHE" id="1Vk-v3-lbH"/>
                         <outlet property="tfK" destination="d5c-y3-ARZ" id="6gD-QY-HkU"/>
+                        <outlet property="viewElipse" destination="xA5-TX-BQg" id="Cua-y8-EWH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pky-wQ-kxa" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -801,6 +842,7 @@
                         <outlet property="chartView" destination="Qdb-wo-IeF" id="YFY-mq-bhd"/>
                         <outlet property="movY" destination="O71-hZ-4l9" id="2JK-df-6Ds"/>
                         <outlet property="tfX" destination="QFL-xJ-mVN" id="GWR-lm-LnH"/>
+                        <outlet property="viewParabola" destination="SJm-jd-XX9" id="ItI-Xx-9xi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cw1-X0-HhE" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1120,7 +1162,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="75M-ot-3VV">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="75M-ot-3VV" customClass="RoundButton" customModule="proyectoMatematicas" customModuleProvider="target">
                                 <rect key="frame" x="16" y="493" width="343" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1128,11 +1170,16 @@
                                 <state key="normal" title="Option B">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="selectedAnswer:" destination="Q5X-Og-WYR" eventType="touchUpInside" id="DSa-PL-Hp7"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iSb-zC-0tz">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iSb-zC-0tz" customClass="RoundButton" customModule="proyectoMatematicas" customModuleProvider="target">
                                 <rect key="frame" x="16" y="531" width="343" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1140,11 +1187,16 @@
                                 <state key="normal" title="Option C">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="selectedAnswer:" destination="Q5X-Og-WYR" eventType="touchUpInside" id="y6Q-IY-kef"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="64z-53-z2X">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="64z-53-z2X" customClass="RoundButton" customModule="proyectoMatematicas" customModuleProvider="target">
                                 <rect key="frame" x="16" y="569" width="343" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1152,6 +1204,11 @@
                                 <state key="normal" title="Option D">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="selectedAnswer:" destination="Q5X-Og-WYR" eventType="touchUpInside" id="y1r-KZ-Ufz"/>
                                 </connections>
@@ -1178,7 +1235,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2AO-RR-q3g">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2AO-RR-q3g" customClass="RoundButton" customModule="proyectoMatematicas" customModuleProvider="target">
                                 <rect key="frame" x="272" y="617" width="87" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.9576706429423415" green="0.34134082492882745" blue="0.74422575094097632" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1186,11 +1243,16 @@
                                 <state key="normal" title="Siguiente">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="btnNext:" destination="Q5X-Og-WYR" eventType="touchUpInside" id="Sxi-5G-wf0"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ytO-X4-itK">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ytO-X4-itK" customClass="RoundButton" customModule="proyectoMatematicas" customModuleProvider="target">
                                 <rect key="frame" x="145" y="617" width="85" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.95767064290000004" green="0.34134082490000001" blue="0.74422575089999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1198,6 +1260,11 @@
                                 <state key="normal" title="Terminar">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="btnFinish:" destination="Q5X-Og-WYR" eventType="touchUpInside" id="lVG-yJ-sbu"/>
                                     <segue destination="kTK-K1-OWP" kind="show" id="vcn-sX-eRi"/>
@@ -1212,7 +1279,7 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lGj-ld-IRu">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lGj-ld-IRu" customClass="RoundButton" customModule="proyectoMatematicas" customModuleProvider="target">
                                 <rect key="frame" x="16" y="455" width="343" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1220,12 +1287,17 @@
                                 <state key="normal" title="Option A">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="selectedAnswer:" destination="Q5X-Og-WYR" eventType="touchUpInside" id="s0b-hJ-1V3"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.77407597959999996" green="0.92549019610000005" blue="0.80630397700000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Kbq-Xt-8tC"/>
                     </view>
                     <navigationItem key="navigationItem" id="XRc-5d-0H4">

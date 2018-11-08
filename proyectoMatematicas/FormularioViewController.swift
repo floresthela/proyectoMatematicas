@@ -19,7 +19,7 @@ class FormularioViewController: UIViewController {
     @IBOutlet weak var label2: UILabel!
     @IBOutlet weak var label3: UILabel!
     
-    var colorFondo = UIColor(red: 239/255.0, green: 231/255.0, blue: 218/255.0, alpha: 1)
+    var colorFondo = UIColor(red: 255/255.0, green: 223/255.0, blue: 104/255.0, alpha: 1)
     
     @IBOutlet weak var viewFormulario: UIView!
     @IBOutlet weak var scrollView: UIScrollView!

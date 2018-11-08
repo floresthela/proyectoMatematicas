@@ -19,6 +19,10 @@ class graficaElipseViewController: UIViewController, ChartViewDelegate {
     
     @IBOutlet weak var chartView: LineChartView!
     
+    
+    @IBOutlet var viewElipse: UIView!
+    var colorFondo = UIColor(red: 255/255.0, green: 223/255.0, blue: 104/255.0, alpha: 1)
+    
     var h : Double!
     var k : Double!
     var a : Double!
@@ -26,7 +30,8 @@ class graficaElipseViewController: UIViewController, ChartViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        self.viewElipse.backgroundColor = colorFondo
         
         chartView.delegate = self
         
