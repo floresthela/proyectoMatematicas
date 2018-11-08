@@ -95,13 +95,11 @@ class graficaElipseViewController: UIViewController, ChartViewDelegate {
     
         rangoMenor = Double(String(format: "%.2f", rangoMenor))
         print(rangoMenor, rangoMayor)
-        
-        
+
         var rango = stride(from: rangoMenor, through: rangoMayor, by: 0.5)
 
         
         let yVal1 = (rango).map {(valor: Double) -> ChartDataEntry in
-
             return ChartDataEntry(x: Double(valor), y: k + sqrt( b * (1 - ( pow(Double(valor) - h , 2) / a))))
         }
         
@@ -111,7 +109,6 @@ class graficaElipseViewController: UIViewController, ChartViewDelegate {
             return ChartDataEntry(x: Double(valor), y: (kparay + sqrt( b * (1 - ( pow(Double(valor) - h , 2) / a) ))) * -1)
         }
         
-        print(yVal2)
         let set1 = LineChartDataSet(values: yVal1, label: "Top")
         //set1.axisDependency = .left
         set1.setColor(UIColor.red)
