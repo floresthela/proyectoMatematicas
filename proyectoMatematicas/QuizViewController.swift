@@ -81,6 +81,11 @@ class QuizViewController: UIViewController {
     
     //actualiza la pregunta en el view
     func update(questionIndex : Int){
+        
+        btnOptionA.isEnabled = true
+        btnOptionB.isEnabled = true
+        btnOptionC.isEnabled = true
+        btnOptionD.isEnabled = true
         //incrementa el contador de preguntas en 1
         counter += 1
         actualQuestion = questionIndex
@@ -107,16 +112,20 @@ class QuizViewController: UIViewController {
         let object = show[questionIndex[actualQuestion]]
         if btnIndex == object.correctAnswer
         {opciones[btnIndex!].backgroundColor = UIColor.green
+            btnOptionA.isEnabled = false
+            btnOptionB.isEnabled = false
+            btnOptionC.isEnabled = false
+            btnOptionD.isEnabled = false
             btnNextQuestion.isEnabled = true
             correctAns += 1
         }
         else {
             opciones[btnIndex!].backgroundColor = UIColor.red
-            //btnOptionA.isEnabled = false
-            //btnOptionB.isEnabled = false
-            //btnOptionC.isEnabled = false
-            //btnOptionD.isEnabled = false
-            btnNextQuestion.isEnabled = false
+            btnOptionA.isEnabled = false
+            btnOptionB.isEnabled = false
+            btnOptionC.isEnabled = false
+            btnOptionD.isEnabled = false
+            btnNextQuestion.isEnabled = true
             incorrectAns += 1
             
         }
@@ -147,13 +156,34 @@ class QuizViewController: UIViewController {
     
     //el botón se activa para que el usuario pueda ver sus resultados
     @IBAction func btnFinish(_ sender: UIButton) {
+        /*
         let alertaFinal = UIAlertController(title: "Ya terminaste:)", message: "Fin del quiz. ¿Quieres ver cómo te fue?", preferredStyle: .alert)
         let restartAction = UIAlertAction(title: "OK", style: .default, handler: nil)
         alertaFinal.addAction(restartAction)
     present(alertaFinal, animated: true, completion: nil)
-    
+    */
+        alert(title: "Terminaste", message: "¿Quieres ver tus resultados?", completion: { result in
+            if result {
+                self.performSegue(withIdentifier: "Segue", sender: self)
+            }
+        })
     }
     
+    
+    func alert (title: String, message: String, completion: @escaping ((Bool) -> Void)) {
+        let alertController = UIAlertController(title: title, message: message, preferredStyle: UIAlertController.Style.alert)
+        alertController.addAction(UIAlertAction(title: "Sí", style: .default, handler: { (action) in
+            alertController.dismiss(animated: true, completion: nil)
+            completion(true)
+        }))
+        
+        alertController.addAction(UIAlertAction(title: "No", style: UIAlertAction.Style.default, handler: { (action) in
+            alertController.dismiss(animated: true, completion: nil)
+            completion(false)
+        }))
+        
+        self.present(alertController, animated: true, completion: nil)
+    }
     /*
     // MARK: - Navigation
 
