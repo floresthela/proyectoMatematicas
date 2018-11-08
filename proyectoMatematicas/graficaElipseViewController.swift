@@ -94,7 +94,6 @@ class graficaElipseViewController: UIViewController, ChartViewDelegate {
         rangoMayor = Double(String(format: "%.2f", rangoMayor))
     
         rangoMenor = Double(String(format: "%.2f", rangoMenor))
-        print(h,k,a,b)
         print(rangoMenor, rangoMayor)
         
         
