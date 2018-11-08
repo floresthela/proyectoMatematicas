@@ -27,6 +27,8 @@ class graficaElipseViewController: UIViewController, ChartViewDelegate {
     var k : Double!
     var a : Double!
     var b : Double!
+    var rangoMayor : Double!
+    var rangoMenor : Double!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -83,62 +85,52 @@ class graficaElipseViewController: UIViewController, ChartViewDelegate {
     
     func setDataCount(){
         
-        /*
-         
-         // parte de arriba del circulo
-         let yVal1 = (rango).map { (valor : Int) -> ChartDataEntry in
-         return ChartDataEntry(x: Double(valor), y: k + sqrt(radio - pow(Double(valor) - h, 2.0)))
-         }*/
+        
+        rangoMayor = sqrt(a) + h
+        rangoMenor = h - sqrt(a)
+        let kparay = k * -1
+        //let doubleStr = String(format: "%.2f", myDouble) // "3.14"
+    
+        rangoMayor = Double(String(format: "%.2f", rangoMayor))
+    
+        rangoMenor = Double(String(format: "%.2f", rangoMenor))
+        print(h,k,a,b)
+        print(rangoMenor, rangoMayor)
         
         
-        
-        let rangoMayor = Int(sqrt(a) + h)
-        let rangoMenor = Int((sqrt(a) - h) * -1)
-        var rango = [Int]()
-        
-        for i in rangoMenor...rangoMayor{
-            
-            rango.append(i)
-        }
+        var rango = stride(from: rangoMenor, through: rangoMayor, by: 0.5)
 
-        print(rangoMenor)
-        print(rangoMayor)
         
-        let yVal1 = (rango).map {(valor: Int) -> ChartDataEntry in
+        let yVal1 = (rango).map {(valor: Double) -> ChartDataEntry in
 
-            return ChartDataEntry(x: Double(valor), y: (k + sqrt( b * (1 - ( pow(Double(valor) - h , 2) / a) ))))
+            return ChartDataEntry(x: Double(valor), y: k + sqrt( b * (1 - ( pow(Double(valor) - h , 2) / a))))
         }
         
         print(yVal1)
-        let yVal2 = (rango).map {(valor: Int) -> ChartDataEntry in
-            return ChartDataEntry(x: Double(valor), y: (k + sqrt( b * (1 - ( pow(Double(valor) - h , 2) / a) ))) * -1)
+        
+        let yVal2 = (rango).map {(valor: Double) -> ChartDataEntry in
+            return ChartDataEntry(x: Double(valor), y: (kparay + sqrt( b * (1 - ( pow(Double(valor) - h , 2) / a) ))) * -1)
         }
         
+        print(yVal2)
         let set1 = LineChartDataSet(values: yVal1, label: "Top")
         //set1.axisDependency = .left
         set1.setColor(UIColor.red)
         set1.drawCirclesEnabled = false
         set1.lineWidth = 2
-        //set1.mode = .cubicBezier
+        set1.mode = .cubicBezier
         
         let set2 = LineChartDataSet(values: yVal2, label: "Bottom")
         set2.setColor(UIColor.black)
         set2.drawCirclesEnabled = false
         set2.lineWidth = 2
-        //set2.mode = .cubicBezier
+        set2.mode = .cubicBezier
         
         let data = LineChartData(dataSets: [set1,set2])
         
         data.setValueFont(.systemFont(ofSize: 9))
         data.setDrawValues(false)
         chartView.data = data
-        
-        /*       set.mode = .cubicBezier
-         let data = LineChartData(dataSet: set)
-         data.setValueFont(.systemFont(ofSize: 10, weight: .light))
-         data.setDrawValues(false)
-         
-         chartView.data = data*/
     }
     /*
     // MARK: - Navigation

@@ -23,8 +23,6 @@
 		29A3FD9F2188D8B100E63DFA /* graficaElipseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A3FD9E2188D8B100E63DFA /* graficaElipseViewController.swift */; };
 		29ED9BE32187F97E00160FEF /* preguntasPracticaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29ED9BE22187F97E00160FEF /* preguntasPracticaViewController.swift */; };
 		29F63E792192A5B000BA9954 /* graficaHiperbolaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F63E782192A5B000BA9954 /* graficaHiperbolaViewController.swift */; };
-		8E62E9CD2193D933001DCB0F /* LeagueGothic-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8E62E9CC2193D932001DCB0F /* LeagueGothic-Regular.otf */; };
-		8E62E9CF2193DBB6001DCB0F /* Antonio-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8E62E9CE2193DBB6001DCB0F /* Antonio-Regular.ttf */; };
 		8E866E6B218A6A4F004C875E /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E866E6A218A6A4F004C875E /* RoundButton.swift */; };
 		FB016879218A4AAE005708A0 /* ResultadosQuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB016878218A4AAE005708A0 /* ResultadosQuizViewController.swift */; };
 		FBBB2FBB2187AF9500D8E1D6 /* MenuFormularioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBBB2FBA2187AF9500D8E1D6 /* MenuFormularioViewController.swift */; };
@@ -52,8 +50,6 @@
 		29F63E782192A5B000BA9954 /* graficaHiperbolaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = graficaHiperbolaViewController.swift; sourceTree = "<group>"; };
 		60DDAD5673428D65AF227D7E /* Pods-proyectoMatematicas.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-proyectoMatematicas.debug.xcconfig"; path = "Pods/Target Support Files/Pods-proyectoMatematicas/Pods-proyectoMatematicas.debug.xcconfig"; sourceTree = "<group>"; };
 		67B5FAF48BDE1D1901AD472F /* Pods_proyectoMatematicas.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_proyectoMatematicas.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8E62E9CC2193D932001DCB0F /* LeagueGothic-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "LeagueGothic-Regular.otf"; path = "../../../../League-Gothic/LeagueGothic-Regular.otf"; sourceTree = "<group>"; };
-		8E62E9CE2193DBB6001DCB0F /* Antonio-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Antonio-Regular.ttf"; path = "../../../../antonio/Antonio-Regular.ttf"; sourceTree = "<group>"; };
 		8E866E6A218A6A4F004C875E /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 		FB016878218A4AAE005708A0 /* ResultadosQuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultadosQuizViewController.swift; sourceTree = "<group>"; };
 		FBBB2FBA2187AF9500D8E1D6 /* MenuFormularioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuFormularioViewController.swift; sourceTree = "<group>"; };
@@ -74,8 +70,6 @@
 		2956768D21837FB7008FF3CE /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
-				8E62E9CE2193DBB6001DCB0F /* Antonio-Regular.ttf */,
-				8E62E9CC2193D932001DCB0F /* LeagueGothic-Regular.otf */,
 				2956768E21838392008FF3CE /* WedgieRegular.ttf */,
 			);
 			path = Fonts;
@@ -212,8 +206,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8E62E9CF2193DBB6001DCB0F /* Antonio-Regular.ttf in Resources */,
-				8E62E9CD2193D933001DCB0F /* LeagueGothic-Regular.otf in Resources */,
 				296BAC872179321400E55702 /* LaunchScreen.storyboard in Resources */,
 				2956768F21838392008FF3CE /* WedgieRegular.ttf in Resources */,
 				296BAC842179321400E55702 /* Assets.xcassets in Resources */,
