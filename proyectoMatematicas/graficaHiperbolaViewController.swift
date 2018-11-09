@@ -12,6 +12,12 @@ import Charts
 class graficaHiperbolaViewController: UIViewController, ChartViewDelegate {
 
     
+    @IBOutlet weak var segconXY: UISegmentedControl!
+    
+    @IBOutlet weak var lb1: UILabel!
+    
+    @IBOutlet weak var lb2: UILabel!
+    
     @IBOutlet weak var chartView: LineChartView!
     
     @IBOutlet weak var tfH: UITextField!
@@ -83,7 +89,24 @@ class graficaHiperbolaViewController: UIViewController, ChartViewDelegate {
         // Do any additional setup after loading the view.
     }
     
+    
+    
+    @IBAction func xy(_ sender: UISegmentedControl) {
+        if segconXY.selectedSegmentIndex == 0 {
+            lb1.text = "(x -"
+            lb2.text = "(y -"
+        }
+        else{
+            lb1.text = "(y -"
+            lb2.text = "(x -"
+            
+        }
+    }
+    
+    
+    
     @IBAction func bGrafica(_ sender: UIButton) {
+        
         
         h = Double(tfH.text!)
         k = Double(tfK.text!)
@@ -99,37 +122,63 @@ class graficaHiperbolaViewController: UIViewController, ChartViewDelegate {
         
         let rango11 = -50.0
         let rango12 = ( h - sqrt(a))
-        print(rango11, rango12)
         
         let rango21 = (sqrt(a) + h)
         let rango22  = 50.0
-        print(rango21, rango22)
+       
         
         let rango1 = stride(from: rango11, through: rango12, by: 0.01)
         
         let rango2 = stride(from: rango21, through: rango22, by: 0.01)
+    
+        let rangoV = stride(from: -50.0, through: 50.0, by: 0.01)
         
+        var yVal1 = [ChartDataEntry]()
+        var yVal2 = [ChartDataEntry]()
+        var yVal3 = [ChartDataEntry]()
+        var yVal4 = [ChartDataEntry]()
         
-        let yVal1 = (rango1).map {(valor: Double) -> ChartDataEntry in
+        if segconXY.selectedSegmentIndex == 0 {
+            yVal1 = (rango1).map {(valor: Double) -> ChartDataEntry in
+                return ChartDataEntry(x: Double(valor), y: k + sqrt( b * (( pow(Double(valor) - h , 2) / a) - 1 )))
+            }
             
-            return ChartDataEntry(x: Double(valor), y: k + sqrt( b * (( pow(Double(valor) - h , 2) / a) - 1 )))
-        }
-        
-       
-        let yVal2 = (rango2).map {(valor: Double) -> ChartDataEntry in
-            return ChartDataEntry(x: Double(valor), y: k + sqrt( b * (( pow(Double(valor) - h , 2) / a) - 1 )) * -1)
-        }
-        
-        let yVal3 = (rango2).map {(valor: Double) -> ChartDataEntry in
+            yVal2 = (rango2).map {(valor: Double) -> ChartDataEntry in
+                return ChartDataEntry(x: Double(valor), y: k + sqrt( b * (( pow(Double(valor) - h , 2) / a) - 1 )) * -1)
+            }
             
-            return ChartDataEntry(x: Double(valor), y: k + sqrt( b * (( pow(Double(valor) - h , 2) / a) - 1 )))
+            yVal3 = (rango2).map {(valor: Double) -> ChartDataEntry in
+                
+                return ChartDataEntry(x: Double(valor), y: k + sqrt( b * (( pow(Double(valor) - h , 2) / a) - 1 )))
+            }
+            
+            yVal4 = (rango1).map {(valor: Double) -> ChartDataEntry in
+                return ChartDataEntry(x: Double(valor), y: k + sqrt( b * (( pow(Double(valor) - h , 2) / a) - 1 )) * -1)
+            }
         }
         
-        let yVal4 = (rango1).map {(valor: Double) -> ChartDataEntry in
-            return ChartDataEntry(x: Double(valor), y: k + sqrt( b * (( pow(Double(valor) - h , 2) / a) - 1 )) * -1)
+        else{
+            yVal1 = (rangoV).map {(valor: Double) -> ChartDataEntry in
+                return ChartDataEntry(x: Double(valor), y: h + sqrt( a * (( pow(Double(valor) - k , 2) / b) + 1 )))
+            }
+            
+            
+            yVal2 = (rangoV).map {(valor: Double) -> ChartDataEntry in
+                return ChartDataEntry(x: Double(valor), y: h + sqrt( a * (( pow(Double(valor) - k , 2) / b) + 1 )) * -1)
+            }
+            
+            yVal3 = (rangoV).map {(valor: Double) -> ChartDataEntry in
+                
+                return ChartDataEntry(x: Double(valor), y: h + sqrt( a * (( pow(Double(valor) - k , 2) / b) + 1 )))
+            }
+            
+            yVal4 = (rangoV).map {(valor: Double) -> ChartDataEntry in
+                return ChartDataEntry(x: Double(valor), y: h + sqrt( a * (( pow(Double(valor) - k , 2) / b) + 1 )) * -1)
+            }
         }
-        print("VALORES MALOS", yVal1)
-        print("BUENOS VALORES", yVal2)
+            
+        
+        
         let set1 = LineChartDataSet(values: yVal1, label: "1")
         set1.setColor(UIColor.green)
         set1.drawCirclesEnabled = false

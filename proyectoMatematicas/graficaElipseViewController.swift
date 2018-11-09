@@ -104,7 +104,7 @@ class graficaElipseViewController: UIViewController, ChartViewDelegate {
             rango.append(num)
         }*/
         
-        print(rango)
+    
        var rango = stride(from: rangoMenor, through: rangoMayor, by: 0.01)
         
         /*if rango.last != rangoMayor {
