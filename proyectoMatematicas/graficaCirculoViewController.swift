@@ -101,11 +101,7 @@ class graficaCirculoViewController: UIViewController, ChartViewDelegate {
         //stride(from: rango11, to: rango12, by: 0.1)
         let rangoMayor = sqrt(radio) + h
         let rangoMenor = (h - sqrt(radio))
-        var rango = stride(from: rangoMenor, through: rangoMayor, by: 0.5)
-        print(rango)
-        /*for i in rangoMenor...rangoMayor{
-            rango.append(i)
-        }*/
+        var rango = stride(from: rangoMenor, through: rangoMayor, by: 0.01)
 
         // parte de arriba del circulo
         let yVal1 = (rango).map { (valor : Double) -> ChartDataEntry in

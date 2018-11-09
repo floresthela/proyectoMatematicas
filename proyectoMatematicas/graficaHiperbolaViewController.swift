@@ -105,9 +105,9 @@ class graficaHiperbolaViewController: UIViewController, ChartViewDelegate {
         let rango22  = 50.0
         print(rango21, rango22)
         
-        let rango1 = stride(from: rango11, through: rango12, by: 0.5)
+        let rango1 = stride(from: rango11, through: rango12, by: 0.01)
         
-        let rango2 = stride(from: rango21, through: rango22, by: 0.5)
+        let rango2 = stride(from: rango21, through: rango22, by: 0.01)
         
         
         let yVal1 = (rango1).map {(valor: Double) -> ChartDataEntry in

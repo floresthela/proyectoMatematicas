@@ -85,21 +85,37 @@ class graficaElipseViewController: UIViewController, ChartViewDelegate {
     
     func setDataCount(){
         
+            rangoMayor = sqrt(a) + h
+            rangoMenor = h - sqrt(a)
         
-        rangoMayor = sqrt(a) + h
-        rangoMenor = h - sqrt(a)
         let kparay = k * -1
-        //let doubleStr = String(format: "%.2f", myDouble) // "3.14"
+        
+        
     
         rangoMayor = Double(String(format: "%.2f", rangoMayor))
     
         rangoMenor = Double(String(format: "%.2f", rangoMenor))
         print(rangoMenor, rangoMayor)
-
-        var rango = stride(from: rangoMenor, through: rangoMayor, by: 0.5)
-
+        /*for radians in stride(from: 0.0, through: .pi * 2, by: .pi / 2) {
+         let degrees = Int(radians * 180 / .pi)
+         */
+        /*var rango = [Double]()
+        for num in stride(from: rangoMenor, through: rangoMayor, by: 0.01){
+            rango.append(num)
+        }*/
         
-        let yVal1 = (rango).map {(valor: Double) -> ChartDataEntry in
+        print(rango)
+       var rango = stride(from: rangoMenor, through: rangoMayor, by: 0.01)
+        
+        /*if rango.last != rangoMayor {
+            rango.append(rangoMayor)
+        }*/
+    
+    
+        /*rango.forEach { (num) in
+            print(num)
+        }*/
+        let yVal1 = rango.map {(valor: Double) -> ChartDataEntry in
             return ChartDataEntry(x: Double(valor), y: k + sqrt( b * (1 - ( pow(Double(valor) - h , 2) / a))))
         }
         
