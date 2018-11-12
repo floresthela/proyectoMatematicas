@@ -38,7 +38,7 @@ class FormularioViewController: UIViewController {
             label1.text = "Un círculo es todos los puntos en un plano que están a una distancia fija de un punto dado en el plano. El punto dado se llama centro, (h, k), y la distancia fija se llama radio, r, del círculo."
             img4.image = UIImage(named: "descCirculo")
             label2.text = "La forma estándar de la ecuación de un círculo con centro en (0,0) tiene la siguiente forma: "
-            img1.image = UIImage(named: "formulaCirculo1")
+            img1.image = UIImage(named: "circuloEcuacion")
             label3.text = "La forma estándar de la ecuación de un círculo con centro en (h,k) es:"
             img2.image = UIImage(named: "formaCirculo2")
 
