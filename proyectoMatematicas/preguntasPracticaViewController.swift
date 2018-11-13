@@ -71,11 +71,20 @@ class preguntasPracticaViewController: UIViewController {
     
     @IBOutlet weak var btnAyuda: UIButton!
     
+    var previousScale : CGFloat = 1.0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         btnAyuda.backgroundColor = UIColor(red: 197/255, green: 0/255, blue: 0/255, alpha: 1)
         self.view1.backgroundColor = colorFondo
         self.view2.backgroundColor = colorFondo
+        
+        let gesture = UIPinchGestureRecognizer(target: self, action: #selector(pinchAction(sender:)))
+        self.view1.addGestureRecognizer(gesture)
+        
+        //view1.delegate = self
+        //view1.minimumZoomScale = 1.0
+        //scrollView.maximumZoomScale = 6.0
         
         bSigout.isEnabled = false
         bTerminarout.isHidden = true
@@ -202,6 +211,14 @@ class preguntasPracticaViewController: UIViewController {
     
     @IBAction func bTermina(_ sender: UIButton) {
     navigationController?.popViewController(animated: true)
+    }
+    
+    @objc func pinchAction(sender:UIPinchGestureRecognizer){
+        let scale:CGFloat = previousScale * sender.scale
+        self.view1.transform = CGAffineTransform(scaleX: scale, y: scale);
+        
+        previousScale = sender.scale
+        //CGAffineTransform(translationX: scale, y: scale)
     }
     
     
