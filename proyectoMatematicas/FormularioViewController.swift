@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FormularioViewController: UIViewController {
+class FormularioViewController: UIViewController, UIScrollViewDelegate {
 
     @IBOutlet weak var lbTitulo: UILabel!
     @IBOutlet weak var img1: UIImageView!
@@ -30,6 +30,25 @@ class FormularioViewController: UIViewController {
         super.viewDidLoad()
         
         self.viewFormulario.backgroundColor = colorFondo
+        
+        
+        scrollView.delegate = self
+        scrollView.minimumZoomScale = 1.0
+        scrollView.maximumZoomScale = 3.0
+        scrollView.zoomScale = 1.0
+
+        //let imageViewSize = img4.bounds.size
+        //let scrollViewSize = scrollView.bounds.size
+        //let widthScale = scrollViewSize.width / imageViewSize.width
+        //let heightScale = scrollViewSize.height / imageViewSize.height
+        
+        //let minZoomScale = min(widthScale, heightScale)
+        //scrollView.minimumZoomScale = minZoomScale
+        //scrollView.zoomScale = minZoomScale
+        
+        //img4.isUserInteractionEnabled = true
+        //let pinchGesture = UIPinchGestureRecognizer(target: self, action: #selector(handlePinch(sender:)))
+        //img4.addGestureRecognizer(pinchGesture)
         
         lbTitulo.text = labelText
         scrollView.contentSize = viewFormulario.frame.size
@@ -68,8 +87,14 @@ class FormularioViewController: UIViewController {
             label3.text = "La forma estándar de la ecuación de un elipse con centro de (h,k) tiene la siguiente forma:"
             img2.image = UIImage(named: "ElipseCentro2")
         }
-
+        
     }
+    
+    func viewForZooming(in scrollView: UIScrollView) -> UIView? {
+        
+        return img4
+    }
+
     
 
     /*

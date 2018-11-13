@@ -46,7 +46,6 @@
 		2998C8BF2180ED2B00112EA7 /* graficaParabolaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = graficaParabolaViewController.swift; sourceTree = "<group>"; };
 		29A3FD9E2188D8B100E63DFA /* graficaElipseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = graficaElipseViewController.swift; sourceTree = "<group>"; };
 		29ED9BE22187F97E00160FEF /* preguntasPracticaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = preguntasPracticaViewController.swift; sourceTree = "<group>"; };
-		29ED9BE42187FA1F00160FEF /* proyectoMatematicas-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "proyectoMatematicas-Bridging-Header.h"; sourceTree = "<group>"; };
 		29F63E782192A5B000BA9954 /* graficaHiperbolaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = graficaHiperbolaViewController.swift; sourceTree = "<group>"; };
 		60DDAD5673428D65AF227D7E /* Pods-proyectoMatematicas.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-proyectoMatematicas.debug.xcconfig"; path = "Pods/Target Support Files/Pods-proyectoMatematicas/Pods-proyectoMatematicas.debug.xcconfig"; sourceTree = "<group>"; };
 		67B5FAF48BDE1D1901AD472F /* Pods_proyectoMatematicas.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_proyectoMatematicas.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -111,7 +110,6 @@
 				290C71EC217C058F00389BAA /* FormularioViewController.swift */,
 				290C71EE217C059D00389BAA /* PracticaViewController.swift */,
 				290C71F0217C05A500389BAA /* GraficaViewController.swift */,
-				29ED9BE42187FA1F00160FEF /* proyectoMatematicas-Bridging-Header.h */,
 				290C71F2217C05AC00389BAA /* QuizViewController.swift */,
 				2956768D21837FB7008FF3CE /* Fonts */,
 				296BAC832179321400E55702 /* Assets.xcassets */,
