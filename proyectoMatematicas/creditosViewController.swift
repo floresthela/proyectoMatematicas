@@ -1,14 +1,14 @@
 //
-//  ResultadosQuizViewController.swift
+//  creditosViewController.swift
 //  proyectoMatematicas
 //
-//  Created by Alumno on 31/10/18.
+//  Created by Flor Barbosa on 11/13/18.
 //  Copyright © 2018 Flor Barbosa. All rights reserved.
 //
 
 import UIKit
 
-class ResultadosQuizViewController: UIViewController {
+class creditosViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,7 +16,11 @@ class ResultadosQuizViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+    
+    @IBAction func regresaMenu(_ sender: UIBarButtonItem) {
+        dismiss(animated: true, completion: nil)
+    }
+    
     /*
     // MARK: - Navigation
 
@@ -26,13 +30,5 @@ class ResultadosQuizViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-    
-    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
-        return UIInterfaceOrientationMask.landscape
-    }
-    
-    override var shouldAutorotate: Bool {
-        return false
-    }
 
 }

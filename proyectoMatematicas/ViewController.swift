@@ -25,5 +25,14 @@ class ViewController: UIViewController {
         boton4.backgroundColor = UIColor(red: 0/255.0, green: 173/255.0, blue: 65/255.0, alpha: 1)
         
 }
+    
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        return UIInterfaceOrientationMask.landscape
+    }
+    
+    override var shouldAutorotate: Bool {
+        return false
+    }
+    
 }
 

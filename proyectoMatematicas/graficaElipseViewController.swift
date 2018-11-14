@@ -170,4 +170,13 @@ class graficaElipseViewController: UIViewController, ChartViewDelegate {
     @IBAction func quitaTeclado(_ sender: Any) {
         view.endEditing(true)
     }
+    
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        return UIInterfaceOrientationMask.landscape
+    }
+    
+    override var shouldAutorotate: Bool {
+        return false
+    }
+    
 }

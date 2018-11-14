@@ -212,4 +212,12 @@ class graficaCirculoViewController: UIViewController, ChartViewDelegate {
     }
     */
 
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        return UIInterfaceOrientationMask.landscape
+    }
+    
+    override var shouldAutorotate: Bool {
+        return false
+    }
+    
 }

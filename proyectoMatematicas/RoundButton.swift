@@ -37,4 +37,6 @@ import  UIKit
     func refreshCorners(value: CGFloat) {
         layer.cornerRadius = value
     }
+    
+    
 }
