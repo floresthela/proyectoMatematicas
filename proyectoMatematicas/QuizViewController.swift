@@ -70,6 +70,7 @@ class QuizViewController: UIViewController, EFImageViewZoomDelegate {
     var counter = 0
     var show : [QuestionQuiz]!
     var correctAns = 0
+    var calificacionFinal = 0
     var incorrectAns = 0
     
     
@@ -146,7 +147,8 @@ class QuizViewController: UIViewController, EFImageViewZoomDelegate {
             btnOptionC.isEnabled = false
             btnOptionD.isEnabled = false
             btnNextQuestion.isEnabled = true
-            correctAns += 1
+            correctAns += 10
+            calificacionFinal = correctAns
         }
         else {
             opciones[btnIndex!].backgroundColor = UIColor.red
@@ -222,17 +224,20 @@ class QuizViewController: UIViewController, EFImageViewZoomDelegate {
         //CGAffineTransform(translationX: scale, y: scale)
     }
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        if (segue.identifier == "Segue"){
+            let vistaResultados = segue.destination as! ResultadosQuizViewController
+            vistaResultados.resultado = String(calificacionFinal)
+            
+            if (calificacionFinal>=80){
+                vistaResultados.comentario = "Felicidades! Eres un experto en secciones cónicas"
+            }
+            
+            else if (calificacionFinal < 80){
+                vistaResultados.comentario = "Sigue practicando:("
+            }
+        }
     }
-    */
-    
-    
     
     override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
         return UIInterfaceOrientationMask.landscape
