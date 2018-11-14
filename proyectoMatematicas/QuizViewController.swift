@@ -25,6 +25,7 @@ class QuizViewController: UIViewController, EFImageViewZoomDelegate {
     @IBOutlet weak var btnNextQuestion: UIButton!
     @IBOutlet weak var btnFinishQuiz: UIButton!
     
+   
     
     @IBOutlet weak var btnOptionA: UIButton!
     @IBOutlet weak var btnOptionB: UIButton!
@@ -33,7 +34,9 @@ class QuizViewController: UIViewController, EFImageViewZoomDelegate {
     
     lazy var opciones : [UIButton] = {return [self.btnOptionA, self.btnOptionB, self.btnOptionC, self.btnOptionD]}()
     
-    var listaPreguntas : [QuestionQuiz]! = [QuestionQuiz(question: "¿Cuál es el centro del círculo?", imageQ: UIImage.init(named: "quiz1"), options:["(3,-1)","(-1,3)","(-3,-1)", "(3,6)"] , correctAnswer: 1),
+    var listaPreguntas : [QuestionQuiz]! = [
+        //preguntas círculo
+        QuestionQuiz(question: "¿Cuál es el centro del círculo?", imageQ: UIImage.init(named: "quiz1"), options:["(3,-1)","(-1,3)","(-3,-1)", "(3,6)"] , correctAnswer: 1),
         QuestionQuiz(question: "El círculo pasa por el punto (3,6), ¿cuál es su radio?", imageQ: UIImage.init(named: "quiz1"), options: ["5π","raíz 20","5","raíz 20π"], correctAnswer: 2),
         QuestionQuiz(question: "¿Cuál es el centro del círculo?", imageQ: UIImage.init(named: "quiz2"), options: ["(-6,1)","(3,-1)","(-1,-6)","(-1,3)"], correctAnswer: 1),
         QuestionQuiz(question: "El círculo pasa por el punto (-1,-6), ¿cuál es su radio?", imageQ: UIImage.init(named: "quiz2"), options: ["41π","raíz 41","raíz 41 π","2 x raíz 41"], correctAnswer: 1),
@@ -41,11 +44,26 @@ class QuizViewController: UIViewController, EFImageViewZoomDelegate {
         QuestionQuiz(question: "¿Cuál es el radio del círculo?", imageQ: UIImage.init(named: "quiz3"), options: ["9","2","6","10"], correctAnswer: 3),
         QuestionQuiz(question: "¿Cuál es el centro del círculo?", imageQ: UIImage.init(named: "quiz4"), options: ["(1.6, 9.8)","(-1.6, 9.8)","(-1.6, -9.8)","(1.6, -9.8)"], correctAnswer: 2),
         QuestionQuiz(question: "¿Cuál es el radio del círculo?", imageQ: UIImage.init(named: "quiz4"), options: ["5.1","5","5.5","5.2"], correctAnswer: 0),
+        //preguntas elipse
         QuestionQuiz(question: "¿Cuál es el centro de la elipse?", imageQ: UIImage.init(named: "quiz5"), options: ["(0,7)","(0,-7)","(1,7)","(7,1)"], correctAnswer: 1),
         QuestionQuiz(question: "¿Cuáles son los ejes de la elipse?", imageQ: UIImage.init(named: "quiz5"), options: ["Mayor = 9, Menor = 3","Mayor = 7, Menor = 4","Mayor = 9, Menor = 6","Mayor = 8, Menor = 6"], correctAnswer: 0),
         QuestionQuiz(question: "¿Cuál es el centro de la elipse?", imageQ: UIImage.init(named: "quiz6"), options: ["(7,5)","(3,-7)","(-7,-3)","(-7,3)"], correctAnswer: 3),
         QuestionQuiz(question: "¿Cuáles son los ejes de la elipse?", imageQ: UIImage.init(named: "quiz6"), options: ["Mayor = 6, Menor = 3","Mayor = 4, Menor = 2","Mayor = 6, Menor = 2","Mayor = 8, Menor = 6"], correctAnswer: 1),
-        QuestionQuiz(question: "¿Cuáles son los focos de la elipse?", imageQ: UIImage.init(named: "quiz7"), options: ["(12,18) y (12,-12)","(3,27) y (3,-3)","(27,3) y (-3,3)","(18,12) y (-12,12)"], correctAnswer: 2)]
+        QuestionQuiz(question: "¿Cuáles son los focos de la elipse?", imageQ: UIImage.init(named: "quiz7"), options: ["(12,18) y (12,-12)","(3,27) y (3,-3)","(27,3) y (-3,3)","(18,12) y (-12,12)"], correctAnswer: 2),
+        //preguntas hipérbola
+        QuestionQuiz(question: "Las coordenadas de los focos de la hipérbola son:", imageQ: UIImage.init(named: "quiz8"), options: ["(5,0) y (-5,0)", "(0,3) y (0,-3)", "(0,5) y (-5,0)", "(4,0) y (-4,0)"], correctAnswer: 0),
+        QuestionQuiz(question: "Las coordenadas de los vértices de la hipérbola son:", imageQ: UIImage.init(named: "quiz8"), options: ["0,4) y (0,-4)", "(4,0) y (-4,0)", "(0,5) y (-5,0)", "(5,0) y (-5,0)"], correctAnswer: 1),
+        QuestionQuiz(question: "Los ejes transverso y no transverso de la hipérbola son:", imageQ: UIImage.init(named: "quiz9"), options: ["10 y 6", "12 y 8", "10 y 8", "12 y 10"], correctAnswer: 2),
+        QuestionQuiz(question: "Los ejes transverso y no transverso de la hipérbola son:", imageQ: UIImage.init(named: "quiz10"), options: ["-9 y 18","3 y 1","1 y 9","1 y 3"], correctAnswer: 1),
+        QuestionQuiz(question: "Una hipérbola es equilátera si son iguales sus", imageQ: UIImage.init(named: "quiz11"), options: ["ejes", "focos", "vértices", "asíntotas"], correctAnswer: 0),
+        QuestionQuiz(question: "¿Qué sección cónica está representada en la ecuación?", imageQ: UIImage.init(named: "quiz12"), options: ["círculo", "elipse", "parábola", "hipérbola"], correctAnswer: 3),
+        QuestionQuiz(question: "Cuáles son los focos de la hipérbola", imageQ: UIImage.init(named: "quiz13"), options: ["(-4,4) y (-4,-2)","(4,4) y (4,-2)","(0,4) y (4,0)","(-2,4) y (2,-4)"], correctAnswer: 1),
+        //preguntas parábola
+        QuestionQuiz(question: "Encuentra el vértice y el foco de la parábola", imageQ: UIImage.init(named: "quiz14"), options: ["V(0), F(-2,0)","V(2,0), F(0,2)","V(0), F(2,0)","V(0), F(-2,0)"], correctAnswer: 0),
+        QuestionQuiz(question: "Encuentra el vértice y el foco de la parábola", imageQ: UIImage.init(named: "quiz15"), options: ["V(2,2), F(3,-4)","V(2,4), F(2,-4)","V(-2,4), F(3,4)","V(-2,2), F(-2,4)"], correctAnswer: 2),
+        QuestionQuiz(question: "Encuentra el vértice y el foco de la parábola", imageQ: UIImage.init(named: "quiz16"), options: ["V(-8,4), F(4,2)","V(8,3), F(4,3)","V(-8,-3), F(4,2)","V(-8,3), F(-4,-3)"], correctAnswer: 1),
+        QuestionQuiz(question: "¿Cuál es el vértice de la parábola", imageQ: UIImage.init(named: "quiz17"), options: ["(3,2)","(2,-3)","(-3,-2)","(-2,-3)"], correctAnswer: 3)
+    ]
     
     var questionIndex : [Int]!
     var actualQuestion = 0
@@ -213,6 +231,8 @@ class QuizViewController: UIViewController, EFImageViewZoomDelegate {
         // Pass the selected object to the new view controller.
     }
     */
+    
+    
     
     override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
         return UIInterfaceOrientationMask.landscape
