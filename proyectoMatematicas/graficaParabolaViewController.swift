@@ -128,4 +128,12 @@ class graficaParabolaViewController: UIViewController, ChartViewDelegate{
         return false
     }
     
+    /*  @IBAction func quitaTeclado(_ sender: Any) {
+     view.endEditing(true)
+     }*/
+
+    
+    @IBAction func quitaTeclado(_ sender: Any) {
+        view.endEditing(true)
+    }
 }
