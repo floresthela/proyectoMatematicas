@@ -12,11 +12,13 @@ import Charts
 class graficaHiperbolaViewController: UIViewController, ChartViewDelegate {
 
     
+    
+    @IBOutlet weak var lbss1: UILabel!
+    @IBOutlet weak var lbss2: UILabel!
+    
     @IBOutlet weak var segconXY: UISegmentedControl!
     
     @IBOutlet weak var lb1: UILabel!
-    
-    @IBOutlet weak var lb2: UILabel!
     
     @IBOutlet weak var chartView: LineChartView!
     
@@ -37,6 +39,23 @@ class graficaHiperbolaViewController: UIViewController, ChartViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        /*var ss1 = "){2} + y("
+         var fss1 : NSMutableAttributedString = ss1.customText()
+         lbss1.attributedText = fss1
+         
+         var ss2 = "){2} = 1"
+         var fss2 : NSMutableAttributedString = ss2.customText()
+         lbss1.attributedText = fss2*/
+        
+        var ss1 = "){2} - (y-"
+        var fss1 : NSMutableAttributedString = ss1.customText()
+        lbss1.attributedText = fss1
+        
+        var ss2 = "){2} = 1"
+        var fss2 : NSMutableAttributedString = ss2.customText()
+        lbss2.attributedText = fss2
+        
+        
         
         self.viewHiperbola.backgroundColor = UIColor(red: 255/255.0, green: 223/255.0, blue: 104/255.0, alpha: 1)
         
@@ -94,11 +113,16 @@ class graficaHiperbolaViewController: UIViewController, ChartViewDelegate {
     @IBAction func xy(_ sender: UISegmentedControl) {
         if segconXY.selectedSegmentIndex == 0 {
             lb1.text = "(x -"
-            lb2.text = "(y -"
+            lbss1.attributedText = "){2} - (y-".customText()
+            
+            /*        var ss1 = "){2} - y(-"
+             var fss1 : NSMutableAttributedString = ss1.customText()
+             lbss1.attributedText = fss1*/
+        
         }
         else{
             lb1.text = "(y -"
-            lb2.text = "(x -"
+            lbss1.attributedText = "){2} - (x-".customText()
             
         }
     }

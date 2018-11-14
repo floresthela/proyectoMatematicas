@@ -10,7 +10,8 @@ import UIKit
 import Charts
 
 class graficaParabolaViewController: UIViewController, ChartViewDelegate{
-
+    
+    @IBOutlet weak var lbx2: UILabel!
     
     @IBOutlet weak var chartView: LineChartView!
     
@@ -23,13 +24,19 @@ class graficaParabolaViewController: UIViewController, ChartViewDelegate{
     
     @IBOutlet var viewParabola: UIView!
     
-    var colorFondo = UIColor(red: 255/255.0, green: 223/255.0, blue: 104/255.0, alpha: 1)
+    //var colorFondo = UIColor(red: 255/255.0, green: 223/255.0, blue: 104/255.0, alpha: 1)
     
     override func viewDidLoad() {
+        
         super.viewDidLoad()
+        
+        var superScript = "x{2} +"
+        var fsuperScript : NSMutableAttributedString = superScript.customText()
+        
+        lbx2.attributedText = fsuperScript
         chartView.delegate = self
         
-        self.viewParabola.backgroundColor = colorFondo
+        //self.viewParabola.backgroundColor = colorFondo
         
         vX = 1
         transY = 1

@@ -12,6 +12,11 @@ import Charts
 class graficaElipseViewController: UIViewController, ChartViewDelegate {
 
 
+    
+    @IBOutlet weak var lbss1: UILabel!
+    @IBOutlet weak var lbss2: UILabel!
+    
+    
     @IBOutlet weak var tfH: UITextField!
     @IBOutlet weak var tfK: UITextField!
     @IBOutlet weak var tfA: UITextField!
@@ -32,8 +37,20 @@ class graficaElipseViewController: UIViewController, ChartViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        /*var superScript = "x{2} +"
+         var fsuperScript : NSMutableAttributedString = superScript.customText()
+         
+         lbx2.attributedText = fsuperScript*/
         
-        self.viewElipse.backgroundColor = colorFondo
+        var ss1 = "){2} + (y-"
+        var fss1 : NSMutableAttributedString = ss1.customText()
+        lbss1.attributedText = fss1
+        
+        var ss2 = "){2} = 1"
+        var fss2 : NSMutableAttributedString = ss2.customText()
+        lbss2.attributedText = fss2
+        
+        //self.viewElipse.backgroundColor = colorFondo
         
         chartView.delegate = self
         
@@ -157,12 +174,7 @@ class graficaElipseViewController: UIViewController, ChartViewDelegate {
     
     
     @IBAction func bGrafica(_ sender: UIButton) {
-        /* let alerta = UIAlertController(title: "Error", message: "Los campos deben tener valor numérico", preferredStyle: .alert)
-         
-         let accion = UIAlertAction(title: "OK", style: .cancel, handler: nil)
-         
-         alerta.addAction(accion)
-         present(alerta, animated: true, completion: nil)*/
+
         
         if let hT = Double(tfH.text!), let kT = Double(tfK.text!), let aT = Double(tfA.text!), let bT = Double(tfB.text!){
             h = hT

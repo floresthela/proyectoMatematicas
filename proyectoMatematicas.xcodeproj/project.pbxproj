@@ -13,6 +13,7 @@
 		290C71F3217C05AC00389BAA /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290C71F2217C05AC00389BAA /* QuizViewController.swift */; };
 		290E5824C167D624B0B12560 /* Pods_proyectoMatematicas.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67B5FAF48BDE1D1901AD472F /* Pods_proyectoMatematicas.framework */; };
 		29165CBF219BE1E60029C822 /* creditosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29165CBE219BE1E60029C822 /* creditosViewController.swift */; };
+		29554F5D219C8C24007440EA /* customText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29554F5C219C8C24007440EA /* customText.swift */; };
 		2956768F21838392008FF3CE /* WedgieRegular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2956768E21838392008FF3CE /* WedgieRegular.ttf */; };
 		296BAC7D2179321100E55702 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296BAC7C2179321100E55702 /* AppDelegate.swift */; };
 		296BAC7F2179321100E55702 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 296BAC7E2179321100E55702 /* ViewController.swift */; };
@@ -36,6 +37,7 @@
 		290C71F0217C05A500389BAA /* GraficaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraficaViewController.swift; sourceTree = "<group>"; };
 		290C71F2217C05AC00389BAA /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
 		29165CBE219BE1E60029C822 /* creditosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = creditosViewController.swift; sourceTree = "<group>"; };
+		29554F5C219C8C24007440EA /* customText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = customText.swift; sourceTree = "<group>"; };
 		2956768E21838392008FF3CE /* WedgieRegular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = WedgieRegular.ttf; sourceTree = "<group>"; };
 		296BAC792179321100E55702 /* proyectoMatematicas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = proyectoMatematicas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		296BAC7C2179321100E55702 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 		296BAC7B2179321100E55702 /* proyectoMatematicas */ = {
 			isa = PBXGroup;
 			children = (
+				29554F5C219C8C24007440EA /* customText.swift */,
 				296BAC7C2179321100E55702 /* AppDelegate.swift */,
 				296BAC802179321100E55702 /* Main.storyboard */,
 				29165CBE219BE1E60029C822 /* creditosViewController.swift */,
@@ -281,6 +284,7 @@
 				2998C8BE2180ED1A00112EA7 /* graficaCirculoViewController.swift in Sources */,
 				FB016879218A4AAE005708A0 /* ResultadosQuizViewController.swift in Sources */,
 				29F63E792192A5B000BA9954 /* graficaHiperbolaViewController.swift in Sources */,
+				29554F5D219C8C24007440EA /* customText.swift in Sources */,
 				2998C8C02180ED2B00112EA7 /* graficaParabolaViewController.swift in Sources */,
 				29A3FD9F2188D8B100E63DFA /* graficaElipseViewController.swift in Sources */,
 				290C71F1217C05A500389BAA /* GraficaViewController.swift in Sources */,
