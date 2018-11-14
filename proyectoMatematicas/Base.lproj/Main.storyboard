@@ -61,92 +61,14 @@ Flor Esthela Barbosa Castillo
                                         <attributes>
                                             <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <font key="NSFont" size="17" name="Helvetica-Oblique"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                <tabStops>
-                                                    <textTab alignment="left" location="28">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="56">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="84">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="112">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="140">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="168">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="196">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="224">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="252">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="280">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="308">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="336">
-                                                        <options/>
-                                                    </textTab>
-                                                </tabStops>
-                                            </paragraphStyle>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
                                         </attributes>
                                     </fragment>
                                     <fragment content=" se distribuye como está de manera gratuita y se prohíbe su distribución y uso con fines de lucro.">
                                         <attributes>
                                             <color key="NSColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <font key="NSFont" size="17" name="Helvetica"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
-                                                <tabStops>
-                                                    <textTab alignment="left" location="28">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="56">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="84">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="112">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="140">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="168">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="196">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="224">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="252">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="280">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="308">
-                                                        <options/>
-                                                    </textTab>
-                                                    <textTab alignment="left" location="336">
-                                                        <options/>
-                                                    </textTab>
-                                                </tabStops>
-                                            </paragraphStyle>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
                                         </attributes>
                                     </fragment>
                                 </attributedString>
@@ -1205,8 +1127,8 @@ Flor Esthela Barbosa Castillo
         <scene sceneID="gAd-mV-Od1">
             <objects>
                 <navigationController id="ewd-Da-GTq" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="pzn-5W-JUG">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="pzn-5W-JUG">
+                        <rect key="frame" x="0.0" y="20" width="375" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="barTintColor" red="0.054901960780000002" green="0.81176470590000005" blue="0.62352941179999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1219,7 +1141,7 @@ Flor Esthela Barbosa Castillo
             </objects>
             <point key="canvasLocation" x="-455" y="-219"/>
         </scene>
-        <!--Menu Formulario View Controller-->
+        <!--Formulario-->
         <scene sceneID="ry8-PW-RKy">
             <objects>
                 <viewController id="Y9t-82-raT" customClass="MenuFormularioViewController" customModule="proyectoMatematicas" customModuleProvider="target" sceneMemberID="viewController">
@@ -1261,13 +1183,6 @@ Flor Esthela Barbosa Castillo
                                     <segue destination="2Q7-LG-f37" kind="show" identifier="elipse" id="W7k-a4-oOa"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Formulario" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3PQ-pI-3LJ">
-                                <rect key="frame" x="105" y="100" width="173" height="46"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zTe-Cb-583" customClass="RoundButton" customModule="proyectoMatematicas" customModuleProvider="target">
                                 <rect key="frame" x="16" y="408" width="160" height="160"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1306,8 +1221,8 @@ Flor Esthela Barbosa Castillo
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Lz6-8w-You"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Sis-Tg-LC7">
-                        <barButtonItem key="leftBarButtonItem" title="Menu" id="Hke-Io-8Ko">
+                    <navigationItem key="navigationItem" title="Formulario" id="Sis-Tg-LC7">
+                        <barButtonItem key="leftBarButtonItem" title="Menú" id="Hke-Io-8Ko">
                             <connections>
                                 <action selector="btnRegresar:" destination="Y9t-82-raT" id="h6d-Q8-zZP"/>
                             </connections>
@@ -1334,28 +1249,14 @@ Flor Esthela Barbosa Castillo
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WDx-Bq-NFA">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="116" width="375" height="551"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OWN-7y-XXF">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="1192"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="wordWrap" numberOfLines="6" baselineAdjustment="none" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tiO-d4-XBc">
-                                                <rect key="frame" x="35" y="89" width="305" height="146"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SW8-6M-Uvl">
-                                                <rect key="frame" x="91" y="24" width="193" height="48"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="29"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="wordWrap" numberOfLines="6" baselineAdjustment="none" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fgz-ip-0dw">
-                                                <rect key="frame" x="35" y="424" width="305" height="152"/>
+                                                <rect key="frame" x="35" y="8" width="305" height="146"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
                                                 <nil key="textColor"/>
@@ -1377,9 +1278,16 @@ Flor Esthela Barbosa Castillo
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gih-Gr-hYv">
-                                                <rect key="frame" x="40" y="243" width="294" height="173"/>
+                                                <rect key="frame" x="40" y="162" width="294" height="173"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="wordWrap" numberOfLines="6" baselineAdjustment="none" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fgz-ip-0dw">
+                                                <rect key="frame" x="35" y="362" width="305" height="152"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </view>
@@ -1398,6 +1306,7 @@ Flor Esthela Barbosa Castillo
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="iZX-ia-oHv"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Title" id="RTL-3M-MbU"/>
                     <connections>
                         <outlet property="img1" destination="O2u-Gt-g3c" id="gcu-Y1-Tzx"/>
                         <outlet property="img2" destination="CbZ-dz-UDT" id="Gk0-a5-V9H"/>
@@ -1405,7 +1314,7 @@ Flor Esthela Barbosa Castillo
                         <outlet property="label1" destination="tiO-d4-XBc" id="cQe-6p-OcW"/>
                         <outlet property="label2" destination="Fgz-ip-0dw" id="gEV-qF-LeZ"/>
                         <outlet property="label3" destination="iZh-E7-bbz" id="oWQ-am-bCJ"/>
-                        <outlet property="lbTitulo" destination="SW8-6M-Uvl" id="qb7-sK-i7q"/>
+                        <outlet property="navTitulo" destination="RTL-3M-MbU" id="vG5-G0-HXh"/>
                         <outlet property="scrollView" destination="WDx-Bq-NFA" id="ONe-hS-oNb"/>
                         <outlet property="viewFormulario" destination="OWN-7y-XXF" id="KRc-kH-Vdd"/>
                     </connections>
