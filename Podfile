@@ -8,5 +8,5 @@ target 'proyectoMatematicas' do
   # Pods for proyectoMatematicas
   pod 'Charts'
   pod 'EFImageViewZoom', :git => 'https://github.com/ezefranca/EFImageViewZoom.git'
-
+  
 end
