@@ -10,8 +10,19 @@ import UIKit
 
 class ResultadosQuizViewController: UIViewController {
 
+    
+    @IBOutlet weak var lbResultado: UILabel!
+    
+    @IBOutlet weak var lbComentario: UITextView!
+    
+    var resultado: String!
+    var comentario: String!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        lbResultado.text = resultado
+        lbComentario.text = comentario
+        
 
         // Do any additional setup after loading the view.
     }
