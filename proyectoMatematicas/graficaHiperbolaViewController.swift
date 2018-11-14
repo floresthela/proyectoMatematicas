@@ -107,13 +107,31 @@ class graficaHiperbolaViewController: UIViewController, ChartViewDelegate {
     
     @IBAction func bGrafica(_ sender: UIButton) {
         
+        /*let alerta = UIAlertController(title: "Error", message: "Los campos deben tener valor numérico", preferredStyle: .alert)
+         
+         let accion = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+         
+         alerta.addAction(accion)
+         present(alerta, animated: true, completion: nil)*/
         
-        h = Double(tfH.text!)
-        k = Double(tfK.text!)
-        a = Double(tfA.text!)
-        b = Double(tfB.text!)
+        if let hT = Double(tfH.text!), let kT = Double(tfK.text!), let aT = Double(tfA.text!), let bT = Double(tfB.text!) {
+            
+            h = hT
+            k = kT
+            a = aT
+            b = bT
         
-        setDataCount()
+            setDataCount()
+            
+        }
+        else{
+            let alerta = UIAlertController(title: "Error", message: "Los campos deben tener valor numérico", preferredStyle: .alert)
+            
+            let accion = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+            
+            alerta.addAction(accion)
+            present(alerta, animated: true, completion: nil)
+        }
         //chartView.animate(xAxisDuration: 2.5)
     }
     

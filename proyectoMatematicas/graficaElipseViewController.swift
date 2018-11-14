@@ -157,13 +157,29 @@ class graficaElipseViewController: UIViewController, ChartViewDelegate {
     
     
     @IBAction func bGrafica(_ sender: UIButton) {
-       
-        h = Double(tfH.text!)
-        k = Double(tfK.text!)
-        a = Double(tfA.text!)
-        b = Double(tfB.text!)
+        /* let alerta = UIAlertController(title: "Error", message: "Los campos deben tener valor numérico", preferredStyle: .alert)
+         
+         let accion = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+         
+         alerta.addAction(accion)
+         present(alerta, animated: true, completion: nil)*/
         
-        setDataCount()
+        if let hT = Double(tfH.text!), let kT = Double(tfK.text!), let aT = Double(tfA.text!), let bT = Double(tfB.text!){
+            h = hT
+            k = kT
+            a = aT
+            b = bT
+            setDataCount()
+        }
+        else{
+            let alerta = UIAlertController(title: "Error", message: "Los campos deben tener valor numérico", preferredStyle: .alert)
+            
+            let accion = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+            
+            alerta.addAction(accion)
+            present(alerta, animated: true, completion: nil)
+        }
+        
     }
     
     

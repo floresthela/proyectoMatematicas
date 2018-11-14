@@ -20,6 +20,9 @@ struct Pregunta {
 
 class preguntasPracticaViewController: UIViewController {
 
+    
+    @IBOutlet weak var navTitulo: UINavigationItem!
+    
     @IBOutlet weak var bOpc1: UIButton!
     @IBOutlet weak var bOpc2: UIButton!
     @IBOutlet weak var bOpc3: UIButton!
@@ -88,19 +91,23 @@ class preguntasPracticaViewController: UIViewController {
         bTerminarout.isHidden = true
         
         if seccionConica == "Circulo"{
+            navTitulo.title = "Círculo"
             indicePregunta = Array(0 ..< preguntasCirculo.count)
             aMostrar = preguntasCirculo
         }
         
         if seccionConica == "Parabola"{
+            navTitulo.title = "Parábola"
             indicePregunta = Array(0 ..< preguntasParabola.count)
             aMostrar = preguntasParabola
         }
         if seccionConica == "Hiperbola"{
+            navTitulo.title = "Hiperbola"
             indicePregunta = Array(0 ..< preguntasHiperbola.count)
             aMostrar = preguntasHiperbola
         }
         if seccionConica == "Elipse"{
+            navTitulo.title = "Elipse"
             indicePregunta = Array(0 ..< preguntasElipse.count)
             aMostrar = preguntasElipse
         }

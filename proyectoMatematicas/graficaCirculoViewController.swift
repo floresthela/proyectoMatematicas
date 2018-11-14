@@ -15,7 +15,7 @@ class graficaCirculoViewController: UIViewController, ChartViewDelegate {
     @IBOutlet weak var tfH: UITextField!
     @IBOutlet weak var tfK: UITextField!
     @IBOutlet weak var chartView: LineChartView!
-    @IBOutlet weak var lbEcuacion: UILabel!
+   
     @IBOutlet weak var tfRadio: UITextField!
     @IBOutlet weak var svHK: UIStackView!
     @IBOutlet weak var sv00: UIStackView!
@@ -28,10 +28,47 @@ class graficaCirculoViewController: UIViewController, ChartViewDelegate {
     var h : Double!
     var k : Double!
     var radio : Double!
+    
+    //x2
+    @IBOutlet weak var ssx: UILabel!
+    
+    //y2 =
+    @IBOutlet weak var ssy: UILabel!
+    
+    //)2 + (y -
+    @IBOutlet weak var ss1: UILabel!
+    
+    //)2 =
+    @IBOutlet weak var ss2: UILabel!
+    
+    
+    
      var colorFondo = UIColor(red: 255/255.0, green: 223/255.0, blue: 104/255.0, alpha: 1)
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        let attString0x:NSMutableAttributedString = NSMutableAttributedString(string: ssx.text!)
+        
+        attString0x.setAttributes([.baselineOffset:15], range: NSRange(location:1,length:1))
+       
+                                  
+        let attString0y:NSMutableAttributedString = NSMutableAttributedString(string: ssy.text!)
+        
+        attString0y.setAttributes([.baselineOffset:15], range: NSRange(location:1,length:1))
+        
+        
+        let attString1:NSMutableAttributedString = NSMutableAttributedString(string: ss1.text!)
+        
+        attString1.setAttributes([.baselineOffset:15], range: NSRange(location:1,length:1))
+        
+        let attString2:NSMutableAttributedString = NSMutableAttributedString(string: ss2.text!)
+
+        attString2.setAttributes([.baselineOffset:15], range: NSRange(location:1,length:1))
+        
+        ss1.attributedText = attString1
+        ss2.attributedText = attString2
+        
         btnGrafica.backgroundColor = UIColor(red: 66/255.0, green: 108/255.0, blue: 218/255.0, alpha: 1)
         segconOut.tintColor = UIColor(red: 66/255.0, green: 108/255.0, blue: 218/255.0, alpha: 1)
         self.viewGraficar.backgroundColor = colorFondo
@@ -167,33 +204,50 @@ class graficaCirculoViewController: UIViewController, ChartViewDelegate {
     
     @IBAction func bGrafica(_ sender: UIButton) {
        
-        radio = Double(tfRadio.text!)
         
-        if segconOut.selectedSegmentIndex == 0 {
-            //230
-            svHK.isHidden = true
-            sv00.isHidden = false
-            UIView.animate(withDuration: 1, animations: {
-                self.tfRadio.frame.origin.x = 230
-            })
-            h = 0
-            k = 0
+        // valores numericos
+        if let radioT = Double(tfRadio.text!), let  hT = Double(tfH.text!) , let kT = Double(tfK.text!) {
+            
+            radio = radioT
+           
+            if segconOut.selectedSegmentIndex == 0 {
+                //230
+                svHK.isHidden = true
+                sv00.isHidden = false
+                UIView.animate(withDuration: 1, animations: {
+                    self.tfRadio.frame.origin.x = 230
+                })
+
+                h = 0
+                k = 0
+            }
+            else{
+                
+                svHK.isHidden = false
+                sv00.isHidden = true
+                //285
+                UIView.animate(withDuration: 1, animations: {
+                    self.tfRadio.frame.origin.x = 285
+                })
+                h = Double(tfH.text!)
+                k = Double(tfK.text!)
+                
+            }
+            
+            setDataCount()
+            chartView.animate(xAxisDuration: 2.5)
+     
         }
         else{
+            let alerta = UIAlertController(title: "Error", message: "Los campos deben tener valor numérico", preferredStyle: .alert)
             
-            svHK.isHidden = false
-            sv00.isHidden = true
-            //285
-            UIView.animate(withDuration: 1, animations: {
-                self.tfRadio.frame.origin.x = 285
-            })
-            h = Double(tfH.text!)
-            k = Double(tfK.text!)
+            let accion = UIAlertAction(title: "OK", style: .cancel, handler: nil)
             
+            alerta.addAction(accion)
+            present(alerta, animated: true, completion: nil)
         }
         
-        setDataCount()
-        chartView.animate(xAxisDuration: 2.5)
+        
     }
     
     

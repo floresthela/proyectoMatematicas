@@ -83,10 +83,23 @@ class graficaParabolaViewController: UIViewController, ChartViewDelegate{
 
     
     @IBAction func bGrafica(_ sender: UIButton) {
-        vX = Double(tfX.text!)
-        transY = Double(movY.text!)
-        setDataCount()
-        chartView.animate(xAxisDuration: 2.5)
+  
+        
+        if let xT = Double(tfX.text!) , let yT = Double(movY.text!) {
+            vX = xT
+            transY = yT
+            setDataCount()
+            chartView.animate(xAxisDuration: 2.5)
+            
+        }
+        else{
+            let alerta = UIAlertController(title: "Error", message: "Los campos deben tener valor numérico", preferredStyle: .alert)
+            
+            let accion = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+            
+            alerta.addAction(accion)
+            present(alerta, animated: true, completion: nil)
+        }
     }
     
     
@@ -128,9 +141,7 @@ class graficaParabolaViewController: UIViewController, ChartViewDelegate{
         return false
     }
     
-    /*  @IBAction func quitaTeclado(_ sender: Any) {
-     view.endEditing(true)
-     }*/
+
 
     
     @IBAction func quitaTeclado(_ sender: Any) {
