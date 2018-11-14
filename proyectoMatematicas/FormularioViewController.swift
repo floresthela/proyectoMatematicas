@@ -13,7 +13,7 @@ class FormularioViewController: UIViewController, UIScrollViewDelegate {
     
     
     @IBOutlet weak var navTitulo: UINavigationItem!
-    @IBOutlet weak var lbTitulo: UILabel!
+    //@IBOutlet weak var lbTitulo: UILabel!
     @IBOutlet weak var img1: UIImageView!
     @IBOutlet weak var img2: UIImageView!
     @IBOutlet weak var img4: UIImageView!
@@ -27,7 +27,7 @@ class FormularioViewController: UIViewController, UIScrollViewDelegate {
     @IBOutlet weak var viewFormulario: UIView!
     @IBOutlet weak var scrollView: UIScrollView!
     
-    
+    var seccConic : String!
     var labelText : String!
     
     override func viewDidLoad() {
@@ -54,10 +54,11 @@ class FormularioViewController: UIViewController, UIScrollViewDelegate {
         //let pinchGesture = UIPinchGestureRecognizer(target: self, action: #selector(handlePinch(sender:)))
         //img4.addGestureRecognizer(pinchGesture)
         
-        lbTitulo.text = labelText
+        //lbTitulo.text = labelText
         scrollView.contentSize = viewFormulario.frame.size
-        navTitulo.title = "Círculo"
-        if lbTitulo.text == "Círculo" {
+        
+        if seccConic == "Círculo" {
+            navTitulo.title = "Círculo"
             label1.text = "Un círculo es todos los puntos en un plano que están a una distancia fija de un punto dado en el plano. El punto dado se llama centro, (h, k), y la distancia fija se llama radio, r, del círculo."
             img4.image = UIImage(named: "descCirculo")
             label2.text = "La forma estándar de la ecuación de un círculo con centro en (0,0) tiene la siguiente forma: "
@@ -66,7 +67,7 @@ class FormularioViewController: UIViewController, UIScrollViewDelegate {
             img2.image = UIImage(named: "formaCirculo2")
 
         }
-        if lbTitulo.text == "Hiperbola"{
+        if seccConic == "Hiperbola"{
             //img1.image = #imageLiteral(resourceName: "4-hiperbola")
             navTitulo.title = "Hiperbola"
             label1.text = "Una hipérbola es todos los puntos en un plano donde la diferencia de sus distancias desde dos puntos fijos es constante. Cada uno de los puntos fijos se llama foco de la hipérbola."
@@ -76,7 +77,7 @@ class FormularioViewController: UIViewController, UIScrollViewDelegate {
             label3.text = "La forma estándar de la ecuación de una hipérbola con centro en (h,k) puede tener cualquiera de las siguientes formas: "
             img2.image = UIImage(named: "hiperbola2")
         }
-        if lbTitulo.text == "Parabola"{
+        if seccConic == "Parabola"{
             navTitulo.title = "Parábola"
             label1.text = "Una parábola es todos los puntos en un plano que están a la misma distancia de un punto fijo y de una línea fija. El punto fijo se llama el foco, y la línea fija se llama la directriz de la parábola. "
             img4.image = UIImage(named: "descParabola")
@@ -85,7 +86,7 @@ class FormularioViewController: UIViewController, UIScrollViewDelegate {
             label3.text = "La forma estándar de la parabola tiene la siguiente forma: "
             img2.image = UIImage(named: "formaEstandarParabola")
         }
-        if lbTitulo.text == "Elipse"{
+        if seccConic == "Elipse"{
             navTitulo.title = "Elipse"
             label1.text = "Un elipse es todos los puntos de un plano donde la suma de las distancias desde dos puntos fijos es constante. Cada uno de los puntos fijos se llama foco del  elipse. "
             img4.image = UIImage(named: "descElipse")

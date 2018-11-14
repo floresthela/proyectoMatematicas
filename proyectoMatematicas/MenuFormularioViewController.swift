@@ -40,21 +40,21 @@ class MenuFormularioViewController: UIViewController {
         
         if(segue.identifier == "circulo"){
             let vistaSig = segue.destination as! FormularioViewController
-            vistaSig.labelText = "Círculo"
+            vistaSig.seccConic = "Círculo"
         }
         else if segue.identifier == "parabola"{
             let vistaSig = segue.destination as! FormularioViewController
-            vistaSig.labelText = "Parabola"
+            vistaSig.seccConic = "Parabola"
         }
         else if segue.identifier == "hiperbola"
         {
             let vistaSig = segue.destination as! FormularioViewController
-            vistaSig.labelText = "Hiperbola"
+            vistaSig.seccConic = "Hiperbola"
         }
         else if segue.identifier == "elipse"
         {
             let vistaSig = segue.destination as! FormularioViewController
-            vistaSig.labelText = "Elipse"
+            vistaSig.seccConic = "Elipse"
         }
     }
     
