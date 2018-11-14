@@ -2,17 +2,29 @@ PODS:
   - Charts (3.2.1):
     - Charts/Core (= 3.2.1)
   - Charts/Core (3.2.1)
+  - EFImageViewZoom (0.0.2)
 
 DEPENDENCIES:
   - Charts
+  - EFImageViewZoom (from `https://github.com/ezefranca/EFImageViewZoom.git`)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Charts
 
+EXTERNAL SOURCES:
+  EFImageViewZoom:
+    :git: https://github.com/ezefranca/EFImageViewZoom.git
+
+CHECKOUT OPTIONS:
+  EFImageViewZoom:
+    :commit: 7140fe1dc8b97b0aefce0179e9cb92499fe9d82c
+    :git: https://github.com/ezefranca/EFImageViewZoom.git
+
 SPEC CHECKSUMS:
   Charts: f122fb70b19847fa5817d018b77d6c5a2296ab25
+  EFImageViewZoom: f977d8de921ed352c04a07b56a75d8cc18bf6d14
 
-PODFILE CHECKSUM: 0848c2cc0033fa17c985c77d53e4b0fea66729ef
+PODFILE CHECKSUM: 6fa70a14785990c79de98ef3faae9f107789af73
 
 COCOAPODS: 1.5.3

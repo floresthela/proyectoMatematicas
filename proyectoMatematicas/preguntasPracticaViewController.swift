@@ -68,6 +68,7 @@ class preguntasPracticaViewController: UIViewController {
     
     @IBOutlet weak var view1: UIView!
     @IBOutlet weak var view2: UIView!
+    @IBOutlet weak var view3: UIView!
     
     @IBOutlet weak var btnAyuda: UIButton!
     
@@ -80,11 +81,8 @@ class preguntasPracticaViewController: UIViewController {
         self.view2.backgroundColor = colorFondo
         
         let gesture = UIPinchGestureRecognizer(target: self, action: #selector(pinchAction(sender:)))
-        self.view1.addGestureRecognizer(gesture)
+        self.view3.addGestureRecognizer(gesture)
         
-        //view1.delegate = self
-        //view1.minimumZoomScale = 1.0
-        //scrollView.maximumZoomScale = 6.0
         
         bSigout.isEnabled = false
         bTerminarout.isHidden = true
@@ -115,10 +113,9 @@ class preguntasPracticaViewController: UIViewController {
     func actualiza(indicePregunta: Int){
         cuenta += 1
         indicePreguntaActual = indicePregunta
-        
-
         lbPregunta.text = aMostrar[indicePregunta].pregunta
         imagenPregunta.image = aMostrar[indicePregunta].imagen
+        
     bOpc1.setTitle(aMostrar[indicePregunta].opciones[0], for: .normal)
     bOpc2.setTitle(aMostrar[indicePregunta].opciones[1], for: .normal)
     bOpc3.setTitle(aMostrar[indicePregunta].opciones[2], for: .normal)
@@ -215,7 +212,7 @@ class preguntasPracticaViewController: UIViewController {
     
     @objc func pinchAction(sender:UIPinchGestureRecognizer){
         let scale:CGFloat = previousScale * sender.scale
-        self.view1.transform = CGAffineTransform(scaleX: scale, y: scale);
+        self.view3.transform = CGAffineTransform(scaleX: scale, y: scale);
         
         previousScale = sender.scale
         //CGAffineTransform(translationX: scale, y: scale)

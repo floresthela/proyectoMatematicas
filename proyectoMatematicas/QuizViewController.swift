@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import EFImageViewZoom
 
 struct QuestionQuiz{
     let question : String
@@ -14,7 +15,7 @@ struct QuestionQuiz{
     let options : [String]
     let correctAnswer : Int
 }
-class QuizViewController: UIViewController {
+class QuizViewController: UIViewController, EFImageViewZoomDelegate {
 
     @IBOutlet weak var questionImage: UIImageView!
     @IBOutlet weak var lbQuestion: UILabel!
@@ -96,7 +97,12 @@ class QuizViewController: UIViewController {
         actualQuestion = questionIndex
         
         lbQuestion.text = show[questionIndex].question
+        
+        //self.questionImage._delegate = self
+        //self.questionImage.image = show[questionIndex].imageQ
+        //self.questionImage.contentMode = .center
         questionImage.image = show[questionIndex].imageQ
+        
         btnOptionA.setTitle(show[questionIndex].options[0], for: .normal)
         btnOptionB.setTitle(show[questionIndex].options[1], for: .normal)
         btnOptionC.setTitle(show[questionIndex].options[2], for: .normal)

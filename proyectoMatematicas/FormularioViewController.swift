@@ -24,6 +24,7 @@ class FormularioViewController: UIViewController, UIScrollViewDelegate {
     @IBOutlet weak var viewFormulario: UIView!
     @IBOutlet weak var scrollView: UIScrollView!
     
+    
     var labelText : String!
     
     override func viewDidLoad() {
