@@ -26,9 +26,6 @@ class creditosViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        var superScript = "x{2} + y{2} = "
-        var finalss : NSMutableAttributedString = superScript.customText()
-        prueba.attributedText = finalss
         // Do any additional setup after loading the view.
     }
     
