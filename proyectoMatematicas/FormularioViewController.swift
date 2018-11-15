@@ -22,7 +22,7 @@ class FormularioViewController: UIViewController, UIScrollViewDelegate {
     @IBOutlet weak var label2: UILabel!
     @IBOutlet weak var label3: UILabel!
     
-    var colorFondo = UIColor(red: 255/255.0, green: 223/255.0, blue: 104/255.0, alpha: 1)
+    //var colorFondo = UIColor(red: 255/255.0, green: 223/255.0, blue: 104/255.0, alpha: 1)
     
     @IBOutlet weak var viewFormulario: UIView!
     @IBOutlet weak var scrollView: UIScrollView!
@@ -33,7 +33,7 @@ class FormularioViewController: UIViewController, UIScrollViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.viewFormulario.backgroundColor = colorFondo
+        //self.viewFormulario.backgroundColor = colorFondo
         
         
         scrollView.delegate = self
@@ -77,7 +77,7 @@ class FormularioViewController: UIViewController, UIScrollViewDelegate {
             label3.text = "La forma estándar de la ecuación de una hipérbola con centro en (h,k) puede tener cualquiera de las siguientes formas: "
             img2.image = UIImage(named: "hiperbola2")
         }
-        if seccConic == "Parabola"{
+        if seccConic == "Parábola"{
             navTitulo.title = "Parábola"
             label1.text = "Una parábola es todos los puntos en un plano que están a la misma distancia de un punto fijo y de una línea fija. El punto fijo se llama el foco, y la línea fija se llama la directriz de la parábola. "
             img4.image = UIImage(named: "descParabola")

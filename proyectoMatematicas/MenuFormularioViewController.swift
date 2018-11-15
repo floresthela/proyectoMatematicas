@@ -44,7 +44,7 @@ class MenuFormularioViewController: UIViewController {
         }
         else if segue.identifier == "parabola"{
             let vistaSig = segue.destination as! FormularioViewController
-            vistaSig.seccConic = "Parabola"
+            vistaSig.seccConic = "Parábola"
         }
         else if segue.identifier == "hiperbola"
         {
