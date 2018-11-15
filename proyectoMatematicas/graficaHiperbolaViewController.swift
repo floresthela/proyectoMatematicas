@@ -57,7 +57,7 @@ class graficaHiperbolaViewController: UIViewController, ChartViewDelegate {
         
         
         
-        self.viewHiperbola.backgroundColor = UIColor(red: 255/255.0, green: 223/255.0, blue: 104/255.0, alpha: 1)
+        //self.viewHiperbola.backgroundColor = UIColor(red: 255/255.0, green: 223/255.0, blue: 104/255.0, alpha: 1)
         
         chartView.delegate = self
         

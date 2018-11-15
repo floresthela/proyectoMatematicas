@@ -70,8 +70,8 @@ class graficaCirculoViewController: UIViewController, ChartViewDelegate {
         ss2.attributedText = attString2
         
         btnGrafica.backgroundColor = UIColor(red: 66/255.0, green: 108/255.0, blue: 218/255.0, alpha: 1)
-        segconOut.tintColor = UIColor(red: 66/255.0, green: 108/255.0, blue: 218/255.0, alpha: 1)
-        self.viewGraficar.backgroundColor = colorFondo
+        //segconOut.tintColor = UIColor(red: 66/255.0, green: 108/255.0, blue: 218/255.0, alpha: 1)
+       // self.viewGraficar.backgroundColor = colorFondo
         h = 0
         k = 0
         svHK.isHidden = true
