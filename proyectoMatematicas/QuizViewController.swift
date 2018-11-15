@@ -56,12 +56,12 @@ class QuizViewController: UIViewController, EFImageViewZoomDelegate {
         QuestionQuiz(question: "Los ejes transverso y no transverso de la hipérbola son:", imageQ: UIImage.init(named: "quiz10"), options: ["-9 y 18","3 y 1","1 y 9","1 y 3"], correctAnswer: 1),
         QuestionQuiz(question: "Una hipérbola es equilátera si son iguales sus", imageQ: UIImage.init(named: "quiz11"), options: ["ejes", "focos", "vértices", "asíntotas"], correctAnswer: 0),
         QuestionQuiz(question: "¿Qué sección cónica está representada en la ecuación?", imageQ: UIImage.init(named: "quiz12"), options: ["círculo", "elipse", "parábola", "hipérbola"], correctAnswer: 3),
-        QuestionQuiz(question: "Cuáles son los focos de la hipérbola", imageQ: UIImage.init(named: "quiz13"), options: ["(-4,4) y (-4,-2)","(4,4) y (4,-2)","(0,4) y (4,0)","(-2,4) y (2,-4)"], correctAnswer: 1),
+        QuestionQuiz(question: "Cuáles son los focos de la hipérbola?", imageQ: UIImage.init(named: "quiz13"), options: ["(-4,4) y (-4,-2)","(4,4) y (4,-2)","(0,4) y (4,0)","(-2,4) y (2,-4)"], correctAnswer: 1),
         //preguntas parábola
         QuestionQuiz(question: "Encuentra el vértice y el foco de la parábola", imageQ: UIImage.init(named: "quiz14"), options: ["V(0), F(-2,0)","V(2,0), F(0,2)","V(0), F(2,0)","V(0), F(-2,0)"], correctAnswer: 0),
         QuestionQuiz(question: "Encuentra el vértice y el foco de la parábola", imageQ: UIImage.init(named: "quiz15"), options: ["V(2,2), F(3,-4)","V(2,4), F(2,-4)","V(-2,4), F(3,4)","V(-2,2), F(-2,4)"], correctAnswer: 2),
         QuestionQuiz(question: "Encuentra el vértice y el foco de la parábola", imageQ: UIImage.init(named: "quiz16"), options: ["V(-8,4), F(4,2)","V(8,3), F(4,3)","V(-8,-3), F(4,2)","V(-8,3), F(-4,-3)"], correctAnswer: 1),
-        QuestionQuiz(question: "¿Cuál es el vértice de la parábola", imageQ: UIImage.init(named: "quiz17"), options: ["(3,2)","(2,-3)","(-3,-2)","(-2,-3)"], correctAnswer: 3)
+        QuestionQuiz(question: "¿Cuál es el vértice de la parábola?", imageQ: UIImage.init(named: "quiz17"), options: ["(3,2)","(2,-3)","(-3,-2)","(-2,-3)"], correctAnswer: 3)
     ]
     
     var questionIndex : [Int]!
