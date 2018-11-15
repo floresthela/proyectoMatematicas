@@ -9,8 +9,8 @@ import UIKit
 extension String{
     
     func customText() -> NSMutableAttributedString {
-        let fontSuper:UIFont? = UIFont(name: "Helvetica", size:10)
-        let font = UIFont(name: "Helvetica", size: 18)
+        let fontSuper:UIFont? = UIFont(name: "Futura", size:10)
+        let font = UIFont(name: "Futura", size: 18)
         let attString:NSMutableAttributedString = NSMutableAttributedString(string: self, attributes: [NSAttributedString.Key.font:font!, NSAttributedString.Key.foregroundColor: UIColor.black])
         var indexA = Array(repeating: 0, count: 10)
         var indexB = Array(repeating: 0, count: 10)

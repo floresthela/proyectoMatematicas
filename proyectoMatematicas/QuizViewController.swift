@@ -86,7 +86,8 @@ class QuizViewController: UIViewController, EFImageViewZoomDelegate {
         super.viewDidLoad()
         
         progress.frame.size.width = CGFloat (counter)
-        
+        progress.isHidden = true
+       //progress.frame.size.width = (view.frame.size.width / CGFloat (10)) * CGFloat (counter)
         btnOptionA.backgroundColor = UIColor(red: 250/255.0, green: 121/255.0, blue: 33/255.0, alpha: 1)
         btnOptionB.backgroundColor = UIColor(red: 250/255.0, green: 121/255.0, blue: 33/255.0, alpha: 1)
         btnOptionC.backgroundColor = UIColor(red: 250/255.0, green: 121/255.0, blue: 33/255.0, alpha: 1)
@@ -110,7 +111,7 @@ class QuizViewController: UIViewController, EFImageViewZoomDelegate {
     
     //actualiza la pregunta en el view
     func update(questionIndex : Int){
-        
+        progress.isHidden = (questionIndex == 0)
         btnOptionA.isEnabled = true
         btnOptionB.isEnabled = true
         btnOptionC.isEnabled = true

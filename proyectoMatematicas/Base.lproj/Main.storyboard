@@ -1619,8 +1619,12 @@ Flor Esthela Barbosa Castillo
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2AO-RR-q3g" customClass="RoundButton" customModule="proyectoMatematicas" customModuleProvider="target">
-                                        <rect key="frame" x="286" y="392" width="75" height="36"/>
+                                        <rect key="frame" x="273" y="392" width="88" height="36"/>
                                         <color key="backgroundColor" red="0.011764705882352941" green="0.58823529411764708" blue="0.792156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="36" id="CTV-04-IWT"/>
+                                            <constraint firstAttribute="width" constant="88" id="YS0-tJ-2i5"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="18"/>
                                         <state key="normal" title="Siguiente">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1635,8 +1639,12 @@ Flor Esthela Barbosa Castillo
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ytO-X4-itK" customClass="RoundButton" customModule="proyectoMatematicas" customModuleProvider="target">
-                                        <rect key="frame" x="153.5" y="392" width="72" height="36"/>
+                                        <rect key="frame" x="145.5" y="392" width="88" height="36"/>
                                         <color key="backgroundColor" red="0.011764705882352941" green="0.58823529411764708" blue="0.792156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="36" id="PCD-Wj-Qfd"/>
+                                            <constraint firstAttribute="width" constant="88" id="ao1-uY-1tP"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="18"/>
                                         <state key="normal" title="Terminar">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
