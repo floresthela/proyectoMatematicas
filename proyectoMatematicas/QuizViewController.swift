@@ -73,6 +73,7 @@ class QuizViewController: UIViewController, EFImageViewZoomDelegate {
     var incorrectAns = 0
     
     
+    @IBOutlet weak var viewImagen: UIView!
     @IBOutlet var viewQuiz: UIView!
      var colorFondo = UIColor(red: 239/255.0, green: 231/255.0, blue: 218/255.0, alpha: 1)
     
@@ -114,10 +115,6 @@ class QuizViewController: UIViewController, EFImageViewZoomDelegate {
         actualQuestion = questionIndex
         
         lbQuestion.text = show[questionIndex].question
-        
-        //self.questionImage._delegate = self
-        //self.questionImage.image = show[questionIndex].imageQ
-        //self.questionImage.contentMode = .center
         questionImage.image = show[questionIndex].imageQ
         
         btnOptionA.setTitle(show[questionIndex].options[0], for: .normal)
@@ -221,7 +218,7 @@ class QuizViewController: UIViewController, EFImageViewZoomDelegate {
     
     @objc func pinchAction(sender:UIPinchGestureRecognizer){
         let scale:CGFloat = previousScale * sender.scale
-        self.viewQuiz.transform = CGAffineTransform(scaleX: scale, y: scale);
+        self.viewImagen.transform = CGAffineTransform(scaleX: scale, y: scale);
         
         previousScale = sender.scale
         //CGAffineTransform(translationX: scale, y: scale)
