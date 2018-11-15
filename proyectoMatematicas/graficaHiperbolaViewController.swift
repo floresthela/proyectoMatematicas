@@ -39,13 +39,6 @@ class graficaHiperbolaViewController: UIViewController, ChartViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        /*var ss1 = "){2} + y("
-         var fss1 : NSMutableAttributedString = ss1.customText()
-         lbss1.attributedText = fss1
-         
-         var ss2 = "){2} = 1"
-         var fss2 : NSMutableAttributedString = ss2.customText()
-         lbss1.attributedText = fss2*/
         
         var ss1 = "){2} - (y-"
         var fss1 : NSMutableAttributedString = ss1.customText()
@@ -222,27 +215,27 @@ class graficaHiperbolaViewController: UIViewController, ChartViewDelegate {
         
         
         let set1 = LineChartDataSet(values: yVal1, label: "1")
-        set1.setColor(UIColor.green)
+        set1.setColor(UIColor.black)
         set1.drawCirclesEnabled = false
-        set1.lineWidth = 2
+        set1.lineWidth = 4
         set1.mode = .cubicBezier
         
         let set2 = LineChartDataSet(values: yVal2, label: "2")
-        set2.setColor(UIColor.red)
+        set2.setColor(UIColor.black)
         set2.drawCirclesEnabled = false
-        set2.lineWidth = 2
+        set2.lineWidth = 4
         set2.mode = .cubicBezier
         
         let set3 = LineChartDataSet(values: yVal3, label: "2")
-        set3.setColor(UIColor.blue)
+        set3.setColor(UIColor.black)
         set3.drawCirclesEnabled = false
-        set3.lineWidth = 2
+        set3.lineWidth = 4
         set3.mode = .cubicBezier
         
         let set4 = LineChartDataSet(values: yVal4, label: "2")
         set4.setColor(UIColor.black)
         set4.drawCirclesEnabled = false
-        set4.lineWidth = 2
+        set4.lineWidth = 4
         set4.mode = .cubicBezier
         
         

@@ -117,7 +117,7 @@ class graficaParabolaViewController: UIViewController, ChartViewDelegate{
         }
         
         let set = LineChartDataSet(values: yVal, label: "Parabola")
-        set.setColor(UIColor.red)
+        set.setColor(UIColor.black)
         //set.drawFilledEnabled = true
         set.drawCirclesEnabled = false
         set.lineWidth = 4

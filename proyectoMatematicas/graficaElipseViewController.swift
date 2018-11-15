@@ -144,15 +144,15 @@ class graficaElipseViewController: UIViewController, ChartViewDelegate {
         
         let set1 = LineChartDataSet(values: yVal1, label: "Top")
         //set1.axisDependency = .left
-        set1.setColor(UIColor.red)
+        set1.setColor(UIColor.black)
         set1.drawCirclesEnabled = false
-        set1.lineWidth = 2
+        set1.lineWidth = 4
         set1.mode = .cubicBezier
         
         let set2 = LineChartDataSet(values: yVal2, label: "Bottom")
         set2.setColor(UIColor.black)
         set2.drawCirclesEnabled = false
-        set2.lineWidth = 2
+        set2.lineWidth = 4
         set2.mode = .cubicBezier
         
         let data = LineChartData(dataSets: [set1,set2])

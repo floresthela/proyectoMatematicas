@@ -154,15 +154,15 @@ class graficaCirculoViewController: UIViewController, ChartViewDelegate {
         
         let set1 = LineChartDataSet(values: yVal1, label: "Top")
          //set1.axisDependency = .left
-         set1.setColor(UIColor.red)
+         set1.setColor(UIColor.black)
          set1.drawCirclesEnabled = false
-         set1.lineWidth = 2
+         set1.lineWidth = 4
         set1.mode = .cubicBezier
         
         let set2 = LineChartDataSet(values: yVal2, label: "Bottom")
         set2.setColor(UIColor.black)
         set2.drawCirclesEnabled = false
-        set2.lineWidth = 2
+        set2.lineWidth = 4
         set2.mode = .cubicBezier
 
         let data = LineChartData(dataSets: [set1,set2])
@@ -185,7 +185,7 @@ class graficaCirculoViewController: UIViewController, ChartViewDelegate {
             })
             h = 0
             k = 0
-            segconOut.tintColor = UIColor(red: 66/255.0, green: 108/255.0, blue: 218/255.0, alpha: 1)
+            //segconOut.tintColor = UIColor(red: 66/255.0, green: 108/255.0, blue: 218/255.0, alpha: 1)
         }
         else{
             
@@ -197,7 +197,7 @@ class graficaCirculoViewController: UIViewController, ChartViewDelegate {
             })
             h = Double(tfH.text!)
             k = Double(tfK.text!)
-            segconOut.tintColor = UIColor(red: 66/255.0, green: 108/255.0, blue: 218/255.0, alpha: 1)
+            //segconOut.tintColor = UIColor(red: 66/255.0, green: 108/255.0, blue: 218/255.0, alpha: 1)
             
         }
     }
