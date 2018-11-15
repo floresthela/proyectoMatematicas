@@ -27,7 +27,16 @@ class ResultadosQuizViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+    
+    
+    @IBAction func regresaMenu(_ sender: UIBarButtonItem) {
+        // No jala -self.navigationController?.popToViewController(ViewController(), animated: true)
+        // No jala -navigationController!.popToViewController(navigationController!.viewControllers[2], animated: false)
+        
+    }
+    
+    
+    
     /*
     // MARK: - Navigation
 
@@ -37,6 +46,7 @@ class ResultadosQuizViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
     
     override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
         return UIInterfaceOrientationMask.landscape

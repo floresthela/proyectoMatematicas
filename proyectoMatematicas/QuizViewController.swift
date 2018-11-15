@@ -20,7 +20,6 @@ class QuizViewController: UIViewController, EFImageViewZoomDelegate {
     @IBOutlet weak var questionImage: UIImageView!
     @IBOutlet weak var lbQuestion: UILabel!
     @IBOutlet weak var lbCounterQ: UILabel!
-    @IBOutlet weak var btnHelp: UIButton!
     @IBOutlet weak var progress: UIProgressView!
     @IBOutlet weak var btnNextQuestion: UIButton!
     @IBOutlet weak var btnFinishQuiz: UIButton!
@@ -88,8 +87,7 @@ class QuizViewController: UIViewController, EFImageViewZoomDelegate {
         btnOptionD.backgroundColor = UIColor(red: 250/255.0, green: 121/255.0, blue: 33/255.0, alpha: 1)
         
         //self.viewQuiz.backgroundColor = colorFondo
-        btnHelp.backgroundColor = UIColor(red: 197/255, green: 0/255, blue: 0/255, alpha: 1)
-        
+    
         let gesture = UIPinchGestureRecognizer(target: self, action: #selector(pinchAction(sender:)))
         self.viewQuiz.addGestureRecognizer(gesture)
         
@@ -203,14 +201,19 @@ class QuizViewController: UIViewController, EFImageViewZoomDelegate {
     
     func alert (title: String, message: String, completion: @escaping ((Bool) -> Void)) {
         let alertController = UIAlertController(title: title, message: message, preferredStyle: UIAlertController.Style.alert)
+        
         alertController.addAction(UIAlertAction(title: "Sí", style: .default, handler: { (action) in
             alertController.dismiss(animated: true, completion: nil)
             completion(true)
+            print("dijo que si")
         }))
         
         alertController.addAction(UIAlertAction(title: "No", style: UIAlertAction.Style.default, handler: { (action) in
             alertController.dismiss(animated: true, completion: nil)
             completion(false)
+            self.dismiss(animated: true, completion: nil)
+            print("dijo que no")
+            
         }))
         
         self.present(alertController, animated: true, completion: nil)
@@ -234,7 +237,7 @@ class QuizViewController: UIViewController, EFImageViewZoomDelegate {
             }
             
             else if (calificacionFinal < 80){
-                vistaResultados.comentario = "Sigue practicando:("
+                vistaResultados.comentario = "Sigue practicando :("
             }
         }
     }
