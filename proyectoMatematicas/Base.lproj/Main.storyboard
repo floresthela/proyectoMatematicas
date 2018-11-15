@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -495,9 +495,13 @@ Flor Esthela Barbosa Castillo
                                         <rect key="frame" x="38" y="170" width="319" height="203"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zPb-IN-4MB">
+                                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zPb-IN-4MB">
                                                 <rect key="frame" x="8" y="2" width="299" height="199"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <gestureRecognizers/>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="Z0B-d4-lj7" appends="YES" id="5oT-Xs-OfU"/>
+                                                </connections>
                                             </imageView>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -522,12 +526,18 @@ Flor Esthela Barbosa Castillo
                         <outlet property="imagenPregunta" destination="zPb-IN-4MB" id="YNc-Je-rfP"/>
                         <outlet property="lbPregunta" destination="di8-od-GhZ" id="3eW-Tx-Qaf"/>
                         <outlet property="navTitulo" destination="79O-Ii-n8g" id="gk9-M1-TJs"/>
+                        <outlet property="tapImagen" destination="Z0B-d4-lj7" id="vUe-hR-skI"/>
                         <outlet property="view1" destination="2vN-vn-KYU" id="h3C-s5-g9U"/>
                         <outlet property="view2" destination="XUx-vr-VdV" id="eRh-1Q-cVH"/>
                         <outlet property="view3" destination="3us-VP-MIh" id="jjk-KE-VZu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FyA-3L-y7s" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="Z0B-d4-lj7">
+                    <connections>
+                        <action selector="imageTapped:" destination="emJ-uW-WZe" id="fOP-Tx-iTw"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1130.4000000000001" y="491.60419790104953"/>
         </scene>
@@ -1248,13 +1258,21 @@ Flor Esthela Barbosa Castillo
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="O2u-Gt-g3c">
+                                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="O2u-Gt-g3c">
                                                 <rect key="frame" x="86" y="549" width="203" height="94"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <gestureRecognizers/>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="RRJ-O6-bwf" appends="YES" id="3Sh-gf-np8"/>
+                                                </connections>
                                             </imageView>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CbZ-dz-UDT">
+                                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CbZ-dz-UDT">
                                                 <rect key="frame" x="67" y="887" width="241" height="128"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <gestureRecognizers/>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="2Qk-gv-OIP" appends="YES" id="QiC-LB-zoW"/>
+                                                </connections>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="wordWrap" numberOfLines="6" baselineAdjustment="none" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iZh-E7-bbz">
                                                 <rect key="frame" x="35" y="651" width="305" height="146"/>
@@ -1263,9 +1281,13 @@ Flor Esthela Barbosa Castillo
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gih-Gr-hYv">
+                                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gih-Gr-hYv">
                                                 <rect key="frame" x="40" y="162" width="294" height="173"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <gestureRecognizers/>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="yZX-xv-UHW" appends="YES" id="MPv-Dl-5yd"/>
+                                                </connections>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="wordWrap" numberOfLines="6" baselineAdjustment="none" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fgz-ip-0dw">
                                                 <rect key="frame" x="35" y="362" width="305" height="152"/>
@@ -1306,6 +1328,21 @@ Flor Esthela Barbosa Castillo
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FpH-hy-lnj" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="yZX-xv-UHW">
+                    <connections>
+                        <action selector="imageTapped:" destination="2Q7-LG-f37" id="GAq-ge-qQr"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="RRJ-O6-bwf">
+                    <connections>
+                        <action selector="imageTapped:" destination="2Q7-LG-f37" id="6mr-lr-ENW"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="2Qk-gv-OIP">
+                    <connections>
+                        <action selector="imageTapped:" destination="2Q7-LG-f37" id="6Mo-Dz-IGn"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="2080.8000000000002" y="-219.04047976011995"/>
         </scene>
@@ -1447,9 +1484,13 @@ Flor Esthela Barbosa Castillo
                                         <rect key="frame" x="53" y="68" width="269" height="186"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zV8-25-z2S">
+                                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zV8-25-z2S">
                                                 <rect key="frame" x="0.0" y="0.0" width="269" height="186"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <gestureRecognizers/>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="ltL-0W-PPb" appends="YES" id="GQF-oJ-1pR"/>
+                                                </connections>
                                             </imageView>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1479,11 +1520,17 @@ Flor Esthela Barbosa Castillo
                         <outlet property="lbQuestion" destination="WkN-dv-uev" id="po9-kd-pA1"/>
                         <outlet property="progress" destination="sDr-vt-AUT" id="KA4-rZ-cfA"/>
                         <outlet property="questionImage" destination="zV8-25-z2S" id="N8S-H7-awS"/>
+                        <outlet property="tapImagen" destination="ltL-0W-PPb" id="SIN-q6-sSC"/>
                         <outlet property="viewImagen" destination="WvV-Qe-B39" id="p97-zc-cdL"/>
                         <outlet property="viewQuiz" destination="Ap1-B6-Wqe" id="zXk-jV-Yi4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kW9-zm-WwR" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="ltL-0W-PPb">
+                    <connections>
+                        <action selector="imageTapped:" destination="Q5X-Og-WYR" id="md1-lu-orQ"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="325.60000000000002" y="1163.568215892054"/>
         </scene>

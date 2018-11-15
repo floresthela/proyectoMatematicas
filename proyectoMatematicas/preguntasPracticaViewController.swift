@@ -34,6 +34,7 @@ class preguntasPracticaViewController: UIViewController {
     
     lazy var opciones: [UIButton] = { return [self.bOpc1 , self.bOpc2, self.bOpc3, self.bOpc4] }()
     
+    @IBOutlet var tapImagen: UITapGestureRecognizer!
     @IBOutlet weak var lbPregunta: UILabel!
     @IBOutlet weak var imagenPregunta: UIImageView!
     
@@ -151,12 +152,19 @@ class preguntasPracticaViewController: UIViewController {
     }
     
     func actualiza(indicePregunta: Int){
+        
+        bSigout.isEnabled = false
         cuenta += 1
         indicePreguntaActual = indicePregunta
         lbPregunta.attributedText = aMostrar[indicePregunta].pregunta
         imagenPregunta.image = aMostrar[indicePregunta].imagen
         
-       
+        if imagenPregunta.image == nil {
+            tapImagen.isEnabled = false
+        }
+        else{
+            tapImagen.isEnabled = true
+        }
     bOpc1.setAttributedTitle(aMostrar[indicePregunta].opciones[0], for: .normal)
     bOpc2.setAttributedTitle(aMostrar[indicePregunta].opciones[1], for: .normal)
     bOpc3.setAttributedTitle(aMostrar[indicePregunta].opciones[2], for: .normal)
@@ -188,11 +196,13 @@ class preguntasPracticaViewController: UIViewController {
                 let restartAction = UIAlertAction(title: "OK", style: .default, handler: nil)
                 alertaFeedback.addAction(restartAction)
                 present(alertaFeedback, animated: true, completion: nil)
+                
             }
         }
         else{
            seEquivoco = true
             opciones[indiceBoton!].backgroundColor = UIColor.red
+            bSigout.isEnabled = false
             //bAyudaout.isEnabled = false
         }
     }
@@ -219,11 +229,11 @@ class preguntasPracticaViewController: UIViewController {
         
         
         // solo se cuenta con # (ayudas) de oportunidades de recibir ayuda
-        if ayudas == 0 {
+        /*if ayudas == 0 {
             bAyudaout.isHidden = true
-        }
+        }*/
         
-        bAyudaout.isEnabled = false
+        //bAyudaout.isEnabled = false
     }
     
     
@@ -265,6 +275,32 @@ class preguntasPracticaViewController: UIViewController {
         
         previousScale = sender.scale
         //CGAffineTransform(translationX: scale, y: scale)
+    }
+    
+    
+ 
+    @IBAction func imageTapped(_ sender: UITapGestureRecognizer) {
+        
+        let imageView = sender.view as! UIImageView
+        let newImageView = UIImageView(image: imageView.image)
+        newImageView.frame = UIScreen.main.bounds
+        newImageView.backgroundColor = .black
+        newImageView.contentMode = .scaleAspectFit
+        newImageView.isUserInteractionEnabled = true
+        
+        let tap = UITapGestureRecognizer(target: self, action: #selector(dismissFullscreenImage))
+        newImageView.addGestureRecognizer(tap)
+        self.view.addSubview(newImageView)
+        self.navigationController?.isNavigationBarHidden = true
+        self.tabBarController?.tabBar.isHidden = true
+        
+    }
+    
+    
+    @objc func dismissFullscreenImage(_ sender: UITapGestureRecognizer) {
+        self.navigationController?.isNavigationBarHidden = false
+        self.tabBarController?.tabBar.isHidden = false
+        sender.view?.removeFromSuperview()
     }
     
     
