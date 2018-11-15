@@ -1157,29 +1157,17 @@ Flor Esthela Barbosa Castillo
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="6nT-ex-cVi" userLabel="botones">
-                                <rect key="frame" x="107.5" y="166" width="160" height="300"/>
+                                <rect key="frame" x="87.5" y="166" width="200" height="301"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ihl-cm-Qmv" customClass="RoundButton" customModule="proyectoMatematicas" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="160" height="58"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Hw-se-bvO" customClass="RoundButton" customModule="proyectoMatematicas" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="200" height="58"/>
                                         <color key="backgroundColor" red="0.26666666666666666" green="0.65490196078431373" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="LTR-mm-h9p"/>
+                                            <constraint firstAttribute="height" constant="58" id="uZq-he-bdJ"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="35"/>
-                                        <state key="normal" title="Círculo">
-                                            <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="18"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <segue destination="CV1-XZ-luZ" kind="show" identifier="graficaCirculo" id="MNs-b6-Cyr"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rMu-re-uJA" customClass="RoundButton" customModule="proyectoMatematicas" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="81" width="160" height="58"/>
-                                        <color key="backgroundColor" red="0.26666666666666666" green="0.65490196078431373" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="35"/>
-                                        <state key="normal" title="Parabola">
+                                        <state key="normal" title="Hiperbola">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <userDefinedRuntimeAttributes>
@@ -1188,12 +1176,16 @@ Flor Esthela Barbosa Castillo
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <segue destination="hhR-jt-TPF" kind="show" identifier="graficaParabola" id="YJk-fN-fmE"/>
+                                            <segue destination="6r3-rw-PcW" kind="show" id="v4p-4g-egY"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r8L-d2-nDu" customClass="RoundButton" customModule="proyectoMatematicas" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="162" width="160" height="57"/>
+                                        <rect key="frame" x="0.0" y="81" width="200" height="58"/>
                                         <color key="backgroundColor" red="0.26666666666666666" green="0.65490196078431373" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="BVb-L6-wza"/>
+                                            <constraint firstAttribute="height" constant="58" id="oZ7-pi-Ucf"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="34"/>
                                         <state key="normal" title="Elipse">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1207,11 +1199,15 @@ Flor Esthela Barbosa Castillo
                                             <segue destination="yhC-CF-wNQ" kind="show" identifier="graficaElipse" id="rd2-If-PcZ"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Hw-se-bvO" customClass="RoundButton" customModule="proyectoMatematicas" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="242" width="160" height="58"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rMu-re-uJA" customClass="RoundButton" customModule="proyectoMatematicas" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="162" width="200" height="58"/>
                                         <color key="backgroundColor" red="0.26666666666666666" green="0.65490196078431373" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="58" id="0FO-Jt-A4v"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="YjR-lb-uQC"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="35"/>
-                                        <state key="normal" title="Hiperbola">
+                                        <state key="normal" title="Parabola">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <userDefinedRuntimeAttributes>
@@ -1220,7 +1216,27 @@ Flor Esthela Barbosa Castillo
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <segue destination="6r3-rw-PcW" kind="show" id="v4p-4g-egY"/>
+                                            <segue destination="hhR-jt-TPF" kind="show" identifier="graficaParabola" id="YJk-fN-fmE"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ihl-cm-Qmv" customClass="RoundButton" customModule="proyectoMatematicas" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="243" width="200" height="58"/>
+                                        <color key="backgroundColor" red="0.26666666666666666" green="0.65490196078431373" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="5Pv-ov-bvH"/>
+                                            <constraint firstAttribute="height" constant="58" id="M5Y-eb-Ap1"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="35"/>
+                                        <state key="normal" title="Círculo">
+                                            <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="18"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="CV1-XZ-luZ" kind="show" identifier="graficaCirculo" id="MNs-b6-Cyr"/>
                                         </connections>
                                     </button>
                                 </subviews>
