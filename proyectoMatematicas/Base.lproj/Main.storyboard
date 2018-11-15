@@ -125,15 +125,20 @@ Flor Esthela Barbosa Castillo
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Secciones" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jAr-g2-Tz8">
+                                <rect key="frame" x="0.0" y="71" width="375" height="45"/>
+                                <fontDescription key="fontDescription" name="Wedgie-Regular" family="Wedgie" pointSize="39"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="7RM-jD-IJ7" userLabel="botones">
-                                <rect key="frame" x="108" y="236" width="159" height="325"/>
+                                <rect key="frame" x="91" y="204" width="193" height="325"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sHV-vk-v5S" customClass="RoundButton" customModule="proyectoMatematicas" customModuleProvider="target">
-                                        <rect key="frame" x="0.5" y="0.0" width="158" height="54"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="193" height="54"/>
                                         <color key="backgroundColor" red="0.2627450980392157" green="0.85098039215686272" blue="0.4823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="158" id="A6D-Kt-jke"/>
-                                            <constraint firstAttribute="height" constant="54" id="bvw-C9-27W"/>
+                                            <constraint firstAttribute="height" constant="54" id="OgK-3N-nAh"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="193" id="lmK-vQ-sBW"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="32"/>
                                         <state key="normal" title="Formulario">
@@ -149,11 +154,11 @@ Flor Esthela Barbosa Castillo
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qZx-j0-qjE" customClass="RoundButton" customModule="proyectoMatematicas" customModuleProvider="target">
-                                        <rect key="frame" x="0.5" y="70" width="158" height="54"/>
+                                        <rect key="frame" x="0.0" y="70" width="193" height="54"/>
                                         <color key="backgroundColor" red="0.2627450980392157" green="0.85098039215686272" blue="0.4823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="158" id="YTO-ye-bsC"/>
-                                            <constraint firstAttribute="height" constant="54" id="pJ6-6l-mmR"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="193" id="2hL-Pr-cTD"/>
+                                            <constraint firstAttribute="height" constant="54" id="42X-Q8-l5X"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="32"/>
                                         <state key="normal" title="Práctica">
@@ -169,11 +174,11 @@ Flor Esthela Barbosa Castillo
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lvj-n4-Vn2" customClass="RoundButton" customModule="proyectoMatematicas" customModuleProvider="target">
-                                        <rect key="frame" x="0.5" y="140" width="158" height="54"/>
+                                        <rect key="frame" x="0.0" y="140" width="193" height="54"/>
                                         <color key="backgroundColor" red="0.2627450980392157" green="0.85098039215686272" blue="0.4823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="54" id="MWS-HO-gmE"/>
-                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="158" id="uk5-27-xpl"/>
+                                            <constraint firstAttribute="height" constant="54" id="Ao6-Xn-ykS"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="193" id="FbH-3j-jdT"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="32"/>
                                         <state key="normal" title="Quiz">
@@ -189,11 +194,11 @@ Flor Esthela Barbosa Castillo
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GC9-DL-nUi" customClass="RoundButton" customModule="proyectoMatematicas" customModuleProvider="target">
-                                        <rect key="frame" x="0.5" y="210" width="158" height="54"/>
+                                        <rect key="frame" x="0.0" y="210" width="193" height="54"/>
                                         <color key="backgroundColor" red="0.2627450980392157" green="0.85098039215686272" blue="0.4823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="54" id="L8M-Hu-h1h"/>
-                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="158" id="jLj-WL-XZe"/>
+                                            <constraint firstAttribute="height" constant="54" id="5AL-Jz-TCl"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="193" id="Unr-gV-1m2"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="32"/>
                                         <state key="normal" title="Graficar">
@@ -209,10 +214,11 @@ Flor Esthela Barbosa Castillo
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rbf-zQ-q6R" customClass="RoundButton" customModule="proyectoMatematicas" customModuleProvider="target">
-                                        <rect key="frame" x="32.5" y="280" width="94" height="45"/>
+                                        <rect key="frame" x="39" y="280" width="115" height="45"/>
                                         <color key="backgroundColor" red="1" green="0.66666666666666663" blue="0.30588235294117649" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="45" id="QhJ-cI-Kot"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="115" id="XNc-tG-1ab"/>
+                                            <constraint firstAttribute="height" constant="45" id="keL-gk-VYk"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="25"/>
                                         <state key="normal" title="Créditos">
@@ -229,30 +235,25 @@ Flor Esthela Barbosa Castillo
                                     </button>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="XEg-QM-K77" userLabel="tit">
-                                <rect key="frame" x="17.5" y="70" width="340" height="113"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Secciones" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jAr-g2-Tz8">
-                                        <rect key="frame" x="0.0" y="0.0" width="340" height="44.5"/>
-                                        <fontDescription key="fontDescription" name="Wedgie-Regular" family="Wedgie" pointSize="39"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Cónicas" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xLg-sC-Jux">
-                                        <rect key="frame" x="0.0" y="45.5" width="340" height="67.5"/>
-                                        <fontDescription key="fontDescription" name="Wedgie-Regular" family="Wedgie" pointSize="60"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Conicas" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xLg-sC-Jux">
+                                <rect key="frame" x="0.0" y="113" width="375" height="63"/>
+                                <fontDescription key="fontDescription" name="Wedgie-Regular" family="Wedgie" pointSize="55"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="7RM-jD-IJ7" secondAttribute="bottom" constant="106" id="4iI-b3-ZIT"/>
-                            <constraint firstItem="7RM-jD-IJ7" firstAttribute="top" secondItem="XEg-QM-K77" secondAttribute="bottom" constant="53" id="Pm4-Xc-LRX"/>
-                            <constraint firstItem="XEg-QM-K77" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="a57-2x-1N5"/>
-                            <constraint firstItem="XEg-QM-K77" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dw5-9b-Egi"/>
-                            <constraint firstItem="7RM-jD-IJ7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qEM-oH-ByD"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7RM-jD-IJ7" secondAttribute="trailing" constant="108" id="qsC-ex-3Rd"/>
+                            <constraint firstItem="xLg-sC-Jux" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="93" id="EED-bp-eGx"/>
+                            <constraint firstItem="7RM-jD-IJ7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HAw-aX-I9K"/>
+                            <constraint firstItem="xLg-sC-Jux" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="J4U-1D-dD0"/>
+                            <constraint firstItem="jAr-g2-Tz8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="POT-Kf-2d0"/>
+                            <constraint firstItem="jAr-g2-Tz8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="51" id="U3p-iF-bcm"/>
+                            <constraint firstItem="xLg-sC-Jux" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="VCt-FI-Xc0"/>
+                            <constraint firstItem="7RM-jD-IJ7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VwT-ig-vBU"/>
+                            <constraint firstItem="7RM-jD-IJ7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cyI-Aj-bxS"/>
+                            <constraint firstItem="jAr-g2-Tz8" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="hKP-iK-fiS"/>
+                            <constraint firstItem="7RM-jD-IJ7" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="33" id="xhl-Em-Hbu"/>
+                            <constraint firstItem="xLg-sC-Jux" firstAttribute="top" secondItem="jAr-g2-Tz8" secondAttribute="bottom" constant="-3" id="zEC-qo-qjd"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -568,7 +569,7 @@ Flor Esthela Barbosa Castillo
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lwj-Sz-T6Q">
-                                        <rect key="frame" x="148" y="393" width="78" height="30"/>
+                                        <rect key="frame" x="148.5" y="393" width="78" height="30"/>
                                         <color key="backgroundColor" red="0.023529411764705882" green="0.84705882352941175" blue="0.32941176470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="78" id="F16-4h-pq6"/>
@@ -1156,12 +1157,12 @@ Flor Esthela Barbosa Castillo
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="6nT-ex-cVi" userLabel="botones">
-                                <rect key="frame" x="96" y="166" width="183" height="325"/>
+                                <rect key="frame" x="107.5" y="166" width="160" height="300"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ihl-cm-Qmv" customClass="RoundButton" customModule="proyectoMatematicas" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="183" height="64"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="160" height="58"/>
                                         <color key="backgroundColor" red="0.26666666666666666" green="0.65490196078431373" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="40"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="35"/>
                                         <state key="normal" title="Círculo">
                                             <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
                                         </state>
@@ -1175,9 +1176,9 @@ Flor Esthela Barbosa Castillo
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rMu-re-uJA" customClass="RoundButton" customModule="proyectoMatematicas" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="87" width="183" height="64"/>
+                                        <rect key="frame" x="0.0" y="81" width="160" height="58"/>
                                         <color key="backgroundColor" red="0.26666666666666666" green="0.65490196078431373" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="40"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="35"/>
                                         <state key="normal" title="Parabola">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
@@ -1191,9 +1192,9 @@ Flor Esthela Barbosa Castillo
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r8L-d2-nDu" customClass="RoundButton" customModule="proyectoMatematicas" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="174" width="183" height="64"/>
+                                        <rect key="frame" x="0.0" y="162" width="160" height="57"/>
                                         <color key="backgroundColor" red="0.26666666666666666" green="0.65490196078431373" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="40"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="34"/>
                                         <state key="normal" title="Elipse">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
@@ -1207,9 +1208,9 @@ Flor Esthela Barbosa Castillo
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Hw-se-bvO" customClass="RoundButton" customModule="proyectoMatematicas" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="261" width="183" height="64"/>
+                                        <rect key="frame" x="0.0" y="242" width="160" height="58"/>
                                         <color key="backgroundColor" red="0.26666666666666666" green="0.65490196078431373" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="40"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="35"/>
                                         <state key="normal" title="Hiperbola">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
