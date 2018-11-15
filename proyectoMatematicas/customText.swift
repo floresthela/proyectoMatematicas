@@ -11,7 +11,7 @@ extension String{
     func customText() -> NSMutableAttributedString {
         let fontSuper:UIFont? = UIFont(name: "Helvetica", size:10)
         let font = UIFont(name: "Helvetica", size: 18)
-        let attString:NSMutableAttributedString = NSMutableAttributedString(string: self, attributes: [NSAttributedString.Key.font:font!])
+        let attString:NSMutableAttributedString = NSMutableAttributedString(string: self, attributes: [NSAttributedString.Key.font:font!, NSAttributedString.Key.foregroundColor: UIColor.black])
         var indexA = Array(repeating: 0, count: 10)
         var indexB = Array(repeating: 0, count: 10)
         var indexC = Array(repeating: 0, count: 10)
@@ -48,12 +48,12 @@ extension String{
         for  a in 0..<10{
             if indexA[a] != 0 || indexB[a] != 0 {
                 for b in indexA[a]+1..<indexB[a]{
-                    attString.setAttributes([NSAttributedString.Key.font:fontSuper!,NSAttributedString.Key.baselineOffset:10], range: NSRange(location:b,length:1))
+                    attString.setAttributes([NSAttributedString.Key.font:fontSuper!,NSAttributedString.Key.baselineOffset:10,NSAttributedString.Key.foregroundColor: UIColor.black], range: NSRange(location:b,length:1))
                 }
             }
             if indexC[a] != 0 || indexD[a] != 0 {
                 for b in indexC[a]+1..<indexD[a]{
-                    attString.setAttributes([NSAttributedString.Key.font:fontSuper!,NSAttributedString.Key.baselineOffset:-5], range: NSRange(location:b,length:1))
+                    attString.setAttributes([NSAttributedString.Key.font:fontSuper!,NSAttributedString.Key.baselineOffset:-5,NSAttributedString.Key.foregroundColor: UIColor.black], range: NSRange(location:b,length:1))
                 }
             }
         }
