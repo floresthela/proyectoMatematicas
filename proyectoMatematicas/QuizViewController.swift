@@ -85,6 +85,8 @@ class QuizViewController: UIViewController, EFImageViewZoomDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        progress.frame.size.width = CGFloat (counter)
+        
         btnOptionA.backgroundColor = UIColor(red: 250/255.0, green: 121/255.0, blue: 33/255.0, alpha: 1)
         btnOptionB.backgroundColor = UIColor(red: 250/255.0, green: 121/255.0, blue: 33/255.0, alpha: 1)
         btnOptionC.backgroundColor = UIColor(red: 250/255.0, green: 121/255.0, blue: 33/255.0, alpha: 1)

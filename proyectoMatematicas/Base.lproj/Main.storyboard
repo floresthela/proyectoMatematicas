@@ -441,14 +441,16 @@ Flor Esthela Barbosa Castillo
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XUx-vr-VdV">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XUx-vr-VdV">
                                 <rect key="frame" x="0.0" y="496" width="375" height="171"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XPY-Az-L8p" customClass="RoundButton" customModule="proyectoMatematicas" customModuleProvider="target">
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XPY-Az-L8p" customClass="RoundButton" customModule="proyectoMatematicas" customModuleProvider="target">
                                         <rect key="frame" x="8" y="53" width="359" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="ewX-u5-PgC"/>
+                                            <constraint firstAttribute="width" constant="359" id="uf3-8N-ziW"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
                                         <state key="normal" title="Parabola">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -462,10 +464,13 @@ Flor Esthela Barbosa Castillo
                                             <action selector="seleccionoBotonWithButton:" destination="emJ-uW-WZe" eventType="touchUpInside" id="B5u-I3-tCX"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zdg-Ix-pqQ" customClass="RoundButton" customModule="proyectoMatematicas" customModuleProvider="target">
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zdg-Ix-pqQ" customClass="RoundButton" customModule="proyectoMatematicas" customModuleProvider="target">
                                         <rect key="frame" x="8" y="91" width="359" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="QA7-W8-dQC"/>
+                                            <constraint firstAttribute="width" constant="359" id="XDp-bP-dxI"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
                                         <state key="normal" title="Parabola">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -479,10 +484,13 @@ Flor Esthela Barbosa Castillo
                                             <action selector="seleccionoBotonWithButton:" destination="emJ-uW-WZe" eventType="touchUpInside" id="eXx-3O-i6T"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cyj-Mh-tu1" customClass="RoundButton" customModule="proyectoMatematicas" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cyj-Mh-tu1" customClass="RoundButton" customModule="proyectoMatematicas" customModuleProvider="target">
                                         <rect key="frame" x="8" y="15" width="359" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="7u8-HY-GGy"/>
+                                            <constraint firstAttribute="width" constant="359" id="EGf-i9-bGl"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
                                         <state key="normal" title="Parabola">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -496,10 +504,13 @@ Flor Esthela Barbosa Castillo
                                             <action selector="seleccionoBotonWithButton:" destination="emJ-uW-WZe" eventType="touchUpInside" id="CQq-Dd-XEw"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5bx-xk-EaO" customClass="RoundButton" customModule="proyectoMatematicas" customModuleProvider="target">
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5bx-xk-EaO" customClass="RoundButton" customModule="proyectoMatematicas" customModuleProvider="target">
                                         <rect key="frame" x="8" y="129" width="359" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="359" id="Fyr-EC-TWi"/>
+                                            <constraint firstAttribute="height" constant="30" id="Nfz-mX-a4Z"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
                                         <state key="normal" title="Parabola">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -515,15 +526,27 @@ Flor Esthela Barbosa Castillo
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.92549019610000005" green="0.97647058819999999" blue="0.94509803920000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="cyj-Mh-tu1" firstAttribute="trailing" secondItem="zdg-Ix-pqQ" secondAttribute="trailing" id="62u-O3-Oyj"/>
+                                    <constraint firstItem="cyj-Mh-tu1" firstAttribute="leading" secondItem="zdg-Ix-pqQ" secondAttribute="leading" id="8ae-6G-Dha"/>
+                                    <constraint firstItem="cyj-Mh-tu1" firstAttribute="leading" secondItem="XPY-Az-L8p" secondAttribute="leading" id="GL7-lQ-XWR"/>
+                                    <constraint firstItem="cyj-Mh-tu1" firstAttribute="leading" secondItem="5bx-xk-EaO" secondAttribute="leading" id="Mza-RB-cYn"/>
+                                    <constraint firstItem="zdg-Ix-pqQ" firstAttribute="top" secondItem="XPY-Az-L8p" secondAttribute="bottom" constant="8" symbolic="YES" id="OD8-TQ-GzZ"/>
+                                    <constraint firstItem="cyj-Mh-tu1" firstAttribute="leading" secondItem="XUx-vr-VdV" secondAttribute="leadingMargin" id="RNo-ge-5u8"/>
+                                    <constraint firstItem="5bx-xk-EaO" firstAttribute="top" secondItem="zdg-Ix-pqQ" secondAttribute="bottom" constant="8" symbolic="YES" id="RUx-Qp-Vof"/>
+                                    <constraint firstItem="cyj-Mh-tu1" firstAttribute="top" secondItem="XUx-vr-VdV" secondAttribute="top" constant="15" id="cII-kA-XhS"/>
+                                    <constraint firstItem="cyj-Mh-tu1" firstAttribute="trailing" secondItem="XPY-Az-L8p" secondAttribute="trailing" id="jBH-RT-C1H"/>
+                                    <constraint firstItem="cyj-Mh-tu1" firstAttribute="trailing" secondItem="5bx-xk-EaO" secondAttribute="trailing" id="yfi-vp-Ihp"/>
+                                    <constraint firstItem="XPY-Az-L8p" firstAttribute="top" secondItem="cyj-Mh-tu1" secondAttribute="bottom" constant="8" symbolic="YES" id="zKR-nr-jKf"/>
+                                </constraints>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2vN-vn-KYU">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2vN-vn-KYU">
                                 <rect key="frame" x="0.0" y="64" width="375" height="431"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RnV-YI-6Ad">
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RnV-YI-6Ad">
                                         <rect key="frame" x="289" y="393" width="78" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.023529411764705882" green="0.84705882352941175" blue="0.32941176470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
                                         <state key="normal" title="Siguiente">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
@@ -531,10 +554,12 @@ Flor Esthela Barbosa Castillo
                                             <action selector="bSiguiente:" destination="emJ-uW-WZe" eventType="touchUpInside" id="KxF-Bo-Rhs"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uY7-dX-H9w">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uY7-dX-H9w">
                                         <rect key="frame" x="341" y="3" width="34" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.023529411764705882" green="0.84705882352941175" blue="0.32941176470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="34" id="C1f-pZ-B4a"/>
+                                        </constraints>
                                         <state key="normal" title="?">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
@@ -542,10 +567,13 @@ Flor Esthela Barbosa Castillo
                                             <action selector="bAyuda:" destination="emJ-uW-WZe" eventType="touchUpInside" id="w1W-2W-xY3"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lwj-Sz-T6Q">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lwj-Sz-T6Q">
                                         <rect key="frame" x="148" y="393" width="78" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="0.023529411764705882" green="0.84705882352941175" blue="0.32941176470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="78" id="F16-4h-pq6"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
                                         <state key="normal" title="Terminar">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
@@ -553,16 +581,18 @@ Flor Esthela Barbosa Castillo
                                             <action selector="bTermina:" destination="emJ-uW-WZe" eventType="touchUpInside" id="ebG-q9-1OL"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Aqui va la pregunta alv" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="di8-od-GhZ">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Aqui va la pregunta " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="di8-od-GhZ">
                                         <rect key="frame" x="18" y="52" width="339" height="110"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="110" id="mxo-GR-deq"/>
+                                            <constraint firstAttribute="width" constant="339" id="xsF-gK-ttp"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3us-VP-MIh">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3us-VP-MIh">
                                         <rect key="frame" x="38" y="170" width="319" height="203"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
                                             <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zPb-IN-4MB">
                                                 <rect key="frame" x="8" y="2" width="299" height="199"/>
@@ -577,9 +607,36 @@ Flor Esthela Barbosa Castillo
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" red="0.92549019607843142" green="0.97647058823529409" blue="0.94509803921568625" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="3us-VP-MIh" secondAttribute="bottom" constant="58" id="4yO-qx-32s"/>
+                                    <constraint firstAttribute="trailing" secondItem="uY7-dX-H9w" secondAttribute="trailing" id="9uP-Rn-I7p"/>
+                                    <constraint firstItem="3us-VP-MIh" firstAttribute="leading" secondItem="2vN-vn-KYU" secondAttribute="leading" constant="38" id="AWj-gS-9le"/>
+                                    <constraint firstItem="di8-od-GhZ" firstAttribute="centerX" secondItem="2vN-vn-KYU" secondAttribute="centerX" id="CBG-CX-K4V"/>
+                                    <constraint firstItem="Lwj-Sz-T6Q" firstAttribute="bottom" secondItem="2vN-vn-KYU" secondAttribute="bottomMargin" id="M9M-lf-F7u"/>
+                                    <constraint firstItem="RnV-YI-6Ad" firstAttribute="leading" secondItem="Lwj-Sz-T6Q" secondAttribute="trailing" constant="63" id="SN6-uZ-VRZ"/>
+                                    <constraint firstItem="di8-od-GhZ" firstAttribute="trailing" secondItem="3us-VP-MIh" secondAttribute="trailing" id="dJi-lx-tDb"/>
+                                    <constraint firstItem="Lwj-Sz-T6Q" firstAttribute="baseline" secondItem="RnV-YI-6Ad" secondAttribute="firstBaseline" id="dc1-pL-HyU"/>
+                                    <constraint firstItem="di8-od-GhZ" firstAttribute="top" secondItem="2vN-vn-KYU" secondAttribute="top" constant="52" id="jxy-Cg-AoZ"/>
+                                    <constraint firstItem="RnV-YI-6Ad" firstAttribute="top" secondItem="3us-VP-MIh" secondAttribute="bottom" constant="20" id="mCf-v4-Wi5"/>
+                                    <constraint firstItem="Lwj-Sz-T6Q" firstAttribute="top" secondItem="RnV-YI-6Ad" secondAttribute="top" id="rwp-VY-dUI"/>
+                                    <constraint firstItem="Lwj-Sz-T6Q" firstAttribute="firstBaseline" secondItem="RnV-YI-6Ad" secondAttribute="baseline" id="uJv-tE-XLC"/>
+                                    <constraint firstItem="di8-od-GhZ" firstAttribute="top" secondItem="uY7-dX-H9w" secondAttribute="bottom" constant="19" id="udQ-9h-T17"/>
+                                    <constraint firstItem="3us-VP-MIh" firstAttribute="top" secondItem="di8-od-GhZ" secondAttribute="bottom" constant="8" symbolic="YES" id="v0O-Nx-zsL"/>
+                                    <constraint firstItem="di8-od-GhZ" firstAttribute="centerX" secondItem="Lwj-Sz-T6Q" secondAttribute="centerX" id="xQf-ea-kLd"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="XUx-vr-VdV" secondAttribute="trailing" id="0I3-zG-YG5"/>
+                            <constraint firstItem="XUx-vr-VdV" firstAttribute="trailing" secondItem="2vN-vn-KYU" secondAttribute="trailing" id="1cV-T4-xm7"/>
+                            <constraint firstItem="XUx-vr-VdV" firstAttribute="leading" secondItem="2vN-vn-KYU" secondAttribute="leading" id="JWL-mY-mKa"/>
+                            <constraint firstItem="XUx-vr-VdV" firstAttribute="top" secondItem="IjO-5m-ZLC" secondAttribute="top" constant="496" id="L9a-JA-FMF"/>
+                            <constraint firstItem="XUx-vr-VdV" firstAttribute="leading" secondItem="IjO-5m-ZLC" secondAttribute="leading" id="NdI-VH-B05"/>
+                            <constraint firstItem="XUx-vr-VdV" firstAttribute="bottom" secondItem="zUJ-I2-5BB" secondAttribute="bottom" id="V6M-Gt-cBi"/>
+                            <constraint firstItem="2vN-vn-KYU" firstAttribute="top" secondItem="zUJ-I2-5BB" secondAttribute="top" id="VjP-Mh-clc"/>
+                            <constraint firstItem="XUx-vr-VdV" firstAttribute="top" secondItem="2vN-vn-KYU" secondAttribute="bottom" constant="1" id="hpN-co-HzC"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="zUJ-I2-5BB"/>
                     </view>
                     <navigationItem key="navigationItem" title="Title" largeTitleDisplayMode="never" id="79O-Ii-n8g"/>
@@ -1459,14 +1516,16 @@ Flor Esthela Barbosa Castillo
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OqO-au-epE">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OqO-au-epE">
+                                <rect key="frame" x="0.0" y="64" width="379" height="603"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="75M-ot-3VV" customClass="RoundButton" customModule="proyectoMatematicas" customModuleProvider="target">
-                                        <rect key="frame" x="16" y="465" width="343" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="75M-ot-3VV" customClass="RoundButton" customModule="proyectoMatematicas" customModuleProvider="target">
+                                        <rect key="frame" x="18" y="474" width="343" height="30"/>
                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="343" id="pCI-3U-neM"/>
+                                            <constraint firstAttribute="height" constant="30" id="wzO-cA-AeX"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
                                         <state key="normal" title="Option B">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1480,10 +1539,13 @@ Flor Esthela Barbosa Castillo
                                             <action selector="selectedAnswer:" destination="Q5X-Og-WYR" eventType="touchUpInside" id="DSa-PL-Hp7"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iSb-zC-0tz" customClass="RoundButton" customModule="proyectoMatematicas" customModuleProvider="target">
-                                        <rect key="frame" x="16" y="506" width="343" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iSb-zC-0tz" customClass="RoundButton" customModule="proyectoMatematicas" customModuleProvider="target">
+                                        <rect key="frame" x="18" y="512" width="343" height="30"/>
                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="343" id="q0t-qp-GDv"/>
+                                            <constraint firstAttribute="height" constant="30" id="qjJ-YB-N9Z"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
                                         <state key="normal" title="Option C">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1497,10 +1559,13 @@ Flor Esthela Barbosa Castillo
                                             <action selector="selectedAnswer:" destination="Q5X-Og-WYR" eventType="touchUpInside" id="y6Q-IY-kef"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="64z-53-z2X" customClass="RoundButton" customModule="proyectoMatematicas" customModuleProvider="target">
-                                        <rect key="frame" x="16" y="544" width="343" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="64z-53-z2X" customClass="RoundButton" customModule="proyectoMatematicas" customModuleProvider="target">
+                                        <rect key="frame" x="18" y="550" width="343" height="30"/>
                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="Ecj-E6-O2G"/>
+                                            <constraint firstAttribute="width" constant="343" id="LFQ-5D-Ufl"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
                                         <state key="normal" title="Option D">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1514,28 +1579,30 @@ Flor Esthela Barbosa Castillo
                                             <action selector="selectedAnswer:" destination="Q5X-Og-WYR" eventType="touchUpInside" id="y1r-KZ-Ufz"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pregunta" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WkN-dv-uev">
-                                        <rect key="frame" x="16" y="243" width="343" height="108"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Pregunta" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WkN-dv-uev">
+                                        <rect key="frame" x="17" y="262" width="343" height="112"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="112" id="N8y-zM-vtK"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="18"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sDr-vt-AUT">
-                                        <rect key="frame" x="0.0" y="-1" width="375" height="3"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="progressTintColor" red="1" green="0.42745098040000001" blue="0.30588235289999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progressViewStyle="bar" translatesAutoresizingMaskIntoConstraints="NO" id="sDr-vt-AUT">
+                                        <rect key="frame" x="0.0" y="1.5" width="371" height="2.5"/>
+                                        <color key="trackTintColor" red="1" green="0.80027001941850884" blue="0.68646217226652628" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </progressView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="xx/10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YgY-xe-xqL">
-                                        <rect key="frame" x="8" y="12" width="62" height="23"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="xx/10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YgY-xe-xqL">
+                                        <rect key="frame" x="8" y="9" width="49" height="23"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="49" id="9YW-9w-G0Y"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2AO-RR-q3g" customClass="RoundButton" customModule="proyectoMatematicas" customModuleProvider="target">
-                                        <rect key="frame" x="272" y="371" width="87" height="38"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2AO-RR-q3g" customClass="RoundButton" customModule="proyectoMatematicas" customModuleProvider="target">
+                                        <rect key="frame" x="286" y="392" width="75" height="36"/>
                                         <color key="backgroundColor" red="0.011764705882352941" green="0.58823529411764708" blue="0.792156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="18"/>
                                         <state key="normal" title="Siguiente">
@@ -1550,26 +1617,8 @@ Flor Esthela Barbosa Castillo
                                             <action selector="btnNext:" destination="Q5X-Og-WYR" eventType="touchUpInside" id="Sxi-5G-wf0"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lGj-ld-IRu" customClass="RoundButton" customModule="proyectoMatematicas" customModuleProvider="target">
-                                        <rect key="frame" x="16" y="427" width="343" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
-                                        <state key="normal" title="Option A">
-                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="12"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <action selector="selectedAnswer:" destination="Q5X-Og-WYR" eventType="touchUpInside" id="s0b-hJ-1V3"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ytO-X4-itK" customClass="RoundButton" customModule="proyectoMatematicas" customModuleProvider="target">
-                                        <rect key="frame" x="145" y="371" width="85" height="38"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ytO-X4-itK" customClass="RoundButton" customModule="proyectoMatematicas" customModuleProvider="target">
+                                        <rect key="frame" x="153.5" y="392" width="72" height="36"/>
                                         <color key="backgroundColor" red="0.011764705882352941" green="0.58823529411764708" blue="0.792156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="18"/>
                                         <state key="normal" title="Terminar">
@@ -1585,12 +1634,11 @@ Flor Esthela Barbosa Castillo
                                             <segue destination="kTK-K1-OWP" kind="show" identifier="Segue" id="vcn-sX-eRi"/>
                                         </connections>
                                     </button>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WvV-Qe-B39">
-                                        <rect key="frame" x="53" y="68" width="269" height="186"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WvV-Qe-B39">
+                                        <rect key="frame" x="53" y="68" width="273" height="186"/>
                                         <subviews>
                                             <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zV8-25-z2S">
-                                                <rect key="frame" x="0.0" y="0.0" width="269" height="186"/>
+                                                <rect key="frame" x="1" y="0.0" width="269" height="186"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <gestureRecognizers/>
                                                 <connections>
@@ -1600,15 +1648,74 @@ Flor Esthela Barbosa Castillo
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lGj-ld-IRu" customClass="RoundButton" customModule="proyectoMatematicas" customModuleProvider="target">
+                                        <rect key="frame" x="18" y="436" width="343" height="30"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="343" id="faK-rt-LAy"/>
+                                            <constraint firstAttribute="height" constant="30" id="vM1-ss-C82"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
+                                        <state key="normal" title="Option A">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="12"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="selectedAnswer:" destination="Q5X-Og-WYR" eventType="touchUpInside" id="s0b-hJ-1V3"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
-                                <color key="backgroundColor" red="0.91764705882352937" green="0.95294117647058818" blue="0.96862745098039216" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="YgY-xe-xqL" firstAttribute="top" secondItem="OqO-au-epE" secondAttribute="top" constant="9" id="21P-ZY-DX2"/>
+                                    <constraint firstItem="2AO-RR-q3g" firstAttribute="top" secondItem="WkN-dv-uev" secondAttribute="bottom" constant="18" id="7Vy-wf-zZZ"/>
+                                    <constraint firstAttribute="bottom" secondItem="lGj-ld-IRu" secondAttribute="bottom" constant="137" id="8Im-ek-m1Q"/>
+                                    <constraint firstItem="lGj-ld-IRu" firstAttribute="top" secondItem="ytO-X4-itK" secondAttribute="bottom" constant="8" symbolic="YES" id="8Zb-1m-0So"/>
+                                    <constraint firstItem="WkN-dv-uev" firstAttribute="top" secondItem="WvV-Qe-B39" secondAttribute="bottom" constant="8" symbolic="YES" id="Ch5-LC-pJe"/>
+                                    <constraint firstItem="75M-ot-3VV" firstAttribute="top" secondItem="lGj-ld-IRu" secondAttribute="bottom" constant="8" symbolic="YES" id="DyE-H2-t40"/>
+                                    <constraint firstItem="lGj-ld-IRu" firstAttribute="centerX" secondItem="64z-53-z2X" secondAttribute="centerX" id="GgI-dG-jtb"/>
+                                    <constraint firstItem="75M-ot-3VV" firstAttribute="centerX" secondItem="ytO-X4-itK" secondAttribute="centerX" id="IKn-KQ-5X0"/>
+                                    <constraint firstItem="YgY-xe-xqL" firstAttribute="leading" secondItem="OqO-au-epE" secondAttribute="leadingMargin" id="JJw-ZN-Ayb"/>
+                                    <constraint firstItem="lGj-ld-IRu" firstAttribute="trailing" secondItem="64z-53-z2X" secondAttribute="trailing" id="JM3-R3-vTB"/>
+                                    <constraint firstItem="75M-ot-3VV" firstAttribute="trailing" secondItem="2AO-RR-q3g" secondAttribute="trailing" id="Mss-Az-4O8"/>
+                                    <constraint firstItem="WvV-Qe-B39" firstAttribute="top" secondItem="YgY-xe-xqL" secondAttribute="bottom" constant="36" id="O5X-Nq-hOa"/>
+                                    <constraint firstItem="64z-53-z2X" firstAttribute="top" secondItem="iSb-zC-0tz" secondAttribute="bottom" constant="8" symbolic="YES" id="OU7-mh-HiC"/>
+                                    <constraint firstItem="YgY-xe-xqL" firstAttribute="top" secondItem="sDr-vt-AUT" secondAttribute="bottom" constant="6" id="RCs-8B-bJA"/>
+                                    <constraint firstItem="75M-ot-3VV" firstAttribute="trailing" secondItem="iSb-zC-0tz" secondAttribute="trailing" id="UX6-hJ-idH"/>
+                                    <constraint firstItem="75M-ot-3VV" firstAttribute="leading" secondItem="64z-53-z2X" secondAttribute="leading" id="Xjo-3L-zoB"/>
+                                    <constraint firstItem="sDr-vt-AUT" firstAttribute="trailing" secondItem="OqO-au-epE" secondAttribute="trailingMargin" id="ap0-bT-0vT"/>
+                                    <constraint firstItem="75M-ot-3VV" firstAttribute="leading" secondItem="iSb-zC-0tz" secondAttribute="leading" id="bJX-j9-OxD"/>
+                                    <constraint firstItem="75M-ot-3VV" firstAttribute="centerX" secondItem="WvV-Qe-B39" secondAttribute="centerX" id="e9g-vR-zYn"/>
+                                    <constraint firstItem="75M-ot-3VV" firstAttribute="trailing" secondItem="WkN-dv-uev" secondAttribute="trailing" id="eg8-77-7g4"/>
+                                    <constraint firstItem="lGj-ld-IRu" firstAttribute="top" secondItem="2AO-RR-q3g" secondAttribute="bottom" constant="8" symbolic="YES" id="lNK-Ot-a57"/>
+                                    <constraint firstItem="lGj-ld-IRu" firstAttribute="leading" secondItem="OqO-au-epE" secondAttribute="leading" constant="18" id="noU-UE-0jC"/>
+                                    <constraint firstItem="sDr-vt-AUT" firstAttribute="leading" secondItem="OqO-au-epE" secondAttribute="leading" id="pS6-7i-vHe"/>
+                                    <constraint firstItem="75M-ot-3VV" firstAttribute="centerX" secondItem="OqO-au-epE" secondAttribute="centerX" id="rg0-kY-bh2"/>
+                                    <constraint firstItem="WkN-dv-uev" firstAttribute="top" secondItem="WvV-Qe-B39" secondAttribute="bottom" constant="8" id="v0d-rg-DHQ"/>
+                                    <constraint firstItem="iSb-zC-0tz" firstAttribute="top" secondItem="75M-ot-3VV" secondAttribute="bottom" constant="8" symbolic="YES" id="vTe-b8-2eq"/>
+                                    <constraint firstItem="WvV-Qe-B39" firstAttribute="leading" secondItem="OqO-au-epE" secondAttribute="leading" constant="53" id="xyD-KU-uC9"/>
+                                    <constraint firstItem="75M-ot-3VV" firstAttribute="leading" secondItem="WkN-dv-uev" secondAttribute="leading" id="z7M-90-E0C"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="OqO-au-epE" firstAttribute="leading" secondItem="Kbq-Xt-8tC" secondAttribute="leading" id="6p9-jv-Az5"/>
+                            <constraint firstItem="OqO-au-epE" firstAttribute="top" secondItem="Kbq-Xt-8tC" secondAttribute="top" id="HM5-j7-men"/>
+                            <constraint firstAttribute="trailing" secondItem="OqO-au-epE" secondAttribute="trailing" constant="-4" id="I0U-Or-pNL"/>
+                            <constraint firstItem="OqO-au-epE" firstAttribute="top" secondItem="Kbq-Xt-8tC" secondAttribute="top" id="KxQ-sS-jlm"/>
+                            <constraint firstItem="OqO-au-epE" firstAttribute="bottom" secondItem="Kbq-Xt-8tC" secondAttribute="bottom" id="evD-Sj-r1I"/>
+                            <constraint firstItem="OqO-au-epE" firstAttribute="bottom" secondItem="Kbq-Xt-8tC" secondAttribute="bottom" id="hDM-3o-XPZ"/>
+                            <constraint firstItem="OqO-au-epE" firstAttribute="leading" secondItem="Ap1-B6-Wqe" secondAttribute="leading" id="vrq-Sx-lxe"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Kbq-Xt-8tC"/>
                     </view>
                     <navigationItem key="navigationItem" title="Quiz" largeTitleDisplayMode="never" id="XRc-5d-0H4">
-                        <barButtonItem key="leftBarButtonItem" title="Menu" id="oif-eg-mfq">
+                        <barButtonItem key="leftBarButtonItem" title="Menú" id="oif-eg-mfq">
                             <connections>
                                 <action selector="regresaMenu:" destination="Q5X-Og-WYR" id="S2G-TB-J5S"/>
                             </connections>
@@ -1647,23 +1754,29 @@ Flor Esthela Barbosa Castillo
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="h3o-0I-6k7">
-                                <rect key="frame" x="67" y="251" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="h3o-0I-6k7">
+                                <rect key="frame" x="67" y="397" width="240" height="128"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</string>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="84c-Tp-OFR">
-                                <rect key="frame" x="67" y="140" width="122" height="91"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="84c-Tp-OFR">
+                                <rect key="frame" x="164.5" y="301" width="46.5" height="65"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="50"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="deviceRGB"/>
+                        <constraints>
+                            <constraint firstItem="qae-Rs-DAC" firstAttribute="trailing" secondItem="h3o-0I-6k7" secondAttribute="trailing" constant="68" id="B6f-cD-baz"/>
+                            <constraint firstItem="84c-Tp-OFR" firstAttribute="centerY" secondItem="3le-OD-Lxh" secondAttribute="centerY" id="Gn8-si-sOI"/>
+                            <constraint firstItem="qae-Rs-DAC" firstAttribute="bottom" secondItem="h3o-0I-6k7" secondAttribute="bottom" constant="142" id="WRr-ic-v4H"/>
+                            <constraint firstItem="h3o-0I-6k7" firstAttribute="top" secondItem="84c-Tp-OFR" secondAttribute="bottom" constant="31" id="fH1-ul-1nQ"/>
+                            <constraint firstItem="h3o-0I-6k7" firstAttribute="leading" secondItem="qae-Rs-DAC" secondAttribute="leading" constant="67" id="gJ4-sM-9ae"/>
+                            <constraint firstItem="84c-Tp-OFR" firstAttribute="centerX" secondItem="3le-OD-Lxh" secondAttribute="centerX" id="j2P-dN-Kuo"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="qae-Rs-DAC"/>
                     </view>
                     <navigationItem key="navigationItem" title="Resultados" largeTitleDisplayMode="always" id="St9-hR-FpL">
