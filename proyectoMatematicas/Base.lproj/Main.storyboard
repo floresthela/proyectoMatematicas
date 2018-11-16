@@ -135,7 +135,7 @@ Flor Esthela Barbosa Castillo
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sHV-vk-v5S" customClass="RoundButton" customModule="proyectoMatematicas" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="193" height="54"/>
-                                        <color key="backgroundColor" red="0.2627450980392157" green="0.85098039215686272" blue="0.4823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="1" green="0.66666666669999997" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="54" id="OgK-3N-nAh"/>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="193" id="lmK-vQ-sBW"/>
@@ -175,7 +175,7 @@ Flor Esthela Barbosa Castillo
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lvj-n4-Vn2" customClass="RoundButton" customModule="proyectoMatematicas" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="140" width="193" height="54"/>
-                                        <color key="backgroundColor" red="0.2627450980392157" green="0.85098039215686272" blue="0.4823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.2666666667" green="0.65490196079999996" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="54" id="Ao6-Xn-ykS"/>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="193" id="FbH-3j-jdT"/>
@@ -195,7 +195,7 @@ Flor Esthela Barbosa Castillo
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GC9-DL-nUi" customClass="RoundButton" customModule="proyectoMatematicas" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="210" width="193" height="54"/>
-                                        <color key="backgroundColor" red="0.2627450980392157" green="0.85098039215686272" blue="0.4823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="1" green="0.42745098040000001" blue="0.30588235289999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="54" id="5AL-Jz-TCl"/>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="193" id="Unr-gV-1m2"/>
@@ -321,7 +321,7 @@ Flor Esthela Barbosa Castillo
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SWt-Co-Wt9" customClass="RoundButton" customModule="proyectoMatematicas" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="160" height="160"/>
-                                                <color key="backgroundColor" red="1" green="0.79607843137254897" blue="0.5725490196078431" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="160" id="g2a-CR-lSF"/>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="160" id="wOm-eu-IvP"/>
@@ -341,7 +341,7 @@ Flor Esthela Barbosa Castillo
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5qu-i1-pRD" customClass="RoundButton" customModule="proyectoMatematicas" customModuleProvider="target">
                                                 <rect key="frame" x="180" y="0.0" width="160" height="160"/>
-                                                <color key="backgroundColor" red="1" green="0.66666666666666663" blue="0.30588235294117649" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="160" id="2YJ-i0-2S7"/>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="160" id="3td-5I-4AS"/>
@@ -366,7 +366,7 @@ Flor Esthela Barbosa Castillo
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7e9-Em-vRK" customClass="RoundButton" customModule="proyectoMatematicas" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="160" height="160"/>
-                                                <color key="backgroundColor" red="1" green="0.66666666666666663" blue="0.30588235294117649" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="160" id="95W-y9-s40"/>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="160" id="tEL-YC-nE3"/>
@@ -386,7 +386,7 @@ Flor Esthela Barbosa Castillo
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o5k-TG-OuK" customClass="RoundButton" customModule="proyectoMatematicas" customModuleProvider="target">
                                                 <rect key="frame" x="180" y="0.0" width="160" height="160"/>
-                                                <color key="backgroundColor" red="1" green="0.79607843137254897" blue="0.5725490196078431" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="160" id="aFp-HT-L3W"/>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="160" id="vsW-ak-kpl"/>
@@ -694,15 +694,17 @@ Flor Esthela Barbosa Castillo
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="I2d-c3-LvI" customClass="LineChartView" customModule="Charts">
-                                <rect key="frame" x="10" y="326" width="355" height="321"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I2d-c3-LvI" customClass="LineChartView" customModule="Charts">
+                                <rect key="frame" x="12" y="326" width="351" height="321"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9tI-tN-VtZ" customClass="RoundButton" customModule="proyectoMatematicas" customModuleProvider="target">
-                                <rect key="frame" x="162" y="216" width="74" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9tI-tN-VtZ" customClass="RoundButton" customModule="proyectoMatematicas" customModuleProvider="target">
+                                <rect key="frame" x="150.5" y="216" width="74" height="30"/>
                                 <color key="backgroundColor" red="1" green="0.53333333329999999" blue="0.027450980390000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="74" id="WFC-Km-bcw"/>
+                                    <constraint firstAttribute="height" constant="30" id="jyP-Q4-dh1"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Grafica">
@@ -717,16 +719,18 @@ Flor Esthela Barbosa Castillo
                                     <action selector="bGrafica:" destination="CV1-XZ-luZ" eventType="touchUpInside" id="Sqa-D8-err"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="p9E-Xc-cYs">
+                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="p9E-Xc-cYs">
                                 <rect key="frame" x="230" y="149" width="48" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Ij5-ME-xgf">
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Ij5-ME-xgf">
                                 <rect key="frame" x="127" y="87" width="121" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="AIh-Wf-BbO"/>
+                                    <constraint firstAttribute="width" constant="121" id="IEZ-TE-SJO"/>
+                                </constraints>
                                 <segments>
                                     <segment title="(0,0)"/>
                                     <segment title="(h,k)"/>
@@ -793,6 +797,18 @@ Flor Esthela Barbosa Castillo
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.64705882349999999" blue="0.57254901960000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="I2d-c3-LvI" firstAttribute="centerX" secondItem="6lW-Jo-o2f" secondAttribute="centerX" id="0Ja-Rm-QB6"/>
+                            <constraint firstItem="5LZ-pL-BXJ" firstAttribute="trailing" secondItem="I2d-c3-LvI" secondAttribute="trailing" constant="12" id="ErO-8M-89g"/>
+                            <constraint firstItem="I2d-c3-LvI" firstAttribute="top" secondItem="9tI-tN-VtZ" secondAttribute="bottom" constant="80" id="Ggb-8y-Jya"/>
+                            <constraint firstItem="I2d-c3-LvI" firstAttribute="top" secondItem="6lW-Jo-o2f" secondAttribute="top" constant="326" id="NtT-2A-5WJ"/>
+                            <constraint firstItem="Ij5-ME-xgf" firstAttribute="centerX" secondItem="6lW-Jo-o2f" secondAttribute="centerX" id="Qdx-Z3-XtL"/>
+                            <constraint firstAttribute="bottom" secondItem="I2d-c3-LvI" secondAttribute="bottom" constant="20" symbolic="YES" id="Zpe-q1-Vw1"/>
+                            <constraint firstItem="9tI-tN-VtZ" firstAttribute="centerX" secondItem="6lW-Jo-o2f" secondAttribute="centerX" id="dZC-Et-VBK"/>
+                            <constraint firstItem="I2d-c3-LvI" firstAttribute="leading" secondItem="5LZ-pL-BXJ" secondAttribute="leading" constant="12" id="n1o-7v-eUC"/>
+                            <constraint firstItem="Ij5-ME-xgf" firstAttribute="top" secondItem="5LZ-pL-BXJ" secondAttribute="top" constant="23" id="pOW-Oz-tFS"/>
+                            <constraint firstItem="p9E-Xc-cYs" firstAttribute="top" secondItem="Ij5-ME-xgf" secondAttribute="bottom" constant="34" id="wSh-LC-8qp"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="5LZ-pL-BXJ"/>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="wy9-69-Axp" appends="YES" id="uoc-xJ-7lD"/>
@@ -832,15 +848,13 @@ Flor Esthela Barbosa Castillo
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="r0t-wJ-dEr" customClass="LineChartView" customModule="Charts">
-                                <rect key="frame" x="8" y="284" width="359" height="327"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wNI-Re-Jl6" customClass="RoundButton" customModule="proyectoMatematicas" customModuleProvider="target">
-                                <rect key="frame" x="150" y="246" width="74" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wNI-Re-Jl6" customClass="RoundButton" customModule="proyectoMatematicas" customModuleProvider="target">
+                                <rect key="frame" x="150" y="207" width="74" height="30"/>
                                 <color key="backgroundColor" red="1" green="0.53333333333333333" blue="0.027450980392156862" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="n0h-Qp-cIy"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="74" id="vHi-6I-Wcg"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Grafica">
@@ -878,16 +892,18 @@ Flor Esthela Barbosa Castillo
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MrQ-JU-heg">
+                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MrQ-JU-heg">
                                 <rect key="frame" x="193" y="163" width="52" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="K2s-U7-eEh">
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="K2s-U7-eEh">
                                 <rect key="frame" x="127" y="86" width="121" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="121" id="9Bl-bc-4mi"/>
+                                    <constraint firstAttribute="height" constant="28" id="OPY-Qj-u96"/>
+                                </constraints>
                                 <segments>
                                     <segment title="x"/>
                                     <segment title="y"/>
@@ -897,9 +913,8 @@ Flor Esthela Barbosa Castillo
                                     <action selector="xy:" destination="6r3-rw-PcW" eventType="valueChanged" id="jdg-h5-sRe"/>
                                 </connections>
                             </segmentedControl>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ugO-h7-zhg">
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ugO-h7-zhg">
                                 <rect key="frame" x="211" y="130" width="37" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
@@ -918,9 +933,31 @@ Flor Esthela Barbosa Castillo
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r0t-wJ-dEr" customClass="LineChartView" customModule="Charts">
+                                <rect key="frame" x="12" y="284" width="351" height="321"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.6470588235294118" blue="0.5725490196078431" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="r0t-wJ-dEr" firstAttribute="top" secondItem="wNI-Re-Jl6" secondAttribute="bottom" constant="18" id="2sY-Gl-frr"/>
+                            <constraint firstItem="TYa-2y-JAd" firstAttribute="trailing" secondItem="r0t-wJ-dEr" secondAttribute="trailing" constant="12" id="5bf-KX-KQt"/>
+                            <constraint firstItem="r0t-wJ-dEr" firstAttribute="leading" secondItem="TYa-2y-JAd" secondAttribute="leading" constant="12" id="6Dx-7f-pDY"/>
+                            <constraint firstItem="K2s-U7-eEh" firstAttribute="trailing" secondItem="ugO-h7-zhg" secondAttribute="trailing" id="EKb-KS-5JW"/>
+                            <constraint firstItem="K2s-U7-eEh" firstAttribute="top" secondItem="TYa-2y-JAd" secondAttribute="top" constant="22" id="Jou-cj-Rra"/>
+                            <constraint firstItem="wNI-Re-Jl6" firstAttribute="top" secondItem="MrQ-JU-heg" secondAttribute="bottom" constant="14" id="KRQ-TL-F3i"/>
+                            <constraint firstItem="wNI-Re-Jl6" firstAttribute="centerX" secondItem="bSl-Xg-PL0" secondAttribute="centerX" id="NJS-Al-kBo"/>
+                            <constraint firstItem="TYa-2y-JAd" firstAttribute="bottom" secondItem="r0t-wJ-dEr" secondAttribute="bottom" constant="62" id="WcT-u0-q8R"/>
+                            <constraint firstItem="ugO-h7-zhg" firstAttribute="top" secondItem="K2s-U7-eEh" secondAttribute="bottom" constant="16" id="ZX9-vw-dyw"/>
+                            <constraint firstItem="r0t-wJ-dEr" firstAttribute="top" secondItem="bSl-Xg-PL0" secondAttribute="top" constant="284" id="bV0-oo-UUs"/>
+                            <constraint firstItem="r0t-wJ-dEr" firstAttribute="centerX" secondItem="wNI-Re-Jl6" secondAttribute="centerX" id="gEQ-5o-4KB"/>
+                            <constraint firstItem="r0t-wJ-dEr" firstAttribute="leading" secondItem="TYa-2y-JAd" secondAttribute="leading" constant="12" id="nwH-0Q-fv9"/>
+                            <constraint firstItem="r0t-wJ-dEr" firstAttribute="centerX" secondItem="bSl-Xg-PL0" secondAttribute="centerX" id="oUE-7K-oyu"/>
+                            <constraint firstItem="K2s-U7-eEh" firstAttribute="centerX" secondItem="bSl-Xg-PL0" secondAttribute="centerX" id="sBt-LI-5Rw"/>
+                            <constraint firstItem="K2s-U7-eEh" firstAttribute="top" secondItem="TYa-2y-JAd" secondAttribute="top" constant="22" id="wkV-GD-onk"/>
+                            <constraint firstItem="K2s-U7-eEh" firstAttribute="centerX" secondItem="bSl-Xg-PL0" secondAttribute="centerX" id="yzv-79-yJJ"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="TYa-2y-JAd"/>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="sjP-fY-RgS" appends="YES" id="rkH-2Z-esN"/>
@@ -957,9 +994,8 @@ Flor Esthela Barbosa Castillo
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Nht-dv-1gY" customClass="LineChartView" customModule="Charts">
-                                <rect key="frame" x="8" y="261" width="359" height="327"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nht-dv-1gY" customClass="LineChartView" customModule="Charts">
+                                <rect key="frame" x="12" y="261" width="351" height="321"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="(x-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fcC-1w-dfO">
@@ -1004,10 +1040,13 @@ Flor Esthela Barbosa Castillo
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fW3-3t-Qg9" customClass="RoundButton" customModule="proyectoMatematicas" customModuleProvider="target">
-                                <rect key="frame" x="150" y="223" width="74" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fW3-3t-Qg9" customClass="RoundButton" customModule="proyectoMatematicas" customModuleProvider="target">
+                                <rect key="frame" x="150.5" y="223" width="74" height="30"/>
                                 <color key="backgroundColor" red="1" green="0.53333333333333333" blue="0.027450980392156862" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="74" id="3oW-xJ-c81"/>
+                                    <constraint firstAttribute="height" constant="30" id="7XX-Gf-txe"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Grafica"/>
@@ -1031,6 +1070,15 @@ Flor Esthela Barbosa Castillo
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.64705882349999999" blue="0.57254901960000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="Nht-dv-1gY" firstAttribute="leading" secondItem="DiR-pU-3cX" secondAttribute="leading" constant="12" id="BaZ-yo-oen"/>
+                            <constraint firstItem="Nht-dv-1gY" firstAttribute="top" secondItem="xA5-TX-BQg" secondAttribute="top" constant="261" id="JS4-zn-R2e"/>
+                            <constraint firstItem="DiR-pU-3cX" firstAttribute="bottom" secondItem="Nht-dv-1gY" secondAttribute="bottom" constant="85" id="LQk-ye-glk"/>
+                            <constraint firstItem="Nht-dv-1gY" firstAttribute="top" secondItem="fW3-3t-Qg9" secondAttribute="bottom" constant="8" symbolic="YES" id="UUF-35-skj"/>
+                            <constraint firstItem="fW3-3t-Qg9" firstAttribute="centerX" secondItem="xA5-TX-BQg" secondAttribute="centerX" id="dWs-JW-n9t"/>
+                            <constraint firstItem="Nht-dv-1gY" firstAttribute="centerX" secondItem="xA5-TX-BQg" secondAttribute="centerX" id="f1G-BH-cnd"/>
+                            <constraint firstItem="DiR-pU-3cX" firstAttribute="trailing" secondItem="Nht-dv-1gY" secondAttribute="trailing" constant="12" id="mkh-ZC-X0C"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="DiR-pU-3cX"/>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="LwN-7K-Fyk" appends="YES" id="HVU-5x-I0I"/>
@@ -1086,9 +1134,8 @@ Flor Esthela Barbosa Castillo
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" text="1" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QFL-xJ-mVN">
+                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" text="1" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QFL-xJ-mVN">
                                 <rect key="frame" x="139" y="131" width="42" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
@@ -1100,15 +1147,17 @@ Flor Esthela Barbosa Castillo
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qdb-wo-IeF" customClass="LineChartView" customModule="Charts">
-                                <rect key="frame" x="12" y="287" width="351" height="327"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qdb-wo-IeF" customClass="LineChartView" customModule="Charts">
+                                <rect key="frame" x="12" y="287" width="351" height="321"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ua-U9-UWd" customClass="RoundButton" customModule="proyectoMatematicas" customModuleProvider="target">
-                                <rect key="frame" x="156" y="238" width="63" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ua-U9-UWd" customClass="RoundButton" customModule="proyectoMatematicas" customModuleProvider="target">
+                                <rect key="frame" x="150.5" y="238" width="74" height="30"/>
                                 <color key="backgroundColor" red="1" green="0.53333333333333333" blue="0.027450980392156862" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="etY-ok-alC"/>
+                                    <constraint firstAttribute="width" constant="74" id="wq6-nI-Die"/>
+                                </constraints>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Grafica">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1125,6 +1174,16 @@ Flor Esthela Barbosa Castillo
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.64705882349999999" blue="0.57254901960000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="Duh-Fs-dhJ" firstAttribute="trailing" secondItem="Qdb-wo-IeF" secondAttribute="trailing" constant="12" id="1Qy-hb-Ibh"/>
+                            <constraint firstItem="Duh-Fs-dhJ" firstAttribute="bottom" secondItem="Qdb-wo-IeF" secondAttribute="bottom" constant="59" id="Pwx-bW-4FS"/>
+                            <constraint firstItem="5ua-U9-UWd" firstAttribute="centerX" secondItem="SJm-jd-XX9" secondAttribute="centerX" id="RZB-j1-cLz"/>
+                            <constraint firstItem="5ua-U9-UWd" firstAttribute="top" secondItem="QFL-xJ-mVN" secondAttribute="bottom" constant="77" id="WEG-er-yh5"/>
+                            <constraint firstItem="Qdb-wo-IeF" firstAttribute="leading" secondItem="Duh-Fs-dhJ" secondAttribute="leading" constant="12" id="Yy6-vU-PB8"/>
+                            <constraint firstItem="Qdb-wo-IeF" firstAttribute="centerX" secondItem="SJm-jd-XX9" secondAttribute="centerX" id="azg-KR-e3Y"/>
+                            <constraint firstItem="Qdb-wo-IeF" firstAttribute="top" secondItem="5ua-U9-UWd" secondAttribute="bottom" constant="19" id="ieU-qk-mri"/>
+                            <constraint firstItem="5ua-U9-UWd" firstAttribute="top" secondItem="SJm-jd-XX9" secondAttribute="top" constant="238" id="l8F-Zx-xa9"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Duh-Fs-dhJ"/>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="zS5-Y0-3UC" appends="YES" id="CkJ-Gp-IR3"/>
@@ -1275,7 +1334,7 @@ Flor Esthela Barbosa Castillo
                         <rect key="frame" x="0.0" y="20" width="375" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="barTintColor" red="0.2627450980392157" green="0.85098039215686272" blue="0.4823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="1" green="0.66666666669999997" blue="0.30588235289999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </navigationBar>
                     <connections>
                         <segue destination="Y9t-82-raT" kind="relationship" relationship="rootViewController" id="kUJ-2n-9ED"/>
@@ -1301,7 +1360,7 @@ Flor Esthela Barbosa Castillo
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0m7-On-kHF" customClass="RoundButton" customModule="proyectoMatematicas" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="160" height="160"/>
-                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="160" id="6KI-Yp-f42"/>
                                                     <constraint firstAttribute="height" constant="160" id="BfP-Wr-XGg"/>
@@ -1321,7 +1380,7 @@ Flor Esthela Barbosa Castillo
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V5T-mi-2gt" customClass="RoundButton" customModule="proyectoMatematicas" customModuleProvider="target">
                                                 <rect key="frame" x="180" y="0.0" width="160" height="160"/>
-                                                <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="160" id="Vc4-gu-7bj"/>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="160" id="hor-dA-vew"/>
@@ -1346,7 +1405,7 @@ Flor Esthela Barbosa Castillo
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zTe-Cb-583" customClass="RoundButton" customModule="proyectoMatematicas" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="160" height="160"/>
-                                                <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="160" id="Itp-XO-KNR"/>
                                                     <constraint firstAttribute="height" constant="160" id="n4M-zw-eSa"/>
@@ -1366,7 +1425,7 @@ Flor Esthela Barbosa Castillo
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wrt-4J-wos" customClass="RoundButton" customModule="proyectoMatematicas" customModuleProvider="target">
                                                 <rect key="frame" x="180" y="0.0" width="160" height="160"/>
-                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="160" id="4ul-b1-RAk"/>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="160" id="H3m-gc-d5a"/>
@@ -1389,7 +1448,7 @@ Flor Esthela Barbosa Castillo
                                 </subviews>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" red="0.53440948024801527" green="0.93339375248830503" blue="0.68996630077240417" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="1" green="0.79607843140000001" blue="0.57254901960000004" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="8yK-uX-JKy" firstAttribute="centerY" secondItem="jbX-NO-QEM" secondAttribute="centerY" id="La4-JM-jG7"/>
                             <constraint firstItem="8yK-uX-JKy" firstAttribute="centerX" secondItem="jbX-NO-QEM" secondAttribute="centerX" id="k2Z-Nv-VQL"/>
@@ -1476,7 +1535,7 @@ Flor Esthela Barbosa Castillo
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
-                                        <color key="backgroundColor" red="0.53440948020000001" green="0.93339375250000001" blue="0.68996630079999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="1" green="0.79607843140000001" blue="0.57254901960000004" alpha="1" colorSpace="calibratedRGB"/>
                                     </view>
                                 </subviews>
                                 <connections>
