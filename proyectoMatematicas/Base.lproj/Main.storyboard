@@ -450,7 +450,7 @@ Flor Esthela Barbosa Castillo
                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="ewX-u5-PgC"/>
-                                            <constraint firstAttribute="width" constant="359" id="uf3-8N-ziW"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="359" id="uf3-8N-ziW"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
                                         <state key="normal" title="Parabola">
@@ -470,7 +470,7 @@ Flor Esthela Barbosa Castillo
                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="QA7-W8-dQC"/>
-                                            <constraint firstAttribute="width" constant="359" id="XDp-bP-dxI"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="359" id="XDp-bP-dxI"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
                                         <state key="normal" title="Parabola">
@@ -490,7 +490,7 @@ Flor Esthela Barbosa Castillo
                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="7u8-HY-GGy"/>
-                                            <constraint firstAttribute="width" constant="359" id="EGf-i9-bGl"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="359" id="EGf-i9-bGl"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
                                         <state key="normal" title="Parabola">
@@ -530,13 +530,25 @@ Flor Esthela Barbosa Castillo
                                 <constraints>
                                     <constraint firstItem="cyj-Mh-tu1" firstAttribute="trailing" secondItem="zdg-Ix-pqQ" secondAttribute="trailing" id="62u-O3-Oyj"/>
                                     <constraint firstItem="cyj-Mh-tu1" firstAttribute="leading" secondItem="zdg-Ix-pqQ" secondAttribute="leading" id="8ae-6G-Dha"/>
+                                    <constraint firstAttribute="bottom" secondItem="5bx-xk-EaO" secondAttribute="bottom" constant="12" id="9pr-Ba-V6o"/>
+                                    <constraint firstAttribute="trailing" secondItem="cyj-Mh-tu1" secondAttribute="trailing" constant="8" id="AMX-NA-yJp"/>
                                     <constraint firstItem="cyj-Mh-tu1" firstAttribute="leading" secondItem="XPY-Az-L8p" secondAttribute="leading" id="GL7-lQ-XWR"/>
+                                    <constraint firstItem="zdg-Ix-pqQ" firstAttribute="top" secondItem="XPY-Az-L8p" secondAttribute="bottom" constant="8" id="KrB-Vo-zPy"/>
+                                    <constraint firstItem="zdg-Ix-pqQ" firstAttribute="leading" secondItem="XUx-vr-VdV" secondAttribute="leading" constant="8" id="LRo-OS-HPe"/>
                                     <constraint firstItem="cyj-Mh-tu1" firstAttribute="leading" secondItem="5bx-xk-EaO" secondAttribute="leading" id="Mza-RB-cYn"/>
                                     <constraint firstItem="zdg-Ix-pqQ" firstAttribute="top" secondItem="XPY-Az-L8p" secondAttribute="bottom" constant="8" symbolic="YES" id="OD8-TQ-GzZ"/>
                                     <constraint firstItem="cyj-Mh-tu1" firstAttribute="leading" secondItem="XUx-vr-VdV" secondAttribute="leadingMargin" id="RNo-ge-5u8"/>
                                     <constraint firstItem="5bx-xk-EaO" firstAttribute="top" secondItem="zdg-Ix-pqQ" secondAttribute="bottom" constant="8" symbolic="YES" id="RUx-Qp-Vof"/>
+                                    <constraint firstItem="5bx-xk-EaO" firstAttribute="top" secondItem="zdg-Ix-pqQ" secondAttribute="bottom" constant="8" id="Vbg-11-xyl"/>
+                                    <constraint firstItem="XPY-Az-L8p" firstAttribute="top" secondItem="cyj-Mh-tu1" secondAttribute="bottom" constant="8" id="XyK-CE-X66"/>
                                     <constraint firstItem="cyj-Mh-tu1" firstAttribute="top" secondItem="XUx-vr-VdV" secondAttribute="top" constant="15" id="cII-kA-XhS"/>
+                                    <constraint firstItem="cyj-Mh-tu1" firstAttribute="leading" secondItem="XUx-vr-VdV" secondAttribute="leading" constant="8" id="g1A-9R-XzE"/>
+                                    <constraint firstAttribute="trailing" secondItem="XPY-Az-L8p" secondAttribute="trailing" constant="8" id="g30-zl-eGH"/>
                                     <constraint firstItem="cyj-Mh-tu1" firstAttribute="trailing" secondItem="XPY-Az-L8p" secondAttribute="trailing" id="jBH-RT-C1H"/>
+                                    <constraint firstItem="XPY-Az-L8p" firstAttribute="leading" secondItem="XUx-vr-VdV" secondAttribute="leading" constant="8" id="jsf-j7-MgO"/>
+                                    <constraint firstAttribute="trailing" secondItem="5bx-xk-EaO" secondAttribute="trailing" constant="8" id="ojr-wa-Mmz"/>
+                                    <constraint firstItem="5bx-xk-EaO" firstAttribute="leading" secondItem="XUx-vr-VdV" secondAttribute="leading" constant="8" id="ozp-kO-VkK"/>
+                                    <constraint firstAttribute="trailing" secondItem="zdg-Ix-pqQ" secondAttribute="trailing" constant="8" id="sOz-ZH-IdM"/>
                                     <constraint firstItem="cyj-Mh-tu1" firstAttribute="trailing" secondItem="5bx-xk-EaO" secondAttribute="trailing" id="yfi-vp-Ihp"/>
                                     <constraint firstItem="XPY-Az-L8p" firstAttribute="top" secondItem="cyj-Mh-tu1" secondAttribute="bottom" constant="8" symbolic="YES" id="zKR-nr-jKf"/>
                                 </constraints>
@@ -572,7 +584,7 @@ Flor Esthela Barbosa Castillo
                                         <rect key="frame" x="148.5" y="393" width="78" height="30"/>
                                         <color key="backgroundColor" red="0.023529411764705882" green="0.84705882352941175" blue="0.32941176470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="78" id="F16-4h-pq6"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="78" id="F16-4h-pq6"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
                                         <state key="normal" title="Terminar">
@@ -586,7 +598,7 @@ Flor Esthela Barbosa Castillo
                                         <rect key="frame" x="18" y="52" width="339" height="110"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="110" id="mxo-GR-deq"/>
-                                            <constraint firstAttribute="width" constant="339" id="xsF-gK-ttp"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="339" id="xsF-gK-ttp"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
                                         <nil key="textColor"/>
@@ -595,9 +607,8 @@ Flor Esthela Barbosa Castillo
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3us-VP-MIh">
                                         <rect key="frame" x="38" y="170" width="319" height="203"/>
                                         <subviews>
-                                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zPb-IN-4MB">
-                                                <rect key="frame" x="8" y="2" width="299" height="199"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zPb-IN-4MB">
+                                                <rect key="frame" x="8" y="2" width="303" height="199"/>
                                                 <gestureRecognizers/>
                                                 <connections>
                                                     <outletCollection property="gestureRecognizers" destination="Z0B-d4-lj7" appends="YES" id="5oT-Xs-OfU"/>
@@ -605,6 +616,13 @@ Flor Esthela Barbosa Castillo
                                             </imageView>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="zPb-IN-4MB" firstAttribute="leading" secondItem="3us-VP-MIh" secondAttribute="leadingMargin" id="afT-Cs-oha"/>
+                                            <constraint firstItem="zPb-IN-4MB" firstAttribute="centerY" secondItem="3us-VP-MIh" secondAttribute="centerY" id="iKb-vT-dVj"/>
+                                            <constraint firstItem="zPb-IN-4MB" firstAttribute="top" secondItem="3us-VP-MIh" secondAttribute="top" constant="2" id="iUE-rD-lfK"/>
+                                            <constraint firstItem="zPb-IN-4MB" firstAttribute="centerX" secondItem="3us-VP-MIh" secondAttribute="centerX" id="rAg-Gi-Rty"/>
+                                            <constraint firstItem="zPb-IN-4MB" firstAttribute="centerX" secondItem="3us-VP-MIh" secondAttribute="centerX" id="rbT-Bh-B7u"/>
+                                        </constraints>
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" red="0.92549019607843142" green="0.97647058823529409" blue="0.94509803921568625" alpha="1" colorSpace="calibratedRGB"/>
@@ -614,7 +632,7 @@ Flor Esthela Barbosa Castillo
                                     <constraint firstItem="3us-VP-MIh" firstAttribute="leading" secondItem="2vN-vn-KYU" secondAttribute="leading" constant="38" id="AWj-gS-9le"/>
                                     <constraint firstItem="di8-od-GhZ" firstAttribute="centerX" secondItem="2vN-vn-KYU" secondAttribute="centerX" id="CBG-CX-K4V"/>
                                     <constraint firstItem="Lwj-Sz-T6Q" firstAttribute="bottom" secondItem="2vN-vn-KYU" secondAttribute="bottomMargin" id="M9M-lf-F7u"/>
-                                    <constraint firstItem="RnV-YI-6Ad" firstAttribute="leading" secondItem="Lwj-Sz-T6Q" secondAttribute="trailing" constant="63" id="SN6-uZ-VRZ"/>
+                                    <constraint firstItem="RnV-YI-6Ad" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Lwj-Sz-T6Q" secondAttribute="trailing" constant="8" symbolic="YES" id="SN6-uZ-VRZ"/>
                                     <constraint firstItem="di8-od-GhZ" firstAttribute="trailing" secondItem="3us-VP-MIh" secondAttribute="trailing" id="dJi-lx-tDb"/>
                                     <constraint firstItem="Lwj-Sz-T6Q" firstAttribute="baseline" secondItem="RnV-YI-6Ad" secondAttribute="firstBaseline" id="dc1-pL-HyU"/>
                                     <constraint firstItem="di8-od-GhZ" firstAttribute="top" secondItem="2vN-vn-KYU" secondAttribute="top" constant="52" id="jxy-Cg-AoZ"/>
@@ -623,6 +641,7 @@ Flor Esthela Barbosa Castillo
                                     <constraint firstItem="Lwj-Sz-T6Q" firstAttribute="firstBaseline" secondItem="RnV-YI-6Ad" secondAttribute="baseline" id="uJv-tE-XLC"/>
                                     <constraint firstItem="di8-od-GhZ" firstAttribute="top" secondItem="uY7-dX-H9w" secondAttribute="bottom" constant="19" id="udQ-9h-T17"/>
                                     <constraint firstItem="3us-VP-MIh" firstAttribute="top" secondItem="di8-od-GhZ" secondAttribute="bottom" constant="8" symbolic="YES" id="v0O-Nx-zsL"/>
+                                    <constraint firstAttribute="trailing" secondItem="RnV-YI-6Ad" secondAttribute="trailing" constant="8" id="wMr-NR-win"/>
                                     <constraint firstItem="di8-od-GhZ" firstAttribute="centerX" secondItem="Lwj-Sz-T6Q" secondAttribute="centerX" id="xQf-ea-kLd"/>
                                 </constraints>
                             </view>
@@ -1593,14 +1612,14 @@ Flor Esthela Barbosa Castillo
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OqO-au-epE">
-                                <rect key="frame" x="0.0" y="64" width="379" height="603"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="75M-ot-3VV" customClass="RoundButton" customModule="proyectoMatematicas" customModuleProvider="target">
-                                        <rect key="frame" x="18" y="474" width="343" height="30"/>
+                                        <rect key="frame" x="16" y="474" width="343" height="30"/>
                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="343" id="pCI-3U-neM"/>
-                                            <constraint firstAttribute="height" constant="30" id="wzO-cA-AeX"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="343" id="6R3-dR-8Cz"/>
+                                            <constraint firstAttribute="height" constant="30" id="JC1-o9-tDQ"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
                                         <state key="normal" title="Option B">
@@ -1616,11 +1635,11 @@ Flor Esthela Barbosa Castillo
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iSb-zC-0tz" customClass="RoundButton" customModule="proyectoMatematicas" customModuleProvider="target">
-                                        <rect key="frame" x="18" y="512" width="343" height="30"/>
+                                        <rect key="frame" x="16" y="512" width="343" height="30"/>
                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="343" id="q0t-qp-GDv"/>
-                                            <constraint firstAttribute="height" constant="30" id="qjJ-YB-N9Z"/>
+                                            <constraint firstAttribute="height" constant="30" id="3NI-R4-ZWa"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="343" id="DLw-it-dRX"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
                                         <state key="normal" title="Option C">
@@ -1635,54 +1654,35 @@ Flor Esthela Barbosa Castillo
                                             <action selector="selectedAnswer:" destination="Q5X-Og-WYR" eventType="touchUpInside" id="y6Q-IY-kef"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="64z-53-z2X" customClass="RoundButton" customModule="proyectoMatematicas" customModuleProvider="target">
-                                        <rect key="frame" x="18" y="550" width="343" height="30"/>
-                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pregunta" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WkN-dv-uev">
+                                        <rect key="frame" x="8" y="246" width="359" height="112"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="30" id="Ecj-E6-O2G"/>
-                                            <constraint firstAttribute="width" constant="343" id="LFQ-5D-Ufl"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
-                                        <state key="normal" title="Option D">
-                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </state>
-                                        <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                                <real key="value" value="12"/>
-                                            </userDefinedRuntimeAttribute>
-                                        </userDefinedRuntimeAttributes>
-                                        <connections>
-                                            <action selector="selectedAnswer:" destination="Q5X-Og-WYR" eventType="touchUpInside" id="y1r-KZ-Ufz"/>
-                                        </connections>
-                                    </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Pregunta" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WkN-dv-uev">
-                                        <rect key="frame" x="17" y="262" width="343" height="112"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="112" id="N8y-zM-vtK"/>
+                                            <constraint firstAttribute="height" constant="112" id="KVe-4i-YfA"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="18"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progressViewStyle="bar" translatesAutoresizingMaskIntoConstraints="NO" id="sDr-vt-AUT">
-                                        <rect key="frame" x="0.0" y="1.5" width="371" height="2.5"/>
+                                        <rect key="frame" x="0.0" y="2" width="355" height="3"/>
                                         <color key="progressTintColor" red="1" green="0.80027001939999998" blue="0.68646217229999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </progressView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="xx/10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YgY-xe-xqL">
-                                        <rect key="frame" x="8" y="9" width="49" height="23"/>
+                                        <rect key="frame" x="8" y="10" width="49" height="24"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="49" id="9YW-9w-G0Y"/>
+                                            <constraint firstAttribute="height" constant="24" id="9fE-48-7ro"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="49" id="DFy-LF-WxR"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2AO-RR-q3g" customClass="RoundButton" customModule="proyectoMatematicas" customModuleProvider="target">
-                                        <rect key="frame" x="273" y="392" width="88" height="36"/>
+                                        <rect key="frame" x="263" y="378" width="88" height="36"/>
                                         <color key="backgroundColor" red="0.011764705882352941" green="0.58823529411764708" blue="0.792156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="36" id="CTV-04-IWT"/>
-                                            <constraint firstAttribute="width" constant="88" id="YS0-tJ-2i5"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="88" id="67p-pK-b0L"/>
+                                            <constraint firstAttribute="height" constant="36" id="j5z-63-lAx"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="18"/>
                                         <state key="normal" title="Siguiente">
@@ -1698,11 +1698,12 @@ Flor Esthela Barbosa Castillo
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ytO-X4-itK" customClass="RoundButton" customModule="proyectoMatematicas" customModuleProvider="target">
-                                        <rect key="frame" x="145.5" y="392" width="88" height="36"/>
+                                        <rect key="frame" x="143.5" y="379" width="88" height="36"/>
                                         <color key="backgroundColor" red="0.011764705882352941" green="0.58823529411764708" blue="0.792156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="36" id="PCD-Wj-Qfd"/>
-                                            <constraint firstAttribute="width" constant="88" id="ao1-uY-1tP"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="88" id="hxG-Tg-5Y1"/>
+                                            <constraint firstAttribute="height" constant="36" id="jw7-32-K3l"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="88" id="unT-eR-wpE"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="18"/>
                                         <state key="normal" title="Terminar">
@@ -1719,11 +1720,10 @@ Flor Esthela Barbosa Castillo
                                         </connections>
                                     </button>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WvV-Qe-B39">
-                                        <rect key="frame" x="53" y="68" width="273" height="186"/>
+                                        <rect key="frame" x="53" y="53" width="248" height="186"/>
                                         <subviews>
-                                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zV8-25-z2S">
-                                                <rect key="frame" x="1" y="0.0" width="269" height="186"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zV8-25-z2S">
+                                                <rect key="frame" x="1" y="0.0" width="266" height="186"/>
                                                 <gestureRecognizers/>
                                                 <connections>
                                                     <outletCollection property="gestureRecognizers" destination="ltL-0W-PPb" appends="YES" id="GQF-oJ-1pR"/>
@@ -1731,13 +1731,19 @@ Flor Esthela Barbosa Castillo
                                             </imageView>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="zV8-25-z2S" firstAttribute="top" secondItem="WvV-Qe-B39" secondAttribute="top" id="AmK-F1-uRo"/>
+                                            <constraint firstItem="zV8-25-z2S" firstAttribute="leading" secondItem="WvV-Qe-B39" secondAttribute="leading" constant="1" id="F0c-8R-tzk"/>
+                                            <constraint firstAttribute="bottom" secondItem="zV8-25-z2S" secondAttribute="bottom" id="aoS-Db-fMa"/>
+                                            <constraint firstAttribute="trailing" secondItem="zV8-25-z2S" secondAttribute="trailing" constant="-19" id="mZq-ZY-hvP"/>
+                                        </constraints>
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lGj-ld-IRu" customClass="RoundButton" customModule="proyectoMatematicas" customModuleProvider="target">
-                                        <rect key="frame" x="18" y="436" width="343" height="30"/>
+                                        <rect key="frame" x="16" y="436" width="343" height="30"/>
                                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="343" id="faK-rt-LAy"/>
-                                            <constraint firstAttribute="height" constant="30" id="vM1-ss-C82"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="343" id="M9I-2d-f2d"/>
+                                            <constraint firstAttribute="height" constant="30" id="lHc-q0-QE2"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
                                         <state key="normal" title="Option A">
@@ -1752,49 +1758,66 @@ Flor Esthela Barbosa Castillo
                                             <action selector="selectedAnswer:" destination="Q5X-Og-WYR" eventType="touchUpInside" id="s0b-hJ-1V3"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="64z-53-z2X" customClass="RoundButton" customModule="proyectoMatematicas" customModuleProvider="target">
+                                        <rect key="frame" x="16" y="550" width="343" height="30"/>
+                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="343" id="CTM-1r-JD4"/>
+                                            <constraint firstAttribute="height" constant="30" id="r6U-z0-lFo"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
+                                        <state key="normal" title="Option D">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="12"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="selectedAnswer:" destination="Q5X-Og-WYR" eventType="touchUpInside" id="y1r-KZ-Ufz"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstItem="YgY-xe-xqL" firstAttribute="top" secondItem="OqO-au-epE" secondAttribute="top" constant="9" id="21P-ZY-DX2"/>
-                                    <constraint firstItem="2AO-RR-q3g" firstAttribute="top" secondItem="WkN-dv-uev" secondAttribute="bottom" constant="18" id="7Vy-wf-zZZ"/>
-                                    <constraint firstAttribute="bottom" secondItem="lGj-ld-IRu" secondAttribute="bottom" constant="137" id="8Im-ek-m1Q"/>
-                                    <constraint firstItem="lGj-ld-IRu" firstAttribute="top" secondItem="ytO-X4-itK" secondAttribute="bottom" constant="8" symbolic="YES" id="8Zb-1m-0So"/>
-                                    <constraint firstItem="WkN-dv-uev" firstAttribute="top" secondItem="WvV-Qe-B39" secondAttribute="bottom" constant="8" symbolic="YES" id="Ch5-LC-pJe"/>
-                                    <constraint firstItem="75M-ot-3VV" firstAttribute="top" secondItem="lGj-ld-IRu" secondAttribute="bottom" constant="8" symbolic="YES" id="DyE-H2-t40"/>
-                                    <constraint firstItem="lGj-ld-IRu" firstAttribute="centerX" secondItem="64z-53-z2X" secondAttribute="centerX" id="GgI-dG-jtb"/>
-                                    <constraint firstItem="75M-ot-3VV" firstAttribute="centerX" secondItem="ytO-X4-itK" secondAttribute="centerX" id="IKn-KQ-5X0"/>
-                                    <constraint firstItem="YgY-xe-xqL" firstAttribute="leading" secondItem="OqO-au-epE" secondAttribute="leadingMargin" id="JJw-ZN-Ayb"/>
-                                    <constraint firstItem="lGj-ld-IRu" firstAttribute="trailing" secondItem="64z-53-z2X" secondAttribute="trailing" id="JM3-R3-vTB"/>
-                                    <constraint firstItem="75M-ot-3VV" firstAttribute="trailing" secondItem="2AO-RR-q3g" secondAttribute="trailing" id="Mss-Az-4O8"/>
-                                    <constraint firstItem="WvV-Qe-B39" firstAttribute="top" secondItem="YgY-xe-xqL" secondAttribute="bottom" constant="36" id="O5X-Nq-hOa"/>
-                                    <constraint firstItem="64z-53-z2X" firstAttribute="top" secondItem="iSb-zC-0tz" secondAttribute="bottom" constant="8" symbolic="YES" id="OU7-mh-HiC"/>
-                                    <constraint firstItem="YgY-xe-xqL" firstAttribute="top" secondItem="sDr-vt-AUT" secondAttribute="bottom" constant="6" id="RCs-8B-bJA"/>
-                                    <constraint firstItem="75M-ot-3VV" firstAttribute="trailing" secondItem="iSb-zC-0tz" secondAttribute="trailing" id="UX6-hJ-idH"/>
-                                    <constraint firstItem="75M-ot-3VV" firstAttribute="leading" secondItem="64z-53-z2X" secondAttribute="leading" id="Xjo-3L-zoB"/>
-                                    <constraint firstItem="sDr-vt-AUT" firstAttribute="trailing" secondItem="OqO-au-epE" secondAttribute="trailingMargin" id="ap0-bT-0vT"/>
-                                    <constraint firstItem="75M-ot-3VV" firstAttribute="leading" secondItem="iSb-zC-0tz" secondAttribute="leading" id="bJX-j9-OxD"/>
-                                    <constraint firstItem="75M-ot-3VV" firstAttribute="centerX" secondItem="WvV-Qe-B39" secondAttribute="centerX" id="e9g-vR-zYn"/>
-                                    <constraint firstItem="75M-ot-3VV" firstAttribute="trailing" secondItem="WkN-dv-uev" secondAttribute="trailing" id="eg8-77-7g4"/>
-                                    <constraint firstItem="lGj-ld-IRu" firstAttribute="top" secondItem="2AO-RR-q3g" secondAttribute="bottom" constant="8" symbolic="YES" id="lNK-Ot-a57"/>
-                                    <constraint firstItem="lGj-ld-IRu" firstAttribute="leading" secondItem="OqO-au-epE" secondAttribute="leading" constant="18" id="noU-UE-0jC"/>
-                                    <constraint firstItem="sDr-vt-AUT" firstAttribute="leading" secondItem="OqO-au-epE" secondAttribute="leading" id="pS6-7i-vHe"/>
-                                    <constraint firstItem="75M-ot-3VV" firstAttribute="centerX" secondItem="OqO-au-epE" secondAttribute="centerX" id="rg0-kY-bh2"/>
-                                    <constraint firstItem="WkN-dv-uev" firstAttribute="top" secondItem="WvV-Qe-B39" secondAttribute="bottom" constant="8" id="v0d-rg-DHQ"/>
-                                    <constraint firstItem="iSb-zC-0tz" firstAttribute="top" secondItem="75M-ot-3VV" secondAttribute="bottom" constant="8" symbolic="YES" id="vTe-b8-2eq"/>
-                                    <constraint firstItem="WvV-Qe-B39" firstAttribute="leading" secondItem="OqO-au-epE" secondAttribute="leading" constant="53" id="xyD-KU-uC9"/>
-                                    <constraint firstItem="75M-ot-3VV" firstAttribute="leading" secondItem="WkN-dv-uev" secondAttribute="leading" id="z7M-90-E0C"/>
+                                    <constraint firstItem="YgY-xe-xqL" firstAttribute="leading" secondItem="OqO-au-epE" secondAttribute="leadingMargin" id="1mW-xn-One"/>
+                                    <constraint firstItem="iSb-zC-0tz" firstAttribute="top" secondItem="75M-ot-3VV" secondAttribute="bottom" constant="8" symbolic="YES" id="2ra-7S-CAP"/>
+                                    <constraint firstItem="YgY-xe-xqL" firstAttribute="top" secondItem="sDr-vt-AUT" secondAttribute="bottom" constant="6" id="6m1-s6-5ZS"/>
+                                    <constraint firstItem="WvV-Qe-B39" firstAttribute="leading" secondItem="OqO-au-epE" secondAttribute="leading" constant="53" id="8E6-Tv-8ne"/>
+                                    <constraint firstItem="2AO-RR-q3g" firstAttribute="top" secondItem="WkN-dv-uev" secondAttribute="bottom" constant="20" id="Bpx-CI-o1d"/>
+                                    <constraint firstItem="sDr-vt-AUT" firstAttribute="top" secondItem="OqO-au-epE" secondAttribute="top" constant="2" id="GgW-nm-dTm"/>
+                                    <constraint firstItem="75M-ot-3VV" firstAttribute="top" secondItem="lGj-ld-IRu" secondAttribute="bottom" constant="8" symbolic="YES" id="Hyl-PQ-3Bh"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="YgY-xe-xqL" secondAttribute="trailing" constant="20" symbolic="YES" id="LZw-te-byj"/>
+                                    <constraint firstItem="lGj-ld-IRu" firstAttribute="top" secondItem="ytO-X4-itK" secondAttribute="bottom" constant="21" id="Okz-yB-eP4"/>
+                                    <constraint firstItem="WkN-dv-uev" firstAttribute="top" secondItem="WvV-Qe-B39" secondAttribute="bottom" constant="7" id="Vqw-43-zNg"/>
+                                    <constraint firstItem="YgY-xe-xqL" firstAttribute="top" secondItem="OqO-au-epE" secondAttribute="top" constant="10" id="WCh-EU-109"/>
+                                    <constraint firstAttribute="trailing" secondItem="2AO-RR-q3g" secondAttribute="trailing" constant="24" id="Wqi-3b-A1i"/>
+                                    <constraint firstItem="WvV-Qe-B39" firstAttribute="top" secondItem="YgY-xe-xqL" secondAttribute="bottom" constant="19" id="Ztx-w8-sbO"/>
+                                    <constraint firstItem="ytO-X4-itK" firstAttribute="centerX" secondItem="OqO-au-epE" secondAttribute="centerX" id="a2F-ep-0aY"/>
+                                    <constraint firstItem="WvV-Qe-B39" firstAttribute="centerX" secondItem="lGj-ld-IRu" secondAttribute="centerX" constant="-10.5" id="aQR-2a-89F"/>
+                                    <constraint firstItem="2AO-RR-q3g" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="ytO-X4-itK" secondAttribute="trailing" constant="8" symbolic="YES" id="cSi-ZF-JWG"/>
+                                    <constraint firstAttribute="bottom" secondItem="WvV-Qe-B39" secondAttribute="bottom" constant="364" id="e9P-zu-OHi"/>
+                                    <constraint firstItem="WvV-Qe-B39" firstAttribute="centerX" secondItem="64z-53-z2X" secondAttribute="centerX" constant="-10.5" id="ema-as-Vzp"/>
+                                    <constraint firstItem="WkN-dv-uev" firstAttribute="leading" secondItem="OqO-au-epE" secondAttribute="leading" constant="8" id="hI5-gO-kjm"/>
+                                    <constraint firstItem="WvV-Qe-B39" firstAttribute="centerX" secondItem="75M-ot-3VV" secondAttribute="centerX" constant="-10.5" id="hLf-Bc-S2N"/>
+                                    <constraint firstItem="ytO-X4-itK" firstAttribute="top" secondItem="WkN-dv-uev" secondAttribute="bottom" constant="21" id="hag-0y-nRY"/>
+                                    <constraint firstItem="sDr-vt-AUT" firstAttribute="leading" secondItem="OqO-au-epE" secondAttribute="leading" id="kDY-aN-guP"/>
+                                    <constraint firstItem="WvV-Qe-B39" firstAttribute="centerX" secondItem="ytO-X4-itK" secondAttribute="centerX" constant="-10.5" id="oWr-gz-uVV"/>
+                                    <constraint firstAttribute="trailing" secondItem="sDr-vt-AUT" secondAttribute="trailing" constant="20" id="ok0-bm-fwN"/>
+                                    <constraint firstItem="YgY-xe-xqL" firstAttribute="leading" secondItem="WkN-dv-uev" secondAttribute="leading" id="qJU-Fc-Tjf"/>
+                                    <constraint firstItem="64z-53-z2X" firstAttribute="top" secondItem="iSb-zC-0tz" secondAttribute="bottom" constant="8" symbolic="YES" id="xOK-X0-yj3"/>
+                                    <constraint firstItem="WvV-Qe-B39" firstAttribute="centerX" secondItem="iSb-zC-0tz" secondAttribute="centerX" constant="-10.5" id="ycU-Uj-IP4"/>
+                                    <constraint firstAttribute="trailing" secondItem="WkN-dv-uev" secondAttribute="trailing" constant="8" id="zuF-zb-Hyx"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="OqO-au-epE" firstAttribute="leading" secondItem="Kbq-Xt-8tC" secondAttribute="leading" id="6p9-jv-Az5"/>
-                            <constraint firstItem="OqO-au-epE" firstAttribute="top" secondItem="Kbq-Xt-8tC" secondAttribute="top" id="HM5-j7-men"/>
-                            <constraint firstAttribute="trailing" secondItem="OqO-au-epE" secondAttribute="trailing" constant="-4" id="I0U-Or-pNL"/>
-                            <constraint firstItem="OqO-au-epE" firstAttribute="top" secondItem="Kbq-Xt-8tC" secondAttribute="top" id="KxQ-sS-jlm"/>
-                            <constraint firstItem="OqO-au-epE" firstAttribute="bottom" secondItem="Kbq-Xt-8tC" secondAttribute="bottom" id="evD-Sj-r1I"/>
-                            <constraint firstItem="OqO-au-epE" firstAttribute="bottom" secondItem="Kbq-Xt-8tC" secondAttribute="bottom" id="hDM-3o-XPZ"/>
-                            <constraint firstItem="OqO-au-epE" firstAttribute="leading" secondItem="Ap1-B6-Wqe" secondAttribute="leading" id="vrq-Sx-lxe"/>
+                            <constraint firstItem="OqO-au-epE" firstAttribute="leading" secondItem="Kbq-Xt-8tC" secondAttribute="leading" id="2eR-QY-TsJ"/>
+                            <constraint firstItem="OqO-au-epE" firstAttribute="trailing" secondItem="Kbq-Xt-8tC" secondAttribute="trailing" id="TyG-Cm-QK6"/>
+                            <constraint firstItem="OqO-au-epE" firstAttribute="bottom" secondItem="Kbq-Xt-8tC" secondAttribute="bottom" id="ibA-cT-vKQ"/>
+                            <constraint firstItem="OqO-au-epE" firstAttribute="top" secondItem="Kbq-Xt-8tC" secondAttribute="top" id="wpx-q0-zHx"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Kbq-Xt-8tC"/>
                     </view>
