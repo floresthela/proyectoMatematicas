@@ -116,6 +116,7 @@ class QuizViewController: UIViewController, EFImageViewZoomDelegate {
         btnOptionB.isEnabled = true
         btnOptionC.isEnabled = true
         btnOptionD.isEnabled = true
+        btnNextQuestion.isEnabled = false
         //incrementa el contador de preguntas en 1
         counter += 1
         actualQuestion = questionIndex
@@ -137,7 +138,7 @@ class QuizViewController: UIViewController, EFImageViewZoomDelegate {
         //actualiza el contador de preguntas
         lbCounterQ.text = "\(actualQuestion + 1)/\(10)"
         //actualiza el estado del progress view
-        progress.frame.size.width = (view.frame.size.width / CGFloat (10)) * CGFloat (counter)
+        progress.setProgress(Float(counter) * 0.10, animated: false)
     }
   
     
@@ -164,6 +165,10 @@ class QuizViewController: UIViewController, EFImageViewZoomDelegate {
             incorrectAns += 1
             
         }
+        
+        if (counter == 10){
+            btnFinishQuiz.isEnabled = true
+        }
     }
     
     @IBAction func regresaMenu(_ sender: Any) {
@@ -185,7 +190,7 @@ class QuizViewController: UIViewController, EFImageViewZoomDelegate {
         if counter == 10{
             btnNextQuestion.isHidden = true
             btnFinishQuiz.isHidden = false
-            btnFinishQuiz.isEnabled = true
+            btnFinishQuiz.isEnabled = false
         }
     }
     

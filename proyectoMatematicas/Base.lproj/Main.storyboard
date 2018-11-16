@@ -1666,7 +1666,7 @@ Flor Esthela Barbosa Castillo
                                     </label>
                                     <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progressViewStyle="bar" translatesAutoresizingMaskIntoConstraints="NO" id="sDr-vt-AUT">
                                         <rect key="frame" x="0.0" y="1.5" width="371" height="2.5"/>
-                                        <color key="trackTintColor" red="1" green="0.80027001941850884" blue="0.68646217226652628" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="progressTintColor" red="1" green="0.80027001939999998" blue="0.68646217229999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </progressView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="xx/10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YgY-xe-xqL">
                                         <rect key="frame" x="8" y="9" width="49" height="23"/>
