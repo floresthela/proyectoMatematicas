@@ -48,26 +48,10 @@ class graficaCirculoViewController: UIViewController, ChartViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let attString0x:NSMutableAttributedString = NSMutableAttributedString(string: ssx.text!)
-        
-        attString0x.setAttributes([.baselineOffset:15], range: NSRange(location:1,length:1))
-       
-                                  
-        let attString0y:NSMutableAttributedString = NSMutableAttributedString(string: ssy.text!)
-        
-        attString0y.setAttributes([.baselineOffset:15], range: NSRange(location:1,length:1))
-        
-        
-        let attString1:NSMutableAttributedString = NSMutableAttributedString(string: ss1.text!)
-        
-        attString1.setAttributes([.baselineOffset:15], range: NSRange(location:1,length:1))
-        
-        let attString2:NSMutableAttributedString = NSMutableAttributedString(string: ss2.text!)
-
-        attString2.setAttributes([.baselineOffset:15], range: NSRange(location:1,length:1))
-        
-        ss1.attributedText = attString1
-        ss2.attributedText = attString2
+        ssx.attributedText = "x{2} + ".customText()
+        ssy.attributedText = "y{2}".customText()
+        ss1.attributedText = "){2} + (y - ".customText()
+        ss2.attributedText = "){2}".customText()
         
         btnGrafica.backgroundColor = UIColor(red: 66/255.0, green: 108/255.0, blue: 218/255.0, alpha: 1)
         //segconOut.tintColor = UIColor(red: 66/255.0, green: 108/255.0, blue: 218/255.0, alpha: 1)
@@ -215,7 +199,7 @@ class graficaCirculoViewController: UIViewController, ChartViewDelegate {
                 svHK.isHidden = true
                 sv00.isHidden = false
                 UIView.animate(withDuration: 1, animations: {
-                    self.tfRadio.frame.origin.x = 230
+                    self.tfRadio.frame.origin.x = 180
                 })
 
                 h = 0
@@ -227,15 +211,27 @@ class graficaCirculoViewController: UIViewController, ChartViewDelegate {
                 sv00.isHidden = true
                 //285
                 UIView.animate(withDuration: 1, animations: {
-                    self.tfRadio.frame.origin.x = 285
+                    self.tfRadio.frame.origin.x = 236
                 })
                 h = Double(tfH.text!)
                 k = Double(tfK.text!)
                 
             }
             
-            setDataCount()
-            chartView.animate(xAxisDuration: 2.5)
+            if h >= 50 || k >= 50 {
+                let alerta = UIAlertController(title: "Error", message: "Los valores de h o k se salen del rango (-50 - 50)", preferredStyle: .alert)
+                
+                let accion = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+                
+                alerta.addAction(accion)
+                present(alerta, animated: true, completion: nil)
+            }
+            
+            else{
+                setDataCount()
+                chartView.animate(xAxisDuration: 2.5)
+            }
+            
      
         }
         else{

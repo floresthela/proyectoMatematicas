@@ -95,8 +95,21 @@ class graficaParabolaViewController: UIViewController, ChartViewDelegate{
         if let xT = Double(tfX.text!) , let yT = Double(movY.text!) {
             vX = xT
             transY = yT
-            setDataCount()
-            chartView.animate(xAxisDuration: 2.5)
+            
+            
+            
+            if transY >= 50 {
+                let alerta = UIAlertController(title: "Error", message: "Los valores de h o k se salen del rango (-50 - 50)", preferredStyle: .alert)
+                
+                let accion = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+                
+                alerta.addAction(accion)
+                present(alerta, animated: true, completion: nil)
+            }
+            else{
+                setDataCount()
+                chartView.animate(xAxisDuration: 2.5)
+            }
             
         }
         else{

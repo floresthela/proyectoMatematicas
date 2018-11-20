@@ -137,8 +137,18 @@ class graficaHiperbolaViewController: UIViewController, ChartViewDelegate {
             k = kT
             a = aT
             b = bT
-        
-            setDataCount()
+            
+            if h >= 50 || k >= 50 {
+                let alerta = UIAlertController(title: "Error", message: "Los valores de h o k se salen del rango (-50 - 50)", preferredStyle: .alert)
+                
+                let accion = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+                
+                alerta.addAction(accion)
+                present(alerta, animated: true, completion: nil)
+            }
+            else{
+                setDataCount()
+            }
             
         }
         else{
