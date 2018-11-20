@@ -49,9 +49,6 @@ class graficaHiperbolaViewController: UIViewController, ChartViewDelegate {
         lbss2.attributedText = fss2
         
         
-        
-        //self.viewHiperbola.backgroundColor = UIColor(red: 255/255.0, green: 223/255.0, blue: 104/255.0, alpha: 1)
-        
         chartView.delegate = self
         
         chartView.chartDescription?.enabled = false
@@ -95,10 +92,7 @@ class graficaHiperbolaViewController: UIViewController, ChartViewDelegate {
         
         chartView.legend.form = .line
         
-        
-        //setDataCount()
-        //chartView.animate(xAxisDuration: 2.5)
-        // Do any additional setup after loading the view.
+
     }
     
     
@@ -123,14 +117,6 @@ class graficaHiperbolaViewController: UIViewController, ChartViewDelegate {
     
     
     @IBAction func bGrafica(_ sender: UIButton) {
-        
-        /*let alerta = UIAlertController(title: "Error", message: "Los campos deben tener valor numérico", preferredStyle: .alert)
-         
-         let accion = UIAlertAction(title: "OK", style: .cancel, handler: nil)
-         
-         alerta.addAction(accion)
-         present(alerta, animated: true, completion: nil)*/
-        
         if let hT = Double(tfH.text!), let kT = Double(tfK.text!), let aT = Double(tfA.text!), let bT = Double(tfB.text!) {
             
             h = hT
@@ -138,6 +124,15 @@ class graficaHiperbolaViewController: UIViewController, ChartViewDelegate {
             a = aT
             b = bT
             
+            if raiz(a) == false || raiz(b) == false {
+                let alerta = UIAlertController(title: "Error", message: "Valor de a o b no aceptable", preferredStyle: .alert)
+                
+                let accion = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+                
+                alerta.addAction(accion)
+                present(alerta, animated: true, completion: nil)
+            } // if raiz
+        else{
             if h >= 50 || k >= 50 {
                 let alerta = UIAlertController(title: "Error", message: "Los valores de h o k se salen del rango (-50 - 50)", preferredStyle: .alert)
                 
@@ -149,8 +144,9 @@ class graficaHiperbolaViewController: UIViewController, ChartViewDelegate {
             else{
                 setDataCount()
             }
-            
         }
+        } // if valor es numérico
+        
         else{
             let alerta = UIAlertController(title: "Error", message: "Los campos deben tener valor numérico", preferredStyle: .alert)
             
@@ -159,8 +155,10 @@ class graficaHiperbolaViewController: UIViewController, ChartViewDelegate {
             alerta.addAction(accion)
             present(alerta, animated: true, completion: nil)
         }
-        //chartView.animate(xAxisDuration: 2.5)
-    }
+    
+    } // bGrafica
+            //chartView.animate(xAxisDuration: 2.5)
+
     
     func setDataCount(){
         
@@ -274,5 +272,18 @@ class graficaHiperbolaViewController: UIViewController, ChartViewDelegate {
 
     @IBAction func quitaTeclado(_ sender: Any) {
         view.endEditing(true)
+    }
+    
+    
+    func raiz(_ number: Double) -> Bool{
+        let x = Int(sqrt(number))
+        
+        if(pow(Double(x), 2) == number){
+            return true
+        }
+        else{
+            return false
+        }
+
     }
 }

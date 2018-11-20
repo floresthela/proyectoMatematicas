@@ -112,7 +112,7 @@ class graficaElipseViewController: UIViewController, ChartViewDelegate {
         rangoMayor = Double(String(format: "%.2f", rangoMayor))
     
         rangoMenor = Double(String(format: "%.2f", rangoMenor))
-        print(rangoMenor, rangoMayor)
+        //print(rangoMenor, rangoMayor)
         /*for radians in stride(from: 0.0, through: .pi * 2, by: .pi / 2) {
          let degrees = Int(radians * 180 / .pi)
          */
@@ -136,7 +136,7 @@ class graficaElipseViewController: UIViewController, ChartViewDelegate {
             return ChartDataEntry(x: Double(valor), y: k + sqrt( b * (1 - ( pow(Double(valor) - h , 2) / a))))
         }
         
-        print(yVal1)
+        //print(yVal1)
         
         let yVal2 = (rango).map {(valor: Double) -> ChartDataEntry in
             return ChartDataEntry(x: Double(valor), y: (kparay + sqrt( b * (1 - ( pow(Double(valor) - h , 2) / a) ))) * -1)
