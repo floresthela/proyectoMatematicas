@@ -80,7 +80,7 @@ class QuizViewController: UIViewController, EFImageViewZoomDelegate {
     @IBOutlet var viewQuiz: UIView!
      var colorFondo = UIColor(red: 239/255.0, green: 231/255.0, blue: 218/255.0, alpha: 1)
     
-    var previousScale : CGFloat = 1.0
+    //var previousScale : CGFloat = 1.0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -93,10 +93,6 @@ class QuizViewController: UIViewController, EFImageViewZoomDelegate {
         btnOptionC.backgroundColor = UIColor(red: 250/255.0, green: 121/255.0, blue: 33/255.0, alpha: 1)
         btnOptionD.backgroundColor = UIColor(red: 250/255.0, green: 121/255.0, blue: 33/255.0, alpha: 1)
         
-        //self.viewQuiz.backgroundColor = colorFondo
-    
-        let gesture = UIPinchGestureRecognizer(target: self, action: #selector(pinchAction(sender:)))
-        self.viewQuiz.addGestureRecognizer(gesture)
         
         btnNextQuestion.isEnabled = false
         btnFinishQuiz.isEnabled = false
@@ -228,14 +224,6 @@ class QuizViewController: UIViewController, EFImageViewZoomDelegate {
         }))
         
         self.present(alertController, animated: true, completion: nil)
-    }
-    
-    @objc func pinchAction(sender:UIPinchGestureRecognizer){
-        let scale:CGFloat = previousScale * sender.scale
-        self.viewImagen.transform = CGAffineTransform(scaleX: scale, y: scale);
-        
-        previousScale = sender.scale
-        //CGAffineTransform(translationX: scale, y: scale)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

@@ -49,9 +49,9 @@ class graficaCirculoViewController: UIViewController, ChartViewDelegate {
         super.viewDidLoad()
 
         ssx.attributedText = "x{2} + ".customText()
-        ssy.attributedText = "y{2}".customText()
+        ssy.attributedText = "y{2} =".customText()
         ss1.attributedText = "){2} + (y - ".customText()
-        ss2.attributedText = "){2}".customText()
+        ss2.attributedText = "){2} =".customText()
         
         btnGrafica.backgroundColor = UIColor(red: 66/255.0, green: 108/255.0, blue: 218/255.0, alpha: 1)
         //segconOut.tintColor = UIColor(red: 66/255.0, green: 108/255.0, blue: 218/255.0, alpha: 1)
@@ -177,7 +177,7 @@ class graficaCirculoViewController: UIViewController, ChartViewDelegate {
             sv00.isHidden = true
             //285
             UIView.animate(withDuration: 1, animations: {
-                self.tfRadio.frame.origin.x = 285
+                self.tfRadio.frame.origin.x = 245
             })
             h = Double(tfH.text!)
             k = Double(tfK.text!)

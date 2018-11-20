@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -764,7 +764,7 @@ Flor Esthela Barbosa Castillo
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JF6-x6-etE">
-                                <rect key="frame" x="44" y="139" width="294" height="45"/>
+                                <rect key="frame" x="32" y="139" width="306" height="45"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="QOc-Jh-zhA" userLabel="sv00">
                                         <rect key="frame" x="102" y="13" width="72.5" height="22.5"/>
@@ -797,27 +797,27 @@ Flor Esthela Barbosa Castillo
                                     <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="p9E-Xc-cYs">
                                         <rect key="frame" x="236" y="8" width="50" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="1" green="0.96859354490000005" blue="0.7609858102" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                     </textField>
                                     <stackView opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="NZI-Lf-1sU" userLabel="svHK">
-                                        <rect key="frame" x="0.0" y="8" width="236" height="30"/>
+                                        <rect key="frame" x="7" y="8" width="242" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qKi-RB-kEB">
-                                                <rect key="frame" x="0.0" y="0.0" width="25" height="30"/>
-                                                <attributedString key="attributedText">
-                                                    <fragment content="(x -">
-                                                        <attributes>
-                                                            <font key="NSFont" size="17" name="Futura-Medium"/>
-                                                        </attributes>
-                                                    </fragment>
-                                                </attributedString>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(x -" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qKi-RB-kEB">
+                                                <rect key="frame" x="0.0" y="0.0" width="31" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="31" id="pVP-mM-HUt"/>
+                                                    <constraint firstAttribute="height" constant="30" id="z5S-j3-HTF"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                                <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EAc-Oh-wmH">
-                                                <rect key="frame" x="29" y="0.0" width="50" height="30"/>
+                                                <rect key="frame" x="35" y="0.0" width="50" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="50" id="AYp-JF-XLY"/>
                                                     <constraint firstAttribute="height" constant="30" id="Bwc-IT-n5Y"/>
@@ -827,7 +827,7 @@ Flor Esthela Barbosa Castillo
                                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GgU-vO-Dd0">
-                                                <rect key="frame" x="83" y="0.0" width="62.5" height="30"/>
+                                                <rect key="frame" x="89" y="0.0" width="62.5" height="30"/>
                                                 <attributedString key="attributedText">
                                                     <fragment content=")2 + (y -">
                                                         <attributes>
@@ -838,7 +838,7 @@ Flor Esthela Barbosa Castillo
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="raP-gZ-hFp">
-                                                <rect key="frame" x="149.5" y="0.0" width="50" height="30"/>
+                                                <rect key="frame" x="155.5" y="0.0" width="50" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="Zar-vg-VXi"/>
                                                     <constraint firstAttribute="width" constant="50" id="bsX-sj-HGP"/>
@@ -848,7 +848,7 @@ Flor Esthela Barbosa Castillo
                                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sWX-2o-VQK">
-                                                <rect key="frame" x="203.5" y="0.0" width="32.5" height="30"/>
+                                                <rect key="frame" x="209.5" y="0.0" width="32.5" height="30"/>
                                                 <attributedString key="attributedText">
                                                     <fragment content=")2 =">
                                                         <attributes>
@@ -864,7 +864,7 @@ Flor Esthela Barbosa Castillo
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="HQY-A1-YZI"/>
-                                    <constraint firstAttribute="width" constant="294" id="nRg-MI-YaC"/>
+                                    <constraint firstAttribute="width" constant="306" id="nRg-MI-YaC"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -879,7 +879,7 @@ Flor Esthela Barbosa Castillo
                             <constraint firstItem="9tI-tN-VtZ" firstAttribute="centerX" secondItem="6lW-Jo-o2f" secondAttribute="centerX" id="dZC-Et-VBK"/>
                             <constraint firstItem="Ij5-ME-xgf" firstAttribute="top" secondItem="5LZ-pL-BXJ" secondAttribute="top" constant="23" id="pOW-Oz-tFS"/>
                             <constraint firstItem="I2d-c3-LvI" firstAttribute="centerX" secondItem="6lW-Jo-o2f" secondAttribute="centerX" id="rvu-mI-EAS"/>
-                            <constraint firstItem="JF6-x6-etE" firstAttribute="centerX" secondItem="6lW-Jo-o2f" secondAttribute="centerX" constant="3.5" id="uRQ-La-4BN"/>
+                            <constraint firstItem="JF6-x6-etE" firstAttribute="centerX" secondItem="6lW-Jo-o2f" secondAttribute="centerX" constant="-2.5" id="uRQ-La-4BN"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="5LZ-pL-BXJ"/>
                         <connections>

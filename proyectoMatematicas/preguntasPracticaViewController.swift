@@ -52,7 +52,7 @@ class preguntasPracticaViewController: UIViewController {
         
         Pregunta(pregunta: NSMutableAttributedString(string: "¿Cuál es el radio de la siguiente ecuación?",attributes:  [NSAttributedString.Key.foregroundColor: UIColor.black]), opciones: [NSMutableAttributedString(string:"3" ,attributes:  [NSAttributedString.Key.foregroundColor: UIColor.black]),NSMutableAttributedString(string: "2",attributes:  [NSAttributedString.Key.foregroundColor: UIColor.black]) , NSMutableAttributedString(string:"5" ,attributes:  [NSAttributedString.Key.foregroundColor: UIColor.black]), NSMutableAttributedString(string: "6",attributes:  [NSAttributedString.Key.foregroundColor: UIColor.black])], respCorrecta: 0, imagen: UIImage.init(named:"practica3"), ayuda: NSMutableAttributedString(string:"Recuerda que el radio se eleva al cuadrado. " ,attributes:  [NSAttributedString.Key.foregroundColor: UIColor.black]), feedback: NSMutableAttributedString(string: "Si observas la imagen con atencion te podras dar cuenta de que el diametro es 6, por lo que el radio es la mitad de este. ",attributes:  [NSAttributedString.Key.foregroundColor: UIColor.black])),
        
-        Pregunta(pregunta: "Encuentra el centro del siguiente circulo: (x−3){2}+(y+4){2}=4".customText(), opciones: [NSMutableAttributedString(string:"(3,4)" ,attributes:  [NSAttributedString.Key.foregroundColor: UIColor.black]),NSMutableAttributedString(string:"(3,-4)" ,attributes:  [NSAttributedString.Key.foregroundColor: UIColor.black]), NSMutableAttributedString(string:"(-3,4)" ,attributes:  [NSAttributedString.Key.foregroundColor: UIColor.black]), NSMutableAttributedString(string: "(0,1)",attributes:  [NSAttributedString.Key.foregroundColor: UIColor.black])], respCorrecta: 1, imagen: UIImage.init(named:"practica4"), ayuda: NSMutableAttributedString(string: "Recuerda que el centro del circulo se encuentra en (h,k).",attributes:  [NSAttributedString.Key.foregroundColor: UIColor.black]), feedback: NSMutableAttributedString(string: "El centro se encuentra en el punto (-2,1)",attributes:  [NSAttributedString.Key.foregroundColor: UIColor.black]))
+        Pregunta(pregunta: "Encuentra el centro del siguiente circulo: (x−3){2}+(y+4){2}=4".customText(), opciones: [NSMutableAttributedString(string:"(3,4)" ,attributes:  [NSAttributedString.Key.foregroundColor: UIColor.black]),NSMutableAttributedString(string:"(3,-4)" ,attributes:  [NSAttributedString.Key.foregroundColor: UIColor.black]), NSMutableAttributedString(string:"(-3,4)" ,attributes:  [NSAttributedString.Key.foregroundColor: UIColor.black]), NSMutableAttributedString(string: "(0,1)",attributes:  [NSAttributedString.Key.foregroundColor: UIColor.black])], respCorrecta: 1, imagen: UIImage.init(named:"practica4"), ayuda: NSMutableAttributedString(string: "Recuerda que el centro del circulo se encuentra en (h,k).",attributes:  [NSAttributedString.Key.foregroundColor: UIColor.black]), feedback: NSMutableAttributedString(string: "El centro se encuentra en el punto (3,4)",attributes:  [NSAttributedString.Key.foregroundColor: UIColor.black]))
     ]
     var preguntasParabola: [Pregunta]! = [
         Pregunta(pregunta: "¿Cuál es la ecuación en forma estándar de la siguiente expresión:  y=3x{2}−6x+5?".customText(), opciones: ["y=3(x−1){2}+2".customText(), "y=3(x−1){2}".customText(), "y=3x{2}+1".customText(), "y=3x{2}+6".customText()], respCorrecta: 0, imagen: nil, ayuda: NSMutableAttributedString(string: "Recuerda completar el cuadrado cuando pases la ecuación a forma estándar",attributes:  [NSAttributedString.Key.foregroundColor: UIColor.black]), feedback: "Reescriba la función en y = a (x − h) {2} + k completando el cuadrado.".customText()),
@@ -109,16 +109,11 @@ class preguntasPracticaViewController: UIViewController {
     
     @IBOutlet weak var btnAyuda: UIButton!
     
-    var previousScale : CGFloat = 1.0
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         btnAyuda.backgroundColor = UIColor(red: 197/255, green: 0/255, blue: 0/255, alpha: 1)
         self.view1.backgroundColor = colorFondo
         self.view2.backgroundColor = colorFondo
-        
-        let gesture = UIPinchGestureRecognizer(target: self, action: #selector(pinchAction(sender:)))
-        self.view3.addGestureRecognizer(gesture)
         
         
         bSigout.isEnabled = false
@@ -268,15 +263,6 @@ class preguntasPracticaViewController: UIViewController {
     @IBAction func bTermina(_ sender: UIButton) {
     navigationController?.popViewController(animated: true)
     }
-    
-    @objc func pinchAction(sender:UIPinchGestureRecognizer){
-        let scale:CGFloat = previousScale * sender.scale
-        self.view3.transform = CGAffineTransform(scaleX: scale, y: scale);
-        
-        previousScale = sender.scale
-        //CGAffineTransform(translationX: scale, y: scale)
-    }
-    
     
  
     @IBAction func imageTapped(_ sender: UITapGestureRecognizer) {
