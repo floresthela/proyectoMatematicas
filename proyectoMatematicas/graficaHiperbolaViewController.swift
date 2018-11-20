@@ -55,7 +55,7 @@ class graficaHiperbolaViewController: UIViewController, ChartViewDelegate {
         
         chartView.dragEnabled = true
         chartView.setScaleEnabled(true)
-        chartView.pinchZoomEnabled = true
+        chartView.pinchZoomEnabled = false
         chartView.highlightPerDragEnabled = true
         
         chartView.backgroundColor = .white

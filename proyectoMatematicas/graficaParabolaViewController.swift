@@ -59,8 +59,8 @@ class graficaParabolaViewController: UIViewController, ChartViewDelegate{
         xAxis.drawGridLinesEnabled = true
         xAxis.gridLineWidth = 1
         xAxis.gridLineDashLengths = [1,1]
-        xAxis.axisMaximum = 100
-        xAxis.axisMinimum = -100
+        xAxis.axisMaximum = 50
+        xAxis.axisMinimum = -50
         //xAxis.centerAxisLabelsEnabled = true
         //xAxis.granularity = 3600
         xAxis.granularity = 0.5
@@ -71,8 +71,8 @@ class graficaParabolaViewController: UIViewController, ChartViewDelegate{
         leftAxis.gridLineWidth = 1
         leftAxis.gridLineDashLengths = [1,1]
         leftAxis.granularityEnabled = true
-        leftAxis.axisMinimum = -100
-        leftAxis.axisMaximum = 100
+        leftAxis.axisMinimum = -50
+        leftAxis.axisMaximum = 50
         leftAxis.granularity = 0.5
         //leftAxis.yOffset = -9
         leftAxis.labelTextColor = UIColor.black

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -861,7 +861,7 @@ Flor Esthela Barbosa Castillo
                                         </subviews>
                                     </stackView>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" red="1" green="0.64705882349999999" blue="0.57254901960000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="HQY-A1-YZI"/>
                                     <constraint firstAttribute="width" constant="306" id="nRg-MI-YaC"/>
@@ -1019,7 +1019,7 @@ Flor Esthela Barbosa Castillo
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" red="1" green="0.64705882349999999" blue="0.57254901960000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="MrQ-JU-heg" firstAttribute="top" secondItem="ugO-h7-zhg" secondAttribute="bottom" constant="10" id="0Yh-XG-tQy"/>
                                     <constraint firstItem="HXe-iU-F1X" firstAttribute="leading" secondItem="eu5-Sd-X8Q" secondAttribute="trailing" constant="3" id="5Wf-0D-Lz6"/>
@@ -1181,7 +1181,7 @@ Flor Esthela Barbosa Castillo
                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="_____________" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7uU-Ac-nBU">
-                                        <rect key="frame" x="16" y="25" width="94" height="22"/>
+                                        <rect key="frame" x="16" y="25" width="94" height="23"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -1193,13 +1193,13 @@ Flor Esthela Barbosa Castillo
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="x5z-RT-CeY">
-                                        <rect key="frame" x="38" y="48" width="50" height="29"/>
+                                        <rect key="frame" x="38" y="49" width="50" height="28"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wlb-Sf-GHE">
-                                        <rect key="frame" x="41" y="6" width="50" height="31"/>
+                                        <rect key="frame" x="41" y="5" width="50" height="33"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="50" id="Y7S-Dq-eqI"/>
                                         </constraints>
@@ -1208,7 +1208,7 @@ Flor Esthela Barbosa Castillo
                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                     </textField>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" red="1" green="0.64705882349999999" blue="0.57254901960000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="OOJ-dk-Xos" firstAttribute="leading" secondItem="wlb-Sf-GHE" secondAttribute="trailing" constant="8" id="1nw-Pi-I1l"/>
                                     <constraint firstItem="wlb-Sf-GHE" firstAttribute="centerY" secondItem="fcC-1w-dfO" secondAttribute="centerY" id="2rX-c1-TS2"/>
@@ -1362,7 +1362,7 @@ Flor Esthela Barbosa Castillo
                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                     </textField>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" red="1" green="0.64705882349999999" blue="0.57254901960000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="Yze-h4-MlQ" firstAttribute="leading" secondItem="QFL-xJ-mVN" secondAttribute="trailing" constant="8" symbolic="YES" id="4Ic-Ey-zeC"/>
                                     <constraint firstItem="QFL-xJ-mVN" firstAttribute="centerY" secondItem="33u-1v-reD" secondAttribute="centerY" id="7IR-y5-xiI"/>
