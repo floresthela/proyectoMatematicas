@@ -20,11 +20,6 @@ class MenuFormularioViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        btnCirculo.backgroundColor = UIColor(red: 14/255.0, green: 150/255.0, blue: 202/255.0, alpha: 1)
-        btnParabola.backgroundColor = UIColor(red: 14/255.0, green: 150/255.0, blue: 202/255.0, alpha: 1)
-        btnHiperbola.backgroundColor = UIColor(red: 14/255.0, green: 150/255.0, blue: 202/255.0, alpha: 1)
-        btnElipse.backgroundColor = UIColor(red: 14/255.0, green: 150/255.0, blue: 202/255.0, alpha: 1)
 
     }
     

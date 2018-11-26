@@ -110,8 +110,8 @@ class graficaCirculoViewController: UIViewController, ChartViewDelegate {
         chartView.legend.form = .line
         
     
-        setDataCount()
-        chartView.animate(xAxisDuration: 2.5)
+        //setDataCount()
+        //chartView.animate(xAxisDuration: 2.5)
         
     }
 
@@ -127,7 +127,7 @@ class graficaCirculoViewController: UIViewController, ChartViewDelegate {
         //stride(from: rango11, to: rango12, by: 0.1)
         let rangoMayor = sqrt(radio) + h
         let rangoMenor = (h - sqrt(radio))
-        var rango = stride(from: rangoMenor, through: rangoMayor, by: 0.01)
+        let rango = stride(from: rangoMenor, through: rangoMayor, by: 0.01)
 
         // parte de arriba del circulo
         let yVal1 = (rango).map { (valor : Double) -> ChartDataEntry in
@@ -195,7 +195,7 @@ class graficaCirculoViewController: UIViewController, ChartViewDelegate {
        
         
         // valores numericos
-        if let radioT = Double(tfRadio.text!), let  hT = Double(tfH.text!) , let kT = Double(tfK.text!) {
+        if let radioT = Double(tfRadio.text!), let  _ = Double(tfH.text!) , let _ = Double(tfK.text!) {
             
             radio = radioT
            
@@ -214,10 +214,6 @@ class graficaCirculoViewController: UIViewController, ChartViewDelegate {
                 
                 svHK.isHidden = false
                 sv00.isHidden = true
-                //285
-                UIView.animate(withDuration: 1, animations: {
-                    self.tfRadio.frame.origin.x = 236
-                })
                 h = Double(tfH.text!)
                 k = Double(tfK.text!)
                 

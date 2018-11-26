@@ -30,8 +30,8 @@ class graficaParabolaViewController: UIViewController, ChartViewDelegate{
         
         super.viewDidLoad()
         
-        var superScript = "x{2} +"
-        var fsuperScript : NSMutableAttributedString = superScript.customText()
+        let superScript = "x{2} +"
+        let fsuperScript : NSMutableAttributedString = superScript.customText()
         
         lbx2.attributedText = fsuperScript
         chartView.delegate = self
@@ -83,8 +83,8 @@ class graficaParabolaViewController: UIViewController, ChartViewDelegate{
         
         chartView.legend.form = .line
         
-        setDataCount()
-        chartView.animate(xAxisDuration: 2.5)
+        //setDataCount()
+        //chartView.animate(xAxisDuration: 2.5)
     }
     
 
