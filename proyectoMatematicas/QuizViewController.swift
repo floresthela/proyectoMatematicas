@@ -74,6 +74,7 @@ class QuizViewController: UIViewController, EFImageViewZoomDelegate {
     var questionIndex : [Int]!
     var actualQuestion = 0
     var counter = 0
+    var countp = 0
     var show : [QuestionQuiz]!
     var correctAns = 0
     var calificacionFinal = 0
@@ -86,15 +87,8 @@ class QuizViewController: UIViewController, EFImageViewZoomDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        progress.frame.size.width = CGFloat (counter)
-        progress.isHidden = true
-  
-        btnOptionA.backgroundColor = UIColor(red: 250/255.0, green: 121/255.0, blue: 33/255.0, alpha: 1)
-        btnOptionB.backgroundColor = UIColor(red: 250/255.0, green: 121/255.0, blue: 33/255.0, alpha: 1)
-        btnOptionC.backgroundColor = UIColor(red: 250/255.0, green: 121/255.0, blue: 33/255.0, alpha: 1)
-        btnOptionD.backgroundColor = UIColor(red: 250/255.0, green: 121/255.0, blue: 33/255.0, alpha: 1)
-        
-        
+        progress.frame.size.width = CGFloat (countp)
+
         btnNextQuestion.isEnabled = false
         btnFinishQuiz.isEnabled = false
         btnFinishQuiz.isHidden = true
@@ -108,7 +102,7 @@ class QuizViewController: UIViewController, EFImageViewZoomDelegate {
     
     //actualiza la pregunta en el view
     func update(questionIndex : Int){
-        progress.isHidden = (questionIndex == 0)
+        //progress.isHidden = (questionIndex == 0)
         btnOptionA.isEnabled = true
         btnOptionB.isEnabled = true
         btnOptionC.isEnabled = true
@@ -116,6 +110,7 @@ class QuizViewController: UIViewController, EFImageViewZoomDelegate {
         btnNextQuestion.isEnabled = false
         //incrementa el contador de preguntas en 1
         counter += 1
+        countp += 1
         actualQuestion = questionIndex
         
         lbQuestion.text = show[questionIndex].question
@@ -135,7 +130,7 @@ class QuizViewController: UIViewController, EFImageViewZoomDelegate {
         //actualiza el contador de preguntas
         lbCounterQ.text = "\(actualQuestion + 1)/\(10)"
         //actualiza el estado del progress view
-        progress.setProgress(Float(counter) * 0.10, animated: false)
+        progress.setProgress(Float(countp)/10, animated: false)
     }
   
     
