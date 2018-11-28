@@ -79,7 +79,6 @@ class QuizViewController: UIViewController, EFImageViewZoomDelegate {
     var calificacionFinal = 0
     var incorrectAns = 0
     
-    
     @IBOutlet weak var viewImagen: UIView!
     @IBOutlet var viewQuiz: UIView!
      var colorFondo = UIColor(red: 239/255.0, green: 231/255.0, blue: 218/255.0, alpha: 1)
@@ -194,12 +193,7 @@ class QuizViewController: UIViewController, EFImageViewZoomDelegate {
     
     //el botón se activa para que el usuario pueda ver sus resultados
     @IBAction func btnFinish(_ sender: UIButton) {
-        /*
-        let alertaFinal = UIAlertController(title: "Ya terminaste:)", message: "Fin del quiz. ¿Quieres ver cómo te fue?", preferredStyle: .alert)
-        let restartAction = UIAlertAction(title: "OK", style: .default, handler: nil)
-        alertaFinal.addAction(restartAction)
-    present(alertaFinal, animated: true, completion: nil)
-    */
+
         alert(title: "Terminaste", message: "¿Quieres ver tus resultados?", completion: { result in
             if result {
                 self.performSegue(withIdentifier: "Segue", sender: self)
