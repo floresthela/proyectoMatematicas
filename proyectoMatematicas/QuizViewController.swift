@@ -37,6 +37,7 @@ class QuizViewController: UIViewController, EFImageViewZoomDelegate {
     lazy var opciones : [UIButton] = {return [self.btnOptionA, self.btnOptionB, self.btnOptionC, self.btnOptionD]}()
     
     var listaPreguntas : [QuestionQuiz]! = [
+        
         //preguntas círculo
         QuestionQuiz(question: "¿Cuál es el centro del círculo?", imageQ: UIImage.init(named: "quiz1"), options:["(3,-1)","(-1,3)","(-3,-1)", "(3,6)"] , correctAnswer: 1),
         QuestionQuiz(question: "El círculo pasa por el punto (3,6), ¿cuál es su radio?", imageQ: UIImage.init(named: "quiz1"), options: ["5π","raíz 20","5","raíz 20π"], correctAnswer: 2),
@@ -46,12 +47,14 @@ class QuizViewController: UIViewController, EFImageViewZoomDelegate {
         QuestionQuiz(question: "¿Cuál es el radio del círculo?", imageQ: UIImage.init(named: "quiz3"), options: ["9","2","6","10"], correctAnswer: 3),
         QuestionQuiz(question: "¿Cuál es el centro del círculo?", imageQ: UIImage.init(named: "quiz4"), options: ["(1.6, 9.8)","(-1.6, 9.8)","(-1.6, -9.8)","(1.6, -9.8)"], correctAnswer: 2),
         QuestionQuiz(question: "¿Cuál es el radio del círculo?", imageQ: UIImage.init(named: "quiz4"), options: ["5.1","5","5.5","5.2"], correctAnswer: 0),
+       
         //preguntas elipse
         QuestionQuiz(question: "¿Cuál es el centro de la elipse?", imageQ: UIImage.init(named: "quiz5"), options: ["(0,7)","(0,-7)","(1,7)","(7,1)"], correctAnswer: 1),
         QuestionQuiz(question: "¿Cuáles son los ejes de la elipse?", imageQ: UIImage.init(named: "quiz5"), options: ["Mayor = 9, Menor = 3","Mayor = 7, Menor = 4","Mayor = 9, Menor = 6","Mayor = 8, Menor = 6"], correctAnswer: 0),
         QuestionQuiz(question: "¿Cuál es el centro de la elipse?", imageQ: UIImage.init(named: "quiz6"), options: ["(7,5)","(3,-7)","(-7,-3)","(-7,3)"], correctAnswer: 3),
         QuestionQuiz(question: "¿Cuáles son los ejes de la elipse?", imageQ: UIImage.init(named: "quiz6"), options: ["Mayor = 6, Menor = 3","Mayor = 4, Menor = 2","Mayor = 6, Menor = 2","Mayor = 8, Menor = 6"], correctAnswer: 1),
         QuestionQuiz(question: "¿Cuáles son los focos de la elipse?", imageQ: UIImage.init(named: "quiz7"), options: ["(12,18) y (12,-12)","(3,27) y (3,-3)","(27,3) y (-3,3)","(18,12) y (-12,12)"], correctAnswer: 2),
+        
         //preguntas hipérbola
         QuestionQuiz(question: "Las coordenadas de los focos de la hipérbola son:", imageQ: UIImage.init(named: "quiz8"), options: ["(5,0) y (-5,0)", "(0,3) y (0,-3)", "(0,5) y (-5,0)", "(4,0) y (-4,0)"], correctAnswer: 0),
         QuestionQuiz(question: "Las coordenadas de los vértices de la hipérbola son:", imageQ: UIImage.init(named: "quiz8"), options: ["0,4) y (0,-4)", "(4,0) y (-4,0)", "(0,5) y (-5,0)", "(5,0) y (-5,0)"], correctAnswer: 1),
@@ -60,6 +63,7 @@ class QuizViewController: UIViewController, EFImageViewZoomDelegate {
         QuestionQuiz(question: "Una hipérbola es equilátera si son iguales sus", imageQ: UIImage.init(named: "quiz11"), options: ["ejes", "focos", "vértices", "asíntotas"], correctAnswer: 0),
         QuestionQuiz(question: "¿Qué sección cónica está representada en la ecuación?", imageQ: UIImage.init(named: "quiz12"), options: ["círculo", "elipse", "parábola", "hipérbola"], correctAnswer: 3),
         QuestionQuiz(question: "Cuáles son los focos de la hipérbola?", imageQ: UIImage.init(named: "quiz13"), options: ["(-4,4) y (-4,-2)","(4,4) y (4,-2)","(0,4) y (4,0)","(-2,4) y (2,-4)"], correctAnswer: 1),
+        
         //preguntas parábola
         QuestionQuiz(question: "Encuentra el vértice y el foco de la parábola", imageQ: UIImage.init(named: "quiz14"), options: ["V(0), F(-2,0)","V(2,0), F(0,2)","V(0), F(2,0)","V(0), F(-2,0)"], correctAnswer: 0),
         QuestionQuiz(question: "Encuentra el vértice y el foco de la parábola", imageQ: UIImage.init(named: "quiz15"), options: ["V(2,2), F(3,-4)","V(2,4), F(2,-4)","V(-2,4), F(3,4)","V(-2,2), F(-2,4)"], correctAnswer: 2),
@@ -80,14 +84,12 @@ class QuizViewController: UIViewController, EFImageViewZoomDelegate {
     @IBOutlet var viewQuiz: UIView!
      var colorFondo = UIColor(red: 239/255.0, green: 231/255.0, blue: 218/255.0, alpha: 1)
     
-    //var previousScale : CGFloat = 1.0
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         progress.frame.size.width = CGFloat (counter)
         progress.isHidden = true
-       //progress.frame.size.width = (view.frame.size.width / CGFloat (10)) * CGFloat (counter)
+  
         btnOptionA.backgroundColor = UIColor(red: 250/255.0, green: 121/255.0, blue: 33/255.0, alpha: 1)
         btnOptionB.backgroundColor = UIColor(red: 250/255.0, green: 121/255.0, blue: 33/255.0, alpha: 1)
         btnOptionC.backgroundColor = UIColor(red: 250/255.0, green: 121/255.0, blue: 33/255.0, alpha: 1)

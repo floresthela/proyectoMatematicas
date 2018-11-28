@@ -12,7 +12,6 @@ import Charts
 class graficaHiperbolaViewController: UIViewController, ChartViewDelegate {
 
     
-    
     @IBOutlet weak var lbss1: UILabel!
     @IBOutlet weak var lbss2: UILabel!
     
@@ -40,12 +39,12 @@ class graficaHiperbolaViewController: UIViewController, ChartViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        var ss1 = "){2} - (y-"
-        var fss1 : NSMutableAttributedString = ss1.customText()
+        let ss1 = "){2} - (y-"
+        let fss1 : NSMutableAttributedString = ss1.customText()
         lbss1.attributedText = fss1
         
-        var ss2 = "){2} = 1"
-        var fss2 : NSMutableAttributedString = ss2.customText()
+        let ss2 = "){2} = 1"
+        let fss2 : NSMutableAttributedString = ss2.customText()
         lbss2.attributedText = fss2
         
         
@@ -101,10 +100,6 @@ class graficaHiperbolaViewController: UIViewController, ChartViewDelegate {
         if segconXY.selectedSegmentIndex == 0 {
             lb1.text = "(x -"
             lbss1.attributedText = "){2} - (y-".customText()
-            
-            /*        var ss1 = "){2} - y(-"
-             var fss1 : NSMutableAttributedString = ss1.customText()
-             lbss1.attributedText = fss1*/
         
         }
         else{
@@ -142,6 +137,7 @@ class graficaHiperbolaViewController: UIViewController, ChartViewDelegate {
                 present(alerta, animated: true, completion: nil)
             }
             else{
+                // graficar
                 setDataCount()
             }
         }
@@ -157,11 +153,10 @@ class graficaHiperbolaViewController: UIViewController, ChartViewDelegate {
         }
     
     } // bGrafica
-            //chartView.animate(xAxisDuration: 2.5)
+    
 
     
     func setDataCount(){
-        
         
         let rango11 = -50.0
         let rango12 = ( h - sqrt(a))
@@ -220,8 +215,7 @@ class graficaHiperbolaViewController: UIViewController, ChartViewDelegate {
             }
         }
             
-        
-        
+    
         let set1 = LineChartDataSet(values: yVal1, label: "1")
         set1.setColor(UIColor.black)
         set1.drawCirclesEnabled = false
@@ -270,11 +264,12 @@ class graficaHiperbolaViewController: UIViewController, ChartViewDelegate {
         return false
     }
 
+    // función para esconder el teclado al dar tap en cualquier parte de la pantalla
     @IBAction func quitaTeclado(_ sender: Any) {
         view.endEditing(true)
     }
     
-    
+    // raíz perfecta
     func raiz(_ number: Double) -> Bool{
         let x = Int(sqrt(number))
         

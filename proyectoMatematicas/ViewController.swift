@@ -19,11 +19,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        /*boton1.backgroundColor = UIColor(red: 0/255.0, green: 173/255.0, blue: 65/255.0, alpha: 1)
-        boton2.backgroundColor = UIColor(red: 0/255.0, green: 173/255.0, blue: 65/255.0, alpha: 1)
-        boton3.backgroundColor = UIColor(red: 0/255.0, green: 173/255.0, blue: 65/255.0, alpha: 1)
-        boton4.backgroundColor = UIColor(red: 0/255.0, green: 173/255.0, blue: 65/255.0, alpha: 1)*/
-        
+
 }
     
     override var supportedInterfaceOrientations: UIInterfaceOrientationMask {

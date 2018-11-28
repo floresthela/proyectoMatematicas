@@ -22,12 +22,6 @@ class PracticaViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        /*btnCirculo.backgroundColor = UIColor(red: 250/255.0, green: 121/255.0, blue: 33/255.0, alpha: 1)
-        btnParabola.backgroundColor = UIColor(red: 250/255.0, green: 121/255.0, blue: 33/255.0, alpha: 1)
-        btnHiperbola.backgroundColor = UIColor(red: 250/255.0, green: 121/255.0, blue: 33/255.0, alpha: 1)
-        btnElipse.backgroundColor = UIColor(red: 250/255.0, green: 121/255.0, blue: 33/255.0, alpha: 1)*/
-        
 
     }
     
@@ -41,11 +35,7 @@ class PracticaViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-    /* if segue.identifier == "graficaCirculo"{
-     let vistagraficaCirculo = segue.destination as! graficaCirculoViewController
-     }
-     if segue.ident*/
-    
+
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "pracCirculo"{
             let vistaRepaso = segue.destination as! preguntasPracticaViewController

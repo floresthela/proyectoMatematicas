@@ -24,8 +24,6 @@ class graficaParabolaViewController: UIViewController, ChartViewDelegate{
     
     @IBOutlet var viewParabola: UIView!
     
-    //var colorFondo = UIColor(red: 255/255.0, green: 223/255.0, blue: 104/255.0, alpha: 1)
-    
     override func viewDidLoad() {
         
         super.viewDidLoad()
@@ -36,8 +34,7 @@ class graficaParabolaViewController: UIViewController, ChartViewDelegate{
         lbx2.attributedText = fsuperScript
         chartView.delegate = self
         
-        //self.viewParabola.backgroundColor = colorFondo
-        
+
         vX = 1
         transY = 1
         chartView.chartDescription?.enabled = false
@@ -49,11 +46,8 @@ class graficaParabolaViewController: UIViewController, ChartViewDelegate{
         chartView.backgroundColor = .white
         
         chartView.legend.enabled = false
-        // chartView.xAxis.gridLineDashLengths = [1, 1]
         let xAxis = chartView.xAxis
-        //xAxis.labelPosition = .bottom
         xAxis.labelFont = .systemFont(ofSize: 10, weight: .light)
-        //xAxis.labelTextColor = UIColor(red: 255/255, green: 192/255, blue: 56/255, alpha: 1)
         xAxis.labelTextColor = UIColor.black
         xAxis.drawAxisLineEnabled = true
         xAxis.drawGridLinesEnabled = true
@@ -61,8 +55,6 @@ class graficaParabolaViewController: UIViewController, ChartViewDelegate{
         xAxis.gridLineDashLengths = [1,1]
         xAxis.axisMaximum = 50
         xAxis.axisMinimum = -50
-        //xAxis.centerAxisLabelsEnabled = true
-        //xAxis.granularity = 3600
         xAxis.granularity = 0.5
         let leftAxis = chartView.leftAxis
         leftAxis.labelPosition = .insideChart
@@ -74,7 +66,6 @@ class graficaParabolaViewController: UIViewController, ChartViewDelegate{
         leftAxis.axisMinimum = -50
         leftAxis.axisMaximum = 50
         leftAxis.granularity = 0.5
-        //leftAxis.yOffset = -9
         leftAxis.labelTextColor = UIColor.black
         
    
@@ -82,9 +73,7 @@ class graficaParabolaViewController: UIViewController, ChartViewDelegate{
         chartView.rightAxis.enabled = false
         
         chartView.legend.form = .line
-        
-        //setDataCount()
-        //chartView.animate(xAxisDuration: 2.5)
+
     }
     
 
@@ -131,7 +120,6 @@ class graficaParabolaViewController: UIViewController, ChartViewDelegate{
         
         let set = LineChartDataSet(values: yVal, label: "Parabola")
         set.setColor(UIColor.black)
-        //set.drawFilledEnabled = true
         set.drawCirclesEnabled = false
         set.lineWidth = 4
         

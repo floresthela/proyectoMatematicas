@@ -58,9 +58,6 @@ class graficaCirculoViewController: UIViewController, ChartViewDelegate {
             self.tfRadio.frame.origin.x = 180
         })
         
-        btnGrafica.backgroundColor = UIColor(red: 66/255.0, green: 108/255.0, blue: 218/255.0, alpha: 1)
-        //segconOut.tintColor = UIColor(red: 66/255.0, green: 108/255.0, blue: 218/255.0, alpha: 1)
-       // self.viewGraficar.backgroundColor = colorFondo
         h = 0
         k = 0
         svHK.isHidden = true
@@ -109,9 +106,6 @@ class graficaCirculoViewController: UIViewController, ChartViewDelegate {
         
         chartView.legend.form = .line
         
-    
-        //setDataCount()
-        //chartView.animate(xAxisDuration: 2.5)
         
     }
 
@@ -124,7 +118,7 @@ class graficaCirculoViewController: UIViewController, ChartViewDelegate {
     func setDataCount() {
         
         // se definen los rangos en x que tendrá y no recibir valores NaN
-        //stride(from: rango11, to: rango12, by: 0.1)
+
         let rangoMayor = sqrt(radio) + h
         let rangoMenor = (h - sqrt(radio))
         let rango = stride(from: rangoMenor, through: rangoMayor, by: 0.01)
@@ -137,12 +131,10 @@ class graficaCirculoViewController: UIViewController, ChartViewDelegate {
         // parte de abajo del circulo
         let yVal2 = (rango).map {
             (valor : Double) -> ChartDataEntry in
-            //return ChartDataEntry(x: Double(valor), y: sqrt(radio - pow(Double(valor), 2.0)) * -1)
             return ChartDataEntry(x: Double(valor), y: k + sqrt(radio - pow(Double(valor) - h, 2.0)) * -1)
             }
         
         let set1 = LineChartDataSet(values: yVal1, label: "Top")
-         //set1.axisDependency = .left
          set1.setColor(UIColor.black)
          set1.drawCirclesEnabled = false
          set1.lineWidth = 4
@@ -166,7 +158,6 @@ class graficaCirculoViewController: UIViewController, ChartViewDelegate {
         radio = Double(tfRadio.text!)
         
         if segconOut.selectedSegmentIndex == 0 {
-            //230
             svHK.isHidden = true
             sv00.isHidden = false
             UIView.animate(withDuration: 1, animations: {
@@ -174,7 +165,7 @@ class graficaCirculoViewController: UIViewController, ChartViewDelegate {
             })
             h = 0
             k = 0
-            //segconOut.tintColor = UIColor(red: 66/255.0, green: 108/255.0, blue: 218/255.0, alpha: 1)
+
         }
         else{
             
@@ -186,7 +177,6 @@ class graficaCirculoViewController: UIViewController, ChartViewDelegate {
             })
             h = Double(tfH.text!)
             k = Double(tfK.text!)
-            //segconOut.tintColor = UIColor(red: 66/255.0, green: 108/255.0, blue: 218/255.0, alpha: 1)
             
         }
     }
@@ -200,12 +190,8 @@ class graficaCirculoViewController: UIViewController, ChartViewDelegate {
             radio = radioT
            
             if segconOut.selectedSegmentIndex == 0 {
-                //230
                 svHK.isHidden = true
                 sv00.isHidden = false
-                /*UIView.animate(withDuration: 1, animations: {
-                    self.tfRadio.frame.origin.x = 180
-                })*/
 
                 h = 0
                 k = 0
@@ -246,11 +232,6 @@ class graficaCirculoViewController: UIViewController, ChartViewDelegate {
         
         
     }
-    
-    
-    
-    // TO DO: checar que el valor ingresado sea válido / numérico
-    
     
     
     /*

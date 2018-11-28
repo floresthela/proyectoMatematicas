@@ -37,10 +37,7 @@ class graficaElipseViewController: UIViewController, ChartViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        /*var superScript = "x{2} +"
-         var fsuperScript : NSMutableAttributedString = superScript.customText()
-         
-         lbx2.attributedText = fsuperScript*/
+ 
         
         var ss1 = "){2} + (y-"
         var fss1 : NSMutableAttributedString = ss1.customText()
@@ -49,9 +46,7 @@ class graficaElipseViewController: UIViewController, ChartViewDelegate {
         var ss2 = "){2} = 1"
         var fss2 : NSMutableAttributedString = ss2.customText()
         lbss2.attributedText = fss2
-        
-        //self.viewElipse.backgroundColor = colorFondo
-        
+
         chartView.delegate = self
         
         chartView.chartDescription?.enabled = false
@@ -94,10 +89,7 @@ class graficaElipseViewController: UIViewController, ChartViewDelegate {
         chartView.rightAxis.enabled = false
         
         chartView.legend.form = .line
-        
-        
-        //setDataCount()
-        //chartView.animate(xAxisDuration: 2.5)
+     
     }
     
     func setDataCount(){
@@ -112,38 +104,21 @@ class graficaElipseViewController: UIViewController, ChartViewDelegate {
         rangoMayor = Double(String(format: "%.2f", rangoMayor))
     
         rangoMenor = Double(String(format: "%.2f", rangoMenor))
-        //print(rangoMenor, rangoMayor)
-        /*for radians in stride(from: 0.0, through: .pi * 2, by: .pi / 2) {
-         let degrees = Int(radians * 180 / .pi)
-         */
-        /*var rango = [Double]()
-        for num in stride(from: rangoMenor, through: rangoMayor, by: 0.01){
-            rango.append(num)
-        }*/
-        
+ 
     
        var rango = stride(from: rangoMenor, through: rangoMayor, by: 0.01)
         
-        /*if rango.last != rangoMayor {
-            rango.append(rangoMayor)
-        }*/
-    
-    
-        /*rango.forEach { (num) in
-            print(num)
-        }*/
+ 
         let yVal1 = rango.map {(valor: Double) -> ChartDataEntry in
             return ChartDataEntry(x: Double(valor), y: k + sqrt( b * (1 - ( pow(Double(valor) - h , 2) / a))))
         }
-        
-        //print(yVal1)
         
         let yVal2 = (rango).map {(valor: Double) -> ChartDataEntry in
             return ChartDataEntry(x: Double(valor), y: (kparay + sqrt( b * (1 - ( pow(Double(valor) - h , 2) / a) ))) * -1)
         }
         
         let set1 = LineChartDataSet(values: yVal1, label: "Top")
-        //set1.axisDependency = .left
+        
         set1.setColor(UIColor.black)
         set1.drawCirclesEnabled = false
         set1.lineWidth = 4
