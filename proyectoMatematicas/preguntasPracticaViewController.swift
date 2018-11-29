@@ -117,8 +117,8 @@ class preguntasPracticaViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         btnAyuda.backgroundColor = UIColor(red: 197/255, green: 0/255, blue: 0/255, alpha: 1)
-        self.view1.backgroundColor = colorFondo
-        self.view2.backgroundColor = colorFondo
+        //self.view1.backgroundColor = colorFondo
+        //self.view2.backgroundColor = colorFondo
         
         
         bSigout.isEnabled = false
