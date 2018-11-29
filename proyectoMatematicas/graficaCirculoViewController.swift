@@ -67,10 +67,10 @@ class graficaCirculoViewController: UIViewController, ChartViewDelegate {
 
         chartView.chartDescription?.enabled = false
         
-        chartView.dragEnabled = true
-        chartView.setScaleEnabled(true)
+        chartView.dragEnabled = false
+        chartView.setScaleEnabled(false)
         chartView.pinchZoomEnabled = false
-        chartView.highlightPerDragEnabled = true
+        chartView.highlightPerDragEnabled = false
         
         chartView.backgroundColor = .white
     
@@ -207,7 +207,7 @@ class graficaCirculoViewController: UIViewController, ChartViewDelegate {
             }
             
             
-            if radio < 5 {
+            if radio < 15 {
                 let alerta = UIAlertController(title: "Error", message: "Valor del radio no es aceptable", preferredStyle: .alert)
                 
                 let accion = UIAlertAction(title: "OK", style: .cancel, handler: nil)
