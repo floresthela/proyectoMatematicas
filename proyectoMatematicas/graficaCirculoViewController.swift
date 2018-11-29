@@ -43,8 +43,6 @@ class graficaCirculoViewController: UIViewController, ChartViewDelegate {
     
     
     
-     var colorFondo = UIColor(red: 255/255.0, green: 223/255.0, blue: 104/255.0, alpha: 1)
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -64,7 +62,7 @@ class graficaCirculoViewController: UIViewController, ChartViewDelegate {
         radio = 100
         
         chartView.delegate = self
-
+        chartView.noDataText = "¡Grafica un círculo!"
         chartView.chartDescription?.enabled = false
         
         chartView.dragEnabled = false

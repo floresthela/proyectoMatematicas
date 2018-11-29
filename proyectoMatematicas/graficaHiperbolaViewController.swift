@@ -52,7 +52,7 @@ class graficaHiperbolaViewController: UIViewController, ChartViewDelegate {
         
         chartView.chartDescription?.enabled = false
         
-        
+        chartView.noDataText = "¡Grafica una hipérbola!"
         chartView.dragEnabled = false
         chartView.setScaleEnabled(false)
         chartView.pinchZoomEnabled = false

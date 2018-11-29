@@ -44,7 +44,7 @@ class graficaParabolaViewController: UIViewController, ChartViewDelegate{
         chartView.pinchZoomEnabled = false
         chartView.highlightPerDragEnabled = true
         chartView.backgroundColor = .white
-        
+        chartView.noDataText = "¡Grafica una parábola!"
         chartView.legend.enabled = false
         let xAxis = chartView.xAxis
         xAxis.labelPosition = .topInside

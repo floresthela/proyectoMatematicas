@@ -50,7 +50,7 @@ class graficaElipseViewController: UIViewController, ChartViewDelegate {
         chartView.delegate = self
         
         chartView.chartDescription?.enabled = false
-        
+        chartView.noDataText = "¡Grafica una elipse!"
         chartView.dragEnabled = false
         chartView.setScaleEnabled(false)
         chartView.pinchZoomEnabled = false
