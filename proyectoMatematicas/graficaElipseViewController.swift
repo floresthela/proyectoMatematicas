@@ -51,8 +51,8 @@ class graficaElipseViewController: UIViewController, ChartViewDelegate {
         
         chartView.chartDescription?.enabled = false
         
-        chartView.dragEnabled = true
-        chartView.setScaleEnabled(true)
+        chartView.dragEnabled = false
+        chartView.setScaleEnabled(false)
         chartView.pinchZoomEnabled = false
         chartView.highlightPerDragEnabled = true
         
@@ -62,6 +62,7 @@ class graficaElipseViewController: UIViewController, ChartViewDelegate {
         
         
         let xAxis = chartView.xAxis
+        xAxis.labelPosition = .topInside
         xAxis.labelFont = .systemFont(ofSize: 10, weight: .light)
         xAxis.labelTextColor = UIColor.black
         xAxis.drawAxisLineEnabled = true
@@ -71,17 +72,17 @@ class graficaElipseViewController: UIViewController, ChartViewDelegate {
         xAxis.axisMaximum = 50
         xAxis.axisMinimum = -50
         
-        xAxis.granularity = 0.5
+        //xAxis.granularity = 0.5
         let leftAxis = chartView.leftAxis
         leftAxis.labelPosition = .insideChart
-        leftAxis.labelFont = .systemFont(ofSize: 12, weight: .light)
+        leftAxis.labelFont = .systemFont(ofSize: 10, weight: .light)
         leftAxis.drawGridLinesEnabled = true
         leftAxis.gridLineWidth = 1
         leftAxis.gridLineDashLengths = [1,1]
-        leftAxis.granularityEnabled = true
+        //leftAxis.granularityEnabled = true
         leftAxis.axisMinimum = -50
         leftAxis.axisMaximum = 50
-        leftAxis.granularity = 0.5
+        //leftAxis.granularity = 0.5
         leftAxis.yOffset = -9
         leftAxis.labelTextColor = UIColor.black
         
@@ -157,6 +158,15 @@ class graficaElipseViewController: UIViewController, ChartViewDelegate {
             a = aT
             b = bT
             
+            if a < 9 || b < 9 {
+                let alerta = UIAlertController(title: "Error", message: "Valor de a o b no aceptable", preferredStyle: .alert)
+                
+                let accion = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+                
+                alerta.addAction(accion)
+                present(alerta, animated: true, completion: nil)
+            } 
+            else{
             if h >= 50 || k >= 50 {
                 let alerta = UIAlertController(title: "Error", message: "Los valores de h o k se salen del rango (-50 - 50)", preferredStyle: .alert)
                 
@@ -167,6 +177,7 @@ class graficaElipseViewController: UIViewController, ChartViewDelegate {
             }
             else{
                 setDataCount()
+            }
             }
         }
         else{

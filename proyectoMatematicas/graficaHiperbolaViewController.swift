@@ -39,7 +39,7 @@ class graficaHiperbolaViewController: UIViewController, ChartViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let ss1 = "){2} - (y-"
+        let ss1 = "){2} - (y - "
         let fss1 : NSMutableAttributedString = ss1.customText()
         lbss1.attributedText = fss1
         
@@ -52,17 +52,19 @@ class graficaHiperbolaViewController: UIViewController, ChartViewDelegate {
         
         chartView.chartDescription?.enabled = false
         
-        chartView.dragEnabled = true
-        chartView.setScaleEnabled(true)
+        
+        chartView.dragEnabled = false
+        chartView.setScaleEnabled(false)
         chartView.pinchZoomEnabled = false
         chartView.highlightPerDragEnabled = true
-        
+
         chartView.backgroundColor = .white
         
         chartView.legend.enabled = false
         
         
         let xAxis = chartView.xAxis
+        xAxis.labelPosition = .topInside
         xAxis.labelFont = .systemFont(ofSize: 10, weight: .light)
         xAxis.labelTextColor = UIColor.black
         xAxis.drawAxisLineEnabled = true
@@ -71,15 +73,16 @@ class graficaHiperbolaViewController: UIViewController, ChartViewDelegate {
         xAxis.gridLineDashLengths = [1,1]
         xAxis.axisMaximum = 50
         xAxis.axisMinimum = -50
+        xAxis.granularityEnabled = false
+    
         
-        xAxis.granularity = 1
         let leftAxis = chartView.leftAxis
         leftAxis.labelPosition = .insideChart
-        leftAxis.labelFont = .systemFont(ofSize: 12, weight: .light)
+        leftAxis.labelFont = .systemFont(ofSize: 10, weight: .light)
         leftAxis.drawGridLinesEnabled = true
         leftAxis.gridLineWidth = 1
         leftAxis.gridLineDashLengths = [1,1]
-        leftAxis.granularityEnabled = true
+        leftAxis.granularityEnabled = false
         leftAxis.axisMinimum = -50
         leftAxis.axisMaximum = 50
         leftAxis.granularity = 1
@@ -88,6 +91,7 @@ class graficaHiperbolaViewController: UIViewController, ChartViewDelegate {
         
         chartView.xAxis.gridLineDashLengths = [1,1]
         chartView.rightAxis.enabled = false
+
         
         chartView.legend.form = .line
         
@@ -119,7 +123,7 @@ class graficaHiperbolaViewController: UIViewController, ChartViewDelegate {
             a = aT
             b = bT
             
-            if raiz(a) == false || raiz(b) == false {
+            if raiz(a) == false || raiz(b) == false || a < 9 || b < 9 {
                 let alerta = UIAlertController(title: "Error", message: "Valor de a o b no aceptable", preferredStyle: .alert)
                 
                 let accion = UIAlertAction(title: "OK", style: .cancel, handler: nil)

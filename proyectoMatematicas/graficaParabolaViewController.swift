@@ -39,14 +39,15 @@ class graficaParabolaViewController: UIViewController, ChartViewDelegate{
         transY = 1
         chartView.chartDescription?.enabled = false
         
-        chartView.dragEnabled = true
-        chartView.setScaleEnabled(true)
-        chartView.pinchZoomEnabled = true
+        chartView.dragEnabled = false
+        chartView.setScaleEnabled(false)
+        chartView.pinchZoomEnabled = false
         chartView.highlightPerDragEnabled = true
         chartView.backgroundColor = .white
         
         chartView.legend.enabled = false
         let xAxis = chartView.xAxis
+        xAxis.labelPosition = .topInside
         xAxis.labelFont = .systemFont(ofSize: 10, weight: .light)
         xAxis.labelTextColor = UIColor.black
         xAxis.drawAxisLineEnabled = true
@@ -58,14 +59,14 @@ class graficaParabolaViewController: UIViewController, ChartViewDelegate{
         xAxis.granularity = 0.5
         let leftAxis = chartView.leftAxis
         leftAxis.labelPosition = .insideChart
-        leftAxis.labelFont = .systemFont(ofSize: 12, weight: .light)
+        leftAxis.labelFont = .systemFont(ofSize: 10, weight: .light)
         leftAxis.drawGridLinesEnabled = true
         leftAxis.gridLineWidth = 1
         leftAxis.gridLineDashLengths = [1,1]
-        leftAxis.granularityEnabled = true
+        //leftAxis.granularityEnabled = true
         leftAxis.axisMinimum = -50
         leftAxis.axisMaximum = 50
-        leftAxis.granularity = 0.5
+        //leftAxis.granularity = 0.5
         leftAxis.labelTextColor = UIColor.black
         
    

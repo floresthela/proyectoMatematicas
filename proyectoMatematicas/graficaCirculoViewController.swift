@@ -51,7 +51,7 @@ class graficaCirculoViewController: UIViewController, ChartViewDelegate {
         ssx.attributedText = "x{2} + ".customText()
         ssy.attributedText = "y{2} =".customText()
         ss1.attributedText = "){2} + (y - ".customText()
-        ss2.attributedText = "){2} =".customText()
+        ss2.attributedText = "){2}=".customText()
         
         
         UIView.animate(withDuration: 1, animations: {
@@ -78,6 +78,7 @@ class graficaCirculoViewController: UIViewController, ChartViewDelegate {
 
         
         let xAxis = chartView.xAxis
+        xAxis.labelPosition = .topInside
         xAxis.labelFont = .systemFont(ofSize: 10, weight: .light)
         xAxis.labelTextColor = UIColor.black
         xAxis.drawAxisLineEnabled = true
@@ -90,7 +91,7 @@ class graficaCirculoViewController: UIViewController, ChartViewDelegate {
         xAxis.granularity = 0.5
         let leftAxis = chartView.leftAxis
         leftAxis.labelPosition = .insideChart
-        leftAxis.labelFont = .systemFont(ofSize: 12, weight: .light)
+        leftAxis.labelFont = .systemFont(ofSize: 10, weight: .light)
         leftAxis.drawGridLinesEnabled = true
         leftAxis.gridLineWidth = 1
         leftAxis.gridLineDashLengths = [1,1]
@@ -205,20 +206,30 @@ class graficaCirculoViewController: UIViewController, ChartViewDelegate {
                 
             }
             
-            if h >= 50 || k >= 50 {
-                let alerta = UIAlertController(title: "Error", message: "Los valores de h o k se salen del rango (-50 - 50)", preferredStyle: .alert)
+            
+            if radio < 5 {
+                let alerta = UIAlertController(title: "Error", message: "Valor del radio no es aceptable", preferredStyle: .alert)
                 
                 let accion = UIAlertAction(title: "OK", style: .cancel, handler: nil)
                 
                 alerta.addAction(accion)
                 present(alerta, animated: true, completion: nil)
             }
+            else{
+                if h >= 50 || k >= 50 {
+                    let alerta = UIAlertController(title: "Error", message: "Los valores de h o k se salen del rango (-50 - 50)", preferredStyle: .alert)
+                    
+                    let accion = UIAlertAction(title: "OK", style: .cancel, handler: nil)
+                    
+                    alerta.addAction(accion)
+                    present(alerta, animated: true, completion: nil)
+                }
             
             else{
                 setDataCount()
                 chartView.animate(xAxisDuration: 2.5)
             }
-            
+            }
      
         }
         else{

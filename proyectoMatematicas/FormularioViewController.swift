@@ -45,7 +45,7 @@ class FormularioViewController: UIViewController, UIScrollViewDelegate {
         }
         if seccConic == "Hiperbola"{
     
-            navTitulo.title = "Hiperbola"
+            navTitulo.title = "Hipérbola"
             label1.text = "Una hipérbola es todos los puntos en un plano donde la diferencia de sus distancias desde dos puntos fijos es constante. Cada uno de los puntos fijos se llama foco de la hipérbola."
             img4.image = UIImage(named: "descHiperbola")
             label2.text = "La forma estándar de la ecuación de una hipérbola con centro en (0,0) puede tener cualquiera de estas dos formas: "
